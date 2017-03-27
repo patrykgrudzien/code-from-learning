@@ -1,0 +1,1 @@
+First test text file to check push from newly created local repository.
