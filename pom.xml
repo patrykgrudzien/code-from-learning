@@ -8,6 +8,7 @@
     <groupId>com.jurik99</groupId>
     <artifactId>all_java_code</artifactId>
     <version>1.0 Version</version>
+    <packaging>pom</packaging>
     <name>All Java Code</name>
 
     <modules>

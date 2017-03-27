@@ -13,12 +13,10 @@
 
     <artifactId>java_brains</artifactId>
     <name>Java Brains</name>
+    <packaging>pom</packaging>
 
-    <build>
-        <sourceDirectory>src/main/java</sourceDirectory>
-        <resources>src/main/resources</resources>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
-        <outputDirectory>target</outputDirectory>
-    </build>
-    
+    <modules>
+        <module>RESTFul API</module>
+    </modules>
+
 </project>
