@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/context"
+       xmlns:context="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="myFortuneService" class="me.jurik99.Section_4_5.HappyFortuneService"/>
+
+    <bean id="myCoach" class="me.jurik99.Section_6.TrackCoach"
+          init-method="doMyStartStuff"
+          destroy-method="doMyCleanupStuff">
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
+
+</beans>

@@ -13,7 +13,7 @@
 
     <artifactId>restful-api</artifactId>
     <name>RESTFul API</name>
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

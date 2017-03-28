@@ -14,6 +14,7 @@
     <artifactId>spring-core</artifactId>
     <name>Spring CORE</name>
     <packaging>war</packaging>
+    <url>http://maven.apache.org</url>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -41,6 +42,4 @@
         </plugins>
     </build>
 
-
-    
 </project>
