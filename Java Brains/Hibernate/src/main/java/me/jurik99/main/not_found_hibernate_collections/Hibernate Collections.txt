@@ -1,0 +1,7 @@
+--- HIBERNATE COLLECTIONS ---
+
+* Bag semantic - List / ArrayList (any order)
+* Bag semantic with ID - List / ArrayList (index property)
+* List semantic - List / ArrayList (list can be ordered)
+* Set semantic - Set (similar to Set in Java)
+* Map semantic - Map (similar to Map in Java)

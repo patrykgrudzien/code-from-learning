@@ -49,6 +49,7 @@
         <test.directory>src/test/java</test.directory>
         <target.directory>target</target.directory>
         <web.directory>src/main/webapp</web.directory>
+        <test.target.directory>src/test/target</test.target.directory>
     </properties>
 
 </project>
