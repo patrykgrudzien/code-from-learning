@@ -13,6 +13,7 @@
 
     <modules>
         <module>Java Brains</module>
+        <module>Journal Dev</module>
     </modules>
 
     <build>
