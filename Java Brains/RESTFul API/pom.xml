@@ -13,16 +13,16 @@
 
     <artifactId>restful-api</artifactId>
     <name>RESTFul API</name>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <build>
-        <sourceDirectory>${main.java.directory}</sourceDirectory>
+        <sourceDirectory>${java.directory}</sourceDirectory>
         <resources>
             <resource>
-                <directory>${main.resources.directory}</directory>
+                <directory>${resources.directory}</directory>
             </resource>
         </resources>
-        <testSourceDirectory>${test.java.directory}</testSourceDirectory>
+        <testSourceDirectory>${test.directory}</testSourceDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
 
         <plugins>
