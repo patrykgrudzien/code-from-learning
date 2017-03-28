@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jurik99</groupId>
-    <artifactId>all_java_code</artifactId>
+    <artifactId>all-java-code</artifactId>
     <version>1.0 Version</version>
     <packaging>pom</packaging>
     <name>All Java Code</name>
@@ -36,5 +36,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <properties>
+        <main.java.directory>src/main/java</main.java.directory>
+        <main.resources.directory>src/main/resources</main.resources.directory>
+        <test.java.directory>src/test/java</test.java.directory>
+        <target.directory>target</target.directory>
+        <web.directory>src/main/webapp</web.directory>
+    </properties>
 
 </project>
