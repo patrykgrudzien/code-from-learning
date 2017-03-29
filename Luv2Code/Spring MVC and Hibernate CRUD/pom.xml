@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>spring-MVC-Hibernate</artifactId>
-    <name>Spring MVC and Hibernate</name>
+    <name>Spring MVC and Hibernate CRUD</name>
 
     <build>
         

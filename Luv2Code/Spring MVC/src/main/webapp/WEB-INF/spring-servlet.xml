@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/cache
+       http://www.springframework.org/schema/cache/spring-cache.xsd
+       http://www.springframework.org/schema/me.jurik99.util ">
+
+    <!-- Step 3: Add support for component scanning -->
+    <context:component-scan base-package="me.jurik99"/>
+
+    <!-- Load the country options properties file in the Spring config file -->
+    <!-- TODO: I commented it because Spring cannot find it (I don't know why). Maybe this file should be located -->
+    <!-- TODO: in resources directory -->
+    <!--<me.jurik99.util:properties id="countryOptions" location="classpath:../../../web/countries.properties"/>-->
+
+</beans>
