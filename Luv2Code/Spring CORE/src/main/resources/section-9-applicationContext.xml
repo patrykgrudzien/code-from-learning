@@ -9,6 +9,6 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Enable component scanning in Spring config file -->
-    <c:component-scan base-package="jurik99.Section_9"/>
+    <c:component-scan base-package="me.jurik99.Section_9"/>
 
 </beans>

@@ -1,8 +1,8 @@
 package me.jurik99.Section_8;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import static me.jurik99.Constants.DEPENDENCY_INJECTION_APPLICATION_CONTEXT;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationDemoApp
 {

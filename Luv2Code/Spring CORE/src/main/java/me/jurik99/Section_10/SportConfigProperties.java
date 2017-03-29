@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@ComponentScan("jurik99.Section_10")
+@ComponentScan("me.jurik99.Section_10")
 @PropertySource("classpath:sport.properties")
 public class SportConfigProperties
 {

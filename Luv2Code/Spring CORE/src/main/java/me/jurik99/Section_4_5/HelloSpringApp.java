@@ -1,8 +1,8 @@
 package me.jurik99.Section_4_5;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import static me.jurik99.Constants.APPLICATION_CONTEXT_XML_CONFIG;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp
 {

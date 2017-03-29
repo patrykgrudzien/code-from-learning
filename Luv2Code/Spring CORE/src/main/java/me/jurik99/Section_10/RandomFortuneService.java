@@ -9,11 +9,8 @@ public class RandomFortuneService implements FortuneService
 {
 	@SuppressWarnings("MismatchedReadAndWriteOfArray")
 	// --- create an array of strings ---
-	private String[] data = {
-			"Beware of the wolf in sheep's clothing",
-	        "Diligence is the mother of good luck",
-	        "The journey is the reward"
-	};
+	private String[] data = {"Beware of the wolf in sheep's clothing", "Diligence is the mother of good luck",
+	                         "The journey is the reward"};
 
 	// --- create a random number generator ---
 	private Random random = new Random();

@@ -10,7 +10,7 @@ public class CacheableTest
 	}
 
 	@Cacheable(value = "message", key = "#message")
-	private static String getMessage(final String message)
+	public static String getMessage(final String message)
 	{
 		return "Hello World with Cache";
 	}
