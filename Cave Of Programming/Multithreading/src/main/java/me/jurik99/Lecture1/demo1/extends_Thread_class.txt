@@ -1,0 +1,1 @@
+This App.java shows how to create Threads using inherintance
