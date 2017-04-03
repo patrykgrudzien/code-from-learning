@@ -21,6 +21,7 @@
     <modules>
         <module>RESTFul API</module>
         <module>Hibernate</module>
+        <module>Java 8</module>
     </modules>
 
 </project>
