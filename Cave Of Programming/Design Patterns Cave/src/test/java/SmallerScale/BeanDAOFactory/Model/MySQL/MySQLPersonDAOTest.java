@@ -10,11 +10,13 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.sql.SQLException;
 import java.util.List;
 
+@Ignore
 public class MySQLPersonDAOTest
 {
 	@BeforeClass
