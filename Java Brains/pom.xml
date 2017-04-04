@@ -10,6 +10,7 @@
         <groupId>com.jurik99</groupId>
         <artifactId>all-java-code</artifactId>
         <version>1.0 Version</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <!-- ARTIFACT, NAME -->
