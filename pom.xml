@@ -10,6 +10,7 @@
     <version>1.0 Version</version>
     <packaging>pom</packaging>
     <name>All Java Code</name>
+    <description>Module containing whole sub projects.</description>
 
     <modules>
         <module>Java Brains</module>
