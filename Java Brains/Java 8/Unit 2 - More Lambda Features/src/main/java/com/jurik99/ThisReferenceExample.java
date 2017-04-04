@@ -37,7 +37,7 @@ public class ThisReferenceExample
 			// System.out.println(this);   NOT WORK !!!
 		});
 
-
+		thisReferenceExample.execute();
 	}
 
 	private void execute()
@@ -45,10 +45,15 @@ public class ThisReferenceExample
 		doProcess(10, i ->
 		{
 			System.out.println("Value of i is: " + i);
-			System.out.println(this); // it is inside of LAMBDA (and that's why it is not modified)
-			/**
+			/*
+			 * it's not in a STATIC context
+			 * it's inside of LAMBDA (and that's why it's not modified)
 			 *
+			 * "this" refers to the same value as would have refered outside of lambda expression
+			 *
+			 * "this" points to instance of ThisReferenceExample class !!!
 			 */
+			System.out.println(this);
 		});
 	}
 
