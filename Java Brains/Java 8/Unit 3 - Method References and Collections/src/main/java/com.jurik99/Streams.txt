@@ -1,0 +1,1 @@
+Streams - A sequence of elements supporting sequential and paraller aggregate operations.
