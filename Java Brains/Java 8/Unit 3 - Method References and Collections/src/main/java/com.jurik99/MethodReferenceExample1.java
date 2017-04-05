@@ -4,7 +4,7 @@ public class MethodReferenceExample1
 {
 	public static void main(String[] args)
 	{
-		final Thread t = new Thread(MethodReferenceExample1::printMessage);
+		final Thread t = new Thread(MethodReferenceExample1::printMessage); // () -> method()
 		t.start();
 	}
 

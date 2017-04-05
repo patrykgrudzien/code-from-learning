@@ -18,10 +18,13 @@ public class MethodReferenceExample2
 
 		// --- Print all elements in the list ---
 		System.out.println("Printing all people:");
-		performConditionally(people, person -> true, System.out::println);
+		performConditionally(people, person -> true, System.out::println); // p -> method(p)
 		/*
 		 * System.out - it's an INSTANCE
 		 * println() - it's a method which is called on that instance (System.out)
+		 *
+		 * (System.out::println) knows about input argument because (Consumer<Person> consumer) takes input argument in
+		 * consumer.accept(person);
 		 */
 	}
 
