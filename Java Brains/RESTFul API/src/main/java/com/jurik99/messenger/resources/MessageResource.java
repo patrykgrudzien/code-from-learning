@@ -18,6 +18,11 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
+import static com.jurik99.messenger.helpers.LinkHelper.createLink;
+import static com.jurik99.messenger.helpers.MessageResourceHelper.getPathToMessageLink;
+
+import com.jurik99.messenger.helpers.LinkReferences;
+import com.jurik99.messenger.model.Link;
 import com.jurik99.messenger.model.Message;
 import com.jurik99.messenger.resources.beans.MessageFilterBean;
 import com.jurik99.messenger.service.MessageService;
@@ -74,9 +79,15 @@ public class MessageResource
 
 	@GET
 	@Path("/{messageId}")
-	public Message getMessage(@PathParam("messageId") final long messageId)
+	public Message getMessage(@PathParam("messageId") final long messageId, @Context UriInfo uriInfo)
 	{
-		return messageService.getMessage(messageId);
+		final Message message = messageService.getMessage(messageId);
+
+		final String path = getPathToMessageLink(uriInfo, messageId);
+		final Link link = createLink(path, LinkReferences.SELF.getName());
+		message.getLinks().add(link);
+
+		return message;
 	}
 
 	/*

@@ -3,8 +3,10 @@ package com.jurik99.messenger.model;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @XmlRootElement
@@ -16,6 +18,7 @@ public class Message
 	private String author;
 
 	private Map<Long, Comment> comments = new HashMap<>();
+	private List<Link> links = new ArrayList<>();
 
 	public Message()
 	{
@@ -81,5 +84,15 @@ public class Message
 	public void setAuthor(final String author)
 	{
 		this.author = author;
+	}
+
+	public List<Link> getLinks()
+	{
+		return links;
+	}
+
+	public void setLinks(final List<Link> links)
+	{
+		this.links = links;
 	}
 }
