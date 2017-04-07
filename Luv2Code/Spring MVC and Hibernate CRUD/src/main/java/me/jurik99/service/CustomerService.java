@@ -1,8 +1,8 @@
 package me.jurik99.service;
 
-import me.jurik99.entity.Customer;
-
 import java.util.List;
+
+import me.jurik99.entity.Customer;
 
 public interface CustomerService
 {

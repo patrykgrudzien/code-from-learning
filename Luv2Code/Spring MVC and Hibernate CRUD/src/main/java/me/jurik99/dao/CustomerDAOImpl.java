@@ -1,13 +1,15 @@
 package me.jurik99.dao;
 
-import me.jurik99.entity.Customer;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
+import me.jurik99.entity.Customer;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO

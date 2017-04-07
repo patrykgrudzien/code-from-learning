@@ -47,8 +47,7 @@ public class MessageService
 	{
 		final List<Message> list = new ArrayList<>(messages.values());
 
-		if (start + size > list.size())
-			return new ArrayList<>();
+		if (start + size > list.size()) return new ArrayList<>();
 
 		return list.subList(start, start + size);
 	}
