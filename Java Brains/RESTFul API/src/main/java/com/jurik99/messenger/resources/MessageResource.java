@@ -84,7 +84,7 @@ public class MessageResource
 		final Message message = messageService.getMessage(messageId);
 
 		final String path = createLinkPath(uriInfo);
-		final Link link = createLink(path, LinkReferences.SELF.getName());
+		final Link link = createLink(path, LinkReferences.SELF.getReference());
 		message.addLink(link);
 
 		return message;

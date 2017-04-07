@@ -4,15 +4,15 @@ public enum LinkReferences
 {
 	SELF("self");
 
-	LinkReferences(final String name)
+	LinkReferences(final String reference)
 	{
-		this.name = name;
+		this.reference = reference;
 	}
 
-	public String getName()
+	public String getReference()
 	{
-		return name;
+		return reference;
 	}
 
-	private String name;
+	private String reference;
 }
