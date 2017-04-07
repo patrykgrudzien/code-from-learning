@@ -53,9 +53,7 @@ public class MessageResource
 
 		final URI uri = uriInfo.getAbsolutePathBuilder().path(String.valueOf(newMessage.getId())).build();
 
-		return Response.created(uri)
-		               .entity(newMessage)
-		               .build();
+		return Response.created(uri).entity(newMessage).build();
 		// return messageService.addMessage(message);
 	}
 

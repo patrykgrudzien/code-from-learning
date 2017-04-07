@@ -1,12 +1,13 @@
 package me.jurik99.service;
 
-import me.jurik99.dao.CustomerDAO;
-import me.jurik99.entity.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
+import me.jurik99.dao.CustomerDAO;
+import me.jurik99.entity.Customer;
 
 @Service
 public class CustomerServiceImpl implements CustomerService
