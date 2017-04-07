@@ -95,4 +95,9 @@ public class Message
 	{
 		this.links = links;
 	}
+
+	public void addLink(final Link link)
+	{
+		this.getLinks().add(link);
+	}
 }
