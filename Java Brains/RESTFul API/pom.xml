@@ -13,6 +13,7 @@
 
     <artifactId>restful-api</artifactId>
     <name>RESTFul API</name>
+    <version>1.0 Version</version>
     <packaging>war</packaging>
 
     <build>

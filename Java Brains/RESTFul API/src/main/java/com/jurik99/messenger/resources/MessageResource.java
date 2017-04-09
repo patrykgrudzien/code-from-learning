@@ -19,7 +19,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 import static com.jurik99.messenger.helpers.LinkHelper.createLink;
-import static com.jurik99.messenger.helpers.MessageResourceHelper.createLinkPath;
+import static com.jurik99.messenger.helpers.LinkHelper.createLinkPath;
 
 import com.jurik99.messenger.helpers.LinkReferences;
 import com.jurik99.messenger.model.Link;
@@ -83,9 +83,14 @@ public class MessageResource
 	{
 		final Message message = messageService.getMessage(messageId);
 
-		final String path = createLinkPath(uriInfo);
-		final Link link = createLink(path, LinkReferences.SELF.getReference());
-		message.addLink(link);
+		final String selfPath = createLinkPath(uriInfo, MessageResource.class, messageId);
+		final String profilePath = createLinkPath(uriInfo, ProfileResource.class, message.getAuthor());
+
+		final Link selfLink = createLink(selfPath, LinkReferences.SELF.getReference());
+		final Link profileLink = createLink(profilePath, LinkReferences.PROFILE.getReference());
+
+		message.addLink(selfLink);
+		message.addLink(profileLink);
 
 		return message;
 	}
