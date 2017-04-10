@@ -19,9 +19,13 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 import static com.jurik99.messenger.helpers.LinkHelper.createLink;
-import static com.jurik99.messenger.helpers.LinkHelper.createLinkPath;
+import static com.jurik99.messenger.helpers.LinkHelper.createLinkUri;
+import static com.jurik99.messenger.helpers.LinkHelper.createLinkUriForSubResource;
+import static com.jurik99.messenger.helpers.LinkReferences.COMMENTS;
+import static com.jurik99.messenger.helpers.LinkReferences.PROFILE;
+import static com.jurik99.messenger.helpers.LinkReferences.SELF;
+import static com.jurik99.messenger.resources.Constants.GET_COMMENT_RESOURCE;
 
-import com.jurik99.messenger.helpers.LinkReferences;
 import com.jurik99.messenger.model.Link;
 import com.jurik99.messenger.model.Message;
 import com.jurik99.messenger.resources.beans.MessageFilterBean;
@@ -35,8 +39,25 @@ public class MessageResource
 	private MessageService messageService = new MessageService();
 
 	@GET
-	public List<Message> getMessages(@BeanParam final MessageFilterBean filterBean)
+	public List<Message> getJSONMessages(@BeanParam final MessageFilterBean filterBean)
 	{
+		System.out.println("JSON method called.");
+		if (filterBean.getYear() > 0)
+		{
+			return messageService.getAllMessagesForYear(filterBean.getYear());
+		}
+		if (filterBean.getStart() > 0 && filterBean.getSize() > 0)
+		{
+			return messageService.getAllMessagesPaginated(filterBean.getStart(), filterBean.getSize());
+		}
+		return messageService.getAllMessages();
+	}
+
+	@GET
+	@Produces(MediaType.TEXT_XML)   // @Produces - "Accept" Header
+	public List<Message> getXMLMessages(@BeanParam final MessageFilterBean filterBean)
+	{
+		System.out.println("XML method called.");
 		if (filterBean.getYear() > 0)
 		{
 			return messageService.getAllMessagesForYear(filterBean.getYear());
@@ -79,18 +100,20 @@ public class MessageResource
 
 	@GET
 	@Path("/{messageId}")
-	public Message getMessage(@PathParam("messageId") final long messageId, @Context UriInfo uriInfo)
+	public Message getMessage(@PathParam("messageId") final long messageId, @Context final UriInfo uriInfo)
 	{
 		final Message message = messageService.getMessage(messageId);
 
-		final String selfPath = createLinkPath(uriInfo, MessageResource.class, messageId);
-		final String profilePath = createLinkPath(uriInfo, ProfileResource.class, message.getAuthor());
+		final String selfUri = createLinkUri(uriInfo, MessageResource.class, messageId);
+		final String profileUri = createLinkUri(uriInfo, ProfileResource.class, message.getAuthor());
+		final String commentsUri = createLinkUriForSubResource(uriInfo, MessageResource.class, GET_COMMENT_RESOURCE,
+				CommentResource.class, "messageId", messageId);
 
-		final Link selfLink = createLink(selfPath, LinkReferences.SELF.getReference());
-		final Link profileLink = createLink(profilePath, LinkReferences.PROFILE.getReference());
+		final Link selfLink = createLink(selfUri, SELF.getReference());
+		final Link profileLink = createLink(profileUri, PROFILE.getReference());
+		final Link commentsLink = createLink(commentsUri, COMMENTS.getReference());
 
-		message.addLink(selfLink);
-		message.addLink(profileLink);
+		message.addLinks(selfLink, profileLink, commentsLink);
 
 		return message;
 	}

@@ -2,7 +2,7 @@ package com.jurik99.messenger.helpers;
 
 public enum LinkReferences
 {
-	SELF("self"), PROFILE("profile");
+	SELF("self"), PROFILE("profile"), COMMENTS("comments");
 
 	LinkReferences(final String reference)
 	{

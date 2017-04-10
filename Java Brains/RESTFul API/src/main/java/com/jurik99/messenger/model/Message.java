@@ -100,4 +100,12 @@ public class Message
 	{
 		this.getLinks().add(link);
 	}
+
+	public void addLinks(final Link... links)
+	{
+		for (final Link link : links)
+		{
+			this.getLinks().add(link);
+		}
+	}
 }
