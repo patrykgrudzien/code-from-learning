@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>java-brains</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>advanced-JAX-RS</artifactId>
+    <name>Advanced JAX-RS</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Basic</module>
+        <module>Lesson 2.1 Resource Life Cycle</module>
+        <module>Lesson 2.2 Param Annotations</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.glassfish.jersey.bundles</groupId>
+            <artifactId>jaxrs-ri</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-moxy</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <jersey.version>2.25</jersey.version>
+    </properties>
+    
+</project>
