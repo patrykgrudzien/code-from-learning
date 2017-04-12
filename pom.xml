@@ -18,6 +18,7 @@
         <module>Luv2Code</module>
         <module>Tutorials</module>
         <module>Cave Of Programming</module>
+        <module>Own Logger</module>
     </modules>
 
     <build>
