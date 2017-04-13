@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>all-java-code</artifactId>
+        <version>1.0 Version</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>archetype-creator</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>Archetype Creator</name>
+
+    <modules>
+        <module>Java SE Project</module>
+        <module>Java EE Project</module>
+    </modules>
+
+</project>
