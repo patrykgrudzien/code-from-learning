@@ -20,6 +20,7 @@
         <module>Lesson 2.1 Resource Life Cycle</module>
         <module>Lesson 2.2 Param Annotations</module>
         <module>Lesson 2.3 Param Converters</module>
+        <module>Lesson 2.6 Message Body Readers Writers</module>
     </modules>
 
     <dependencies>
