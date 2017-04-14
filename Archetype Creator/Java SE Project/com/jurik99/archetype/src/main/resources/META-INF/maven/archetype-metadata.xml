@@ -13,6 +13,9 @@
         <fileSet>
             <directory>com/jurik99/src/main/resources</directory>
         </fileSet>
+        <fileSet>
+            <directory>com/jurik99/src/test/java</directory>
+        </fileSet>
     </fileSets>
 
 </archetype-descriptor>
