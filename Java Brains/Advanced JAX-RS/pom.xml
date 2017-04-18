@@ -21,6 +21,7 @@
         <module>Lesson 2.2 Param Annotations</module>
         <module>Lesson 2.3 Param Converters</module>
         <module>Lesson 2.6 Message Body Readers Writers</module>
+        <module>Lesson 2.8 Custom Media Type</module>
     </modules>
 
     <dependencies>

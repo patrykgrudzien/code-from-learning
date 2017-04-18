@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -11,11 +10,10 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-2-6-message-body-readers-writers</artifactId>
-    <version>1.0 Version</version>
+    <artifactId>lesson-2-8-custom-media-type</artifactId>
     <packaging>war</packaging>
 
-    <name>Lesson 2.6 Message Body Readers Writers</name>
+    <name>Lesson 2.8 Custom Media Type</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
