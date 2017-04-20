@@ -9,12 +9,7 @@ public class Unit1ExerciseSolutionJava8
 {
 	public static void main(String[] args)
 	{
-		final List<Person> people = Arrays.asList(
-				new Person("Patryk", "Nowak", 10),
-				new Person("Damian", "Grudzien", 20),
-				new Person("Celina", "Stawiarz", 30),
-				new Person("Viola", "Adamski", 40),
-				new Person("Andrzej", "Chmmielewski", 50));
+		final List<Person> people = prepareListOfPeople();
 
 		// --- Step 1. Sort list by last name ---
 		people.sort((person1, person2) -> person2.getLastName().compareTo(person1.getLastName()));
@@ -30,5 +25,14 @@ public class Unit1ExerciseSolutionJava8
 		// --- Step 4. Create a method that prints all people that have first name beginning with C ---
 		System.out.println("\nPrinting all people with first name beginning with V:");
 		printConditionally(people, person -> person.getFirstName().startsWith("V"));
+	}
+
+	public static List<Person> prepareListOfPeople()
+	{
+		return Arrays.asList(new Person("Patryk", "Nowak", 10),
+		                     new Person("Damian", "Grudzien", 20),
+		                     new Person("Celina", "Stawiarz", 30),
+		                     new Person("Viola", "Adamski", 40),
+		                     new Person("Andrzej", "Chmmielewski", 50));
 	}
 }
