@@ -26,6 +26,8 @@
         <module>Lesson 3.5 Making a POST request</module>
         <module>Lesson 3.6 Creating Invocations</module>
         <module>Lesson 3.7 Handling Generic Types</module>
+        <module>Lesson 4.2 Implementing Filters</module>
+        <module>Lesson 4.5 Implementing REST API Authorization</module>
     </modules>
 
     <dependencies>
