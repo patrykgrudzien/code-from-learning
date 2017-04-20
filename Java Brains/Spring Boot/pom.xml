@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>java-brains</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>spring-boot</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Spring Boot</name>
+
+    <modules>
+        <module>Unit 1 - Introducing Spring Boot</module>
+        <module>Unit 2 - Spring MVC The View Tier</module>
+        <module>Unit 3 - Booting Spring Boot</module>
+        <module>Unit 4 - Spring Data JPA The Data Tier</module>
+        <module>Unit 5 - Deployment and monitoring</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <spring.boot.version>1.5.2.RELEASE</spring.boot.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+</project>
