@@ -14,5 +14,17 @@
     <packaging>pom</packaging>
 
     <name>Unit 2 - Spring MVC The View Tier</name>
-    
+
+    <build>
+        <sourceDirectory>${java.directory}</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${resources.directory}</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>${test.directory}</testSourceDirectory>
+        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
+    </build>
+
 </project>
