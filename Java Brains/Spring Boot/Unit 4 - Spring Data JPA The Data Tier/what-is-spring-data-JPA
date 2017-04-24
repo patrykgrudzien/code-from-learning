@@ -1,0 +1,6 @@
+JPA = Java Persistence API
+ORM = Object Relational Mapping (Class <-> Table)
+
+Spring Data JPA is a separate project, which lets you make working with that ORM tools easier.
+
+Apache Derby -> EMBEDDED (test) DATABASE in Spring Data JPA that is available in classpath.
