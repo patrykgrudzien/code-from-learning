@@ -2,6 +2,7 @@ package com.jurik99.service;
 
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,9 +15,11 @@ import com.jurik99.model.Topic;
 @Service
 public class TopicService
 {
-	private List<Topic> topics = Arrays.asList(new Topic("spring", "Spring Framework", "Spring Framework Description"),
-	                                           new Topic("java", "Core Java", "Core Java Description"),
-	                                           new Topic("javascript", "JavaScript", "JavaScript Description"));
+	// --- When we create a list from "Arrays.asList()", the list is IMMUTABLE (cannot add or remove smth) !!! ---
+	private List<Topic> topics = new ArrayList<>(Arrays.asList(
+			new Topic("spring","Spring Framework","Spring Framework Description"),
+			new Topic("java", "Core Java", "Core Java Description"),
+			new Topic("javascript", "JavaScript", "JavaScript Description")));
 
 	public List<Topic> getAllTopics()
 	{
@@ -26,5 +29,10 @@ public class TopicService
 	public Topic getTopic(final String topicId)
 	{
 		return topics.stream().filter(topic -> topic.getId().equals(topicId)).findFirst().get();
+	}
+
+	public void addTopic(final Topic topic)
+	{
+		topics.add(topic);
 	}
 }
