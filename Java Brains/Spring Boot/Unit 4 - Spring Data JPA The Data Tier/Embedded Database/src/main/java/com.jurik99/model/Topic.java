@@ -1,8 +1,16 @@
 package com.jurik99.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Topic
 {
+	@Id
+	@GeneratedValue
 	private String id;
+
 	private String name;
 	private String description;
 
