@@ -21,6 +21,7 @@
         <module>Own Logger</module>
         <module>Archetype Creator</module>
         <module>Algorithms</module>
+        <module>SQL</module>
     </modules>
 
     <build>
