@@ -14,16 +14,11 @@
     <name>Design Patterns</name>
     <packaging>pom</packaging>
 
-    <build>
-        <sourceDirectory>${java.directory}</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${resources.directory}</directory>
-            </resource>
-        </resources>
-        <testSourceDirectory>${test.directory}</testSourceDirectory>
-        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${target.directory}</outputDirectory>
-    </build>
+    <modules>
+        <module>Creational</module>
+        <module>Structural</module>
+        <module>Behavioral</module>
+        <module>Miscellaneous</module>
+    </modules>
 
 </project>

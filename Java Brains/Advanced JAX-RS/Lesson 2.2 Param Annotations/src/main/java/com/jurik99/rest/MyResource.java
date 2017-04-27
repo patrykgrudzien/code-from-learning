@@ -10,9 +10,9 @@ import javax.ws.rs.core.MediaType;
 /*
  * The {pathParam} in the Path annotation lets you map resource to a variable path pattern.
  *
- * @Singleton will cause VALIDATION ERROR.
+ * @com.jurik99.Singleton will cause VALIDATION ERROR.
  *
- * Singleton resources are instantiated during application startup. So it is impossible to inject request-specific
+ * com.jurik99.Singleton resources are instantiated during application startup. So it is impossible to inject request-specific
  * information to their member variables !!!
  *
  * Resource is created BEFORE request comes in !!!
