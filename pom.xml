@@ -20,6 +20,7 @@
         <module>Cave Of Programming</module>
         <module>Own Logger</module>
         <module>Archetype Creator</module>
+        <module>Algorithms</module>
     </modules>
 
     <build>
