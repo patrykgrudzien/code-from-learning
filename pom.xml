@@ -22,6 +22,7 @@
         <module>Archetype Creator</module>
         <module>Algorithms</module>
         <module>SQL</module>
+        <module>JavaDevMatt</module>
     </modules>
 
     <build>
