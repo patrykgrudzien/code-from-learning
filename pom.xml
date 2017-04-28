@@ -23,6 +23,7 @@
         <module>Algorithms</module>
         <module>SQL</module>
         <module>JavaDevMatt</module>
+        <module>Unversioned Code</module>
     </modules>
 
     <build>
