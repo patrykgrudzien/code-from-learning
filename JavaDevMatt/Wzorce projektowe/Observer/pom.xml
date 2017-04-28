@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>observer</artifactId>
-    <name>com.jurik99.Observer</name>
+    <name>Observer</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

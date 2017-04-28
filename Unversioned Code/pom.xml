@@ -4,10 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jurik99</groupId>
-    <artifactId>unversioned-code</artifactId>
-    <version>1.0 Version</version>
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>all-java-code</artifactId>
+        <version>1.0 Version</version>
+    </parent>
 
+    <artifactId>unversioned-code</artifactId>
     <name>Unversioned Code</name>
+
+    <build>
+        <sourceDirectory>${java.directory}</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${resources.directory}</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>${test.directory}</testSourceDirectory>
+        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
+    </build>
 
 </project>
