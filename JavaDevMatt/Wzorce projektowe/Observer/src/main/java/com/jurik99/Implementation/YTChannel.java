@@ -1,4 +1,4 @@
-package com.jurik99;
+package com.jurik99.Implementation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ public class YTChannel implements Subject
 
 	public void publishNewVideo()
 	{
-		System.out.println("com.jurik99.YTChannel: Publishing new video...");
+		System.out.println("YTChannel: Publishing new video...");
 		notifyObservers();
 	}
 

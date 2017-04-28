@@ -1,18 +1,18 @@
-package com.jurik99;
+package com.jurik99.Implementation;
 
 public class Intro
 {
 	/*
-	 *  (com.jurik99.Subject / Publisher)
-	 *  - void register(com.jurik99.Observer o);
-	 *  - void unregister(com.jurik99.Observer o);
+	 *  (Subject / Publisher)
+	 *  - void register(Observer o);
+	 *  - void unregister(Observer o);
 	 *  - void notifyObservers();
 	 *
-	 *  - ArrayList<com.jurik99.Observer> observerList;
+	 *  - ArrayList<Observer> observerList;
 	 *
 	 *  -----------------------------------------------------
 	 *
-	 *  (com.jurik99.Observer)
+	 *  (Observer)
 	 *  - void update();
 	 *
 	 *  -----------------------------------------------------
