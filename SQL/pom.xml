@@ -18,4 +18,12 @@
         <module>Example Database</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
+    </dependencies>
+
 </project>
