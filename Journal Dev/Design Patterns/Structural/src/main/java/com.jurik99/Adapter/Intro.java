@@ -12,7 +12,18 @@ public class Intro
 	 *
 	 *  Step-by-step:
 	 *  1) 2 classes - Volt, Socket
+	 *
+	 *  Now we want to build an adapter that can produce 3 volts, 12 volts and default 120 volts. So first of all we
+	 *  will create an adapter interface.
 	 *  2) SocketAdapter interface
+	 *
+	 *  TWO WAY ADAPTER PATTERN
+	 *  While implementing Adapter pattern, there are two approaches - "class adapter" and "object adapter" - however
+	 *  both aproaches produce same result.
+	 *
+	 *  # CLASS ADAPTER - this form uses "java inheritance" and extends the source interface, in our case Socket class.
+	 *  # OBJECT ADAPTER - This form uses "java composition" and adapter contains the source object.
+	 *
 	 *  3) SocketClassAdapterImpl
 	 *  4) SocketObjectAdapterImpl
 	 *  5) AdapterPatternTest
