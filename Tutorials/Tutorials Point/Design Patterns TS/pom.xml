@@ -6,16 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>tutorials</artifactId>
+        <artifactId>tutorials-point</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>tutorials-point</artifactId>
+    <artifactId>design-patterns-ts</artifactId>
     <packaging>pom</packaging>
-    <name>Tutorials Point</name>
+    <name>Design Patterns TS</name>
 
     <modules>
-        <module>Design Patterns TS</module>
+        <module>Structural TS</module>
     </modules>
 
 </project>
