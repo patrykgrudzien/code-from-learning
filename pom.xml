@@ -24,6 +24,7 @@
         <module>SQL</module>
         <module>JavaDevMatt</module>
         <module>Unversioned Code</module>
+        <module>Artur Owczarek</module>
     </modules>
 
     <build>
