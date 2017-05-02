@@ -13,10 +13,9 @@ public abstract class UserHelper
 {
 	private static Connection connection = CreateConnectionToRootLocalhost.createConnection();
 	private static Statement statement;
-	private static ResultSet resultSet;
 
-	private static final String SELECT_USERS_SUMMARY = "SELECT * FROM user_summary";
-	private static final String USER_NAME_COLUMN = "user";
+	private static final String SELECT_USERS_SUMMARY = "SELECT * FROM mysql.user";
+	private static final String USER_NAME_COLUMN = "User";
 	private static final String CREATE_NEW_USER = "CREATE USER '%1$s'@'localhost' IDENTIFIED BY '%2$s';";
 	private static final String GRANT_ALL_PRIVILAGES = "GRANT ALL PRIVILEGES ON * . * TO '%1$s'@'localhost';";
 
@@ -64,7 +63,7 @@ public abstract class UserHelper
 		try
 		{
 			statement = connection.createStatement();
-			resultSet = statement.executeQuery(SELECT_USERS_SUMMARY);
+			final ResultSet resultSet = statement.executeQuery(SELECT_USERS_SUMMARY);
 
 			if (resultSet != null)
 			{
