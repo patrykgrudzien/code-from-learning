@@ -6,16 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>algorithms</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>algorithms</artifactId>
-    <packaging>pom</packaging>
-    <name>Algorithms</name>
-
-    <modules>
-        <module>Bubble Sort</module>
-    </modules>
+    <artifactId>bubble-sort</artifactId>
+    <name>Bubble Sort</name>
     
 </project>
