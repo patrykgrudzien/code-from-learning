@@ -11,7 +11,7 @@ import com.jurik99.model.User;
 
 public abstract class UserHelper
 {
-	private static Connection connection = CreateConnectionToRootLocalhost.createConnection();
+	private static Connection connection = ConnectionHelper.createRootConnection();
 	private static Statement statement;
 
 	private static final String SELECT_USERS_SUMMARY = "SELECT * FROM mysql.user";
@@ -51,12 +51,12 @@ public abstract class UserHelper
 		}
 		finally
 		{
-			CloseResourcesHelper.closeStatement(statement);
-			CloseResourcesHelper.closeConnection(connection);
+			ResourcesHelper.closeStatement(statement);
+			ResourcesHelper.closeConnection(connection);
 		}
 	}
 
-	private static List<String> getAllUsersNames()
+	public static List<String> getAllUsersNames()
 	{
 		final List<String> users = new ArrayList<>();
 

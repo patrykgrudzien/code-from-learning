@@ -4,12 +4,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import static com.jurik99.database.RootCredentials.DB_ROOT_URL;
-import static com.jurik99.database.RootCredentials.JDBC_DRIVER;
-import static com.jurik99.database.RootCredentials.ROOT_PASSWORD;
-import static com.jurik99.database.RootCredentials.ROOT_USER;
+import static com.jurik99.database.DatabaseCredentials.DB_ROOT_URL;
+import static com.jurik99.database.DatabaseCredentials.JDBC_DRIVER;
+import static com.jurik99.database.DatabaseCredentials.ROOT_PASSWORD;
+import static com.jurik99.database.DatabaseCredentials.ROOT_USER;
 
-import com.jurik99.helper.CloseResourcesHelper;
+import com.jurik99.helper.ResourcesHelper;
 
 public class RootConnectionTest
 {
@@ -58,7 +58,7 @@ public class RootConnectionTest
 		}
 		finally
 		{
-			CloseResourcesHelper.closeJDBCResources(connection, statement, resultSet);
+			ResourcesHelper.closeJDBCResources(connection, statement, resultSet);
 		}
 	}
 }

@@ -1,11 +1,14 @@
 package com.jurik99.helper;
 
+import java.io.File;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public abstract class CloseResourcesHelper
+public abstract class ResourcesHelper
 {
 	public static void closeConnection(final Connection connection)
 	{
@@ -61,5 +64,13 @@ public abstract class CloseResourcesHelper
 		closeResultSet(resultSet);
 		closeStatement(statement);
 		closeConnection(connection);
+	}
+
+	@SuppressWarnings("SameParameterValue")
+	public static String getFullPathToResourceScript(final Class<?> clazz, final String resourceName)
+			throws URISyntaxException
+	{
+		final URL resource = clazz.getClassLoader().getResource(resourceName);
+		return resource != null ? new File(resource.toURI()).getAbsolutePath() : "Script NOT FOUND!";
 	}
 }
