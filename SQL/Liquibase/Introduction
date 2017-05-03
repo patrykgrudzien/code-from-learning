@@ -1,0 +1,12 @@
+Liquibase is a database change management tool. Rather than writing SQL directly against the database to
+create, update or drop database objects, developers define their desired database changes in XML files.
+
+Any change to database are grouped into "ChangeSet", the best practice is one changeset per modification
+to make roll back easily. Changes to database can be taged, e.g. you can tag your database structure to 1.0
+after first release. Later, when some patches are made and ver. 1.1 is release, you can tag all changes
+up to now to 1.1. (If it's not very clear now, it's ok, see the examples below will make it more obvious).
+With the help of those tags, you can easily rollback your database structure to a certain version. (Also
+liquibase can rollback without tags.)
+
+One notion need to be clarified first, liquibase ONLY MANAGE SCHEMA CHANGES OF YOUR DATABASE, e.g. add extra
+index or rename a column, THE DATA IN THE TABLES ARE NOT MANAGED !!!

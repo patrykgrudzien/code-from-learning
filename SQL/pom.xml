@@ -16,6 +16,7 @@
 
     <modules>
         <module>Example Database</module>
+        <module>Liquibase</module>
     </modules>
 
     <dependencies>
