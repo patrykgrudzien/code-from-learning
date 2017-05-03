@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Odliczanie czasu</title>
+
+    <!-- W sekcji HEAD zawsze umieszczamy skrypty JavaScript, ma się on później wykonać w sekcji BODY -->
+    <script type="text/javascript">
+
+        function odliczanie()
+        {
+            <!-- Uda nam się pobrać czas naszego lokalnego komputera, NIE SERWERA !!! -->
+            var dzisiaj = new Date();
+
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth() + 1;
+            var rok = dzisiaj.getFullYear();
+
+            var godzina = dzisiaj.getHours();
+            if (godzina < 10)
+                godzina = "0" + godzina;
+
+            var minuta = dzisiaj.getMinutes();
+            if (minuta < 10)
+                minuta = "0" + minuta;
+
+            var sekunda = dzisiaj.getSeconds();
+            if (sekunda < 10)
+                sekunda = "0" + sekunda;
+
+            document.getElementById("zegar").innerHTML =
+                dzien + "/" + miesiac + "/" + rok + " | " + godzina + ":" + minuta + ":" + sekunda;
+
+            setTimeout("odliczanie()", 1000);
+        }
+
+    </script>
+</head>
+
+<body onload="odliczanie()">
+
+<!-- Po przeprowadzeniu odpowiednich obliczeń bądź pobraniu czasu z systemu, co sekundę będziemy
+zmieniać wartość specjalnego pojemnika na stronie "div" z ang. DIVIDE (podziel stronę na pojemniki) -->
+<div id="zegar"></div>
+
+</body>
+</html>

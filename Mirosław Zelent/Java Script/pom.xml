@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>youtube</artifactId>
+        <artifactId>miroslaw-zelent</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>miroslaw-zelent</artifactId>
-    <name>Mirosław Zelent</name>
+    <artifactId>java-script</artifactId>
     <packaging>pom</packaging>
+    <name>Java Script</name>
 
     <modules>
-        <module>JavaScript</module>
+        <module>Odcinek 1</module>
     </modules>
 
 </project>

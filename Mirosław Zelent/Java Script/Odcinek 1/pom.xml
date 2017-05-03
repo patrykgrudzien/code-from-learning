@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>miroslaw-zelent</artifactId>
+        <artifactId>java-script</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>java-script</artifactId>
-    <name>JavaScript</name>
+    <artifactId>odcinek-1</artifactId>
+    <name>Odcinek 1</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -23,6 +23,7 @@
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
+        <scriptSourceDirectory>${java.script.directory}</scriptSourceDirectory>
     </build>
 
 </project>
