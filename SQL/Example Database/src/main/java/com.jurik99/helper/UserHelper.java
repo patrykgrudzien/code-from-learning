@@ -100,6 +100,6 @@ public abstract class UserHelper
 				break;
 			}
 		}
-		return true;
+		return false;
 	}
 }
