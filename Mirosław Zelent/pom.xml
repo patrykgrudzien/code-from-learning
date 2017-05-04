@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <java.script.directory>src/main/javascript</java.script.directory>
+        <java.script.directory>src/main/resources/javascript</java.script.directory>
     </properties>
 
 </project>
