@@ -27,6 +27,21 @@ public class SecurityFilter implements ContainerRequestFilter
 	{
 		final List<String> allAuthorizationHeaders = requestContext.getHeaders().get(AUTHORIZATION_HEADER);
 
+		/*
+		 * Basic Auth (Basic Access Authentication)
+		 * In the HEADER we have (username + password)
+		 *
+		 * Basic auth - client side
+		 * username:password  ->  Base64 encoding  ->  dXNlcm5hbWU6cGFzc3dvcmQ=
+		 * In the header "Authorization" we set value to: "Basic dXNlcm5hbWU6cGFzc3dvcmQ="
+		 * (Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=)
+		 *
+		 * Then we encode and use StringTokenizer in the code below to decodeAsString();
+		 *
+		 * Security is not the intent of the encoding step. Rather, the intent of the encoding is to ENCODE
+		 * "non-HTTP-compatible" CHARACTERS that may be in the user name or password into those that are
+		 * "HTTP-compatible"
+		 */
 		if (requestContext.getUriInfo().getPath().contains(SECURED_URL_PREFIX))
 		{
 			if (allAuthorizationHeaders != null && allAuthorizationHeaders.size() > 0)
