@@ -5,6 +5,6 @@ public class NewUserCreationTest
 {
 	public static void main(final String[] args)
 	{
-		UserHelper.createNewUser(new User("liquibase-user", "liquibase"));
+		UserHelper.createNewUser(new User("provide user name !", "provide user password !"));
 	}
 }
