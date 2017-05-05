@@ -12,5 +12,43 @@
 
     <artifactId>liquibase-hello-world-example</artifactId>
     <name>Liquibase</name>
+
+    <build>
+        <!-- LIQUIBASE PLUGIN -->
+        <plugins>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <propertyFile>${resources.directory}/liquibase/liquibase.properties</propertyFile>
+                    <changeLogFile>${resources.directory}/liquibase/db-changelog-master.xml</changeLogFile>
+                </configuration>
+                <!-- I personally prefer not to bind it to any maven build lifecycle, but invoke it manually. There
+                are 2 files configured in this plugin:
+                1) properties file (defines all parameter to connect to database)
+                2) changeLogFile (is the file which is reads change sets from)
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>update</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                -->
+            </plugin>
+        </plugins>
+        <!-- LIQUIBASE PLUGIN -->
+        <sourceDirectory>${java.directory}</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${resources.directory}</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>${test.directory}</testSourceDirectory>
+        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
+    </build>
     
 </project>

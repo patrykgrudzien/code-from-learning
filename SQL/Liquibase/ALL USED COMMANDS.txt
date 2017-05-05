@@ -1,0 +1,11 @@
+1) RUN LIQUIBASE BY MAVEN:
+mvn liquibase:update
+
+2) ROLLBACK DATABASE TO VERSION e.g. 1.0
+mvn liquibase:rollback -Dliquibase.rollbackTag=1.0
+
+3) APPLY CHANGE LOG TO A SPECIFIED VERSION e.g. 1.1
+mvn liquibase:update -Dliquibase.toTag=1.1
+
+4) GENERATE CHANGELOG FROM EXISTING TABLES
+mvn liquibase:generateChangeLog -Dliquibase.outputChangeLogFile=d:\output.xml

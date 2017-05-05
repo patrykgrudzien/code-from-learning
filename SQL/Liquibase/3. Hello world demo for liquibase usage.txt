@@ -1,0 +1,1 @@
+First, let's create maven project. In this demo, there is no java class. We emphase on how to use liquibase.

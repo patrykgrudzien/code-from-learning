@@ -3,8 +3,8 @@ import com.jurik99.model.User;
 
 public class NewUserCreationTest
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
-		UserHelper.createNewUser(new User("user-for-examples", "test"));
+		UserHelper.createNewUser(new User("liquibase-user", "liquibase"));
 	}
 }

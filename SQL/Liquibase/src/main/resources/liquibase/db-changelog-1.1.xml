@@ -1,0 +1,19 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <!-- Let suppose later on, 2 new versions are released with a little change to the database, 1.1 and 1.2. Every
+    version has a XML file, defining what has changed since last time. The "db-changelog-1.1.xml" change column
+    'name' of table 'department' to "dept_name"
+     -->
+    <changeSet id="rename_dept_column" author="patryk.grudzien">
+        <renameColumn tableName="department" oldColumnName="name" newColumnName="dept_name"
+                      columnDataType="varchar(50)" />
+    </changeSet>
+
+    <changeSet id="tag-1.1" author="patryk.grudzien">
+        <tagDatabase tag="1.1"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,10 @@
+Let's now demonstrate the 'version control' functionality of liquibase.
+Suppose at beginning we have a clean database with nothing in it. The database change log has 3 versions:
+* 1.0
+* 1.1
+* 1.2
+defined in previous files.
+
+* version 1.0 -> create 2 tables
+* version 1.1 -> change column name of table department
+* version 1.2 -> add foreign key and index

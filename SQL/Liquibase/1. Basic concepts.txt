@@ -1,0 +1,19 @@
+ChangeSet is a logic group in which you can put any real operation. For example, a change set can has operations to
+create a table, rename a column, add foreign key or any other database operations.
+
+How does liquibase identify a change set?
+Change set is identified by 3 elements:
+1) ID
+2) Author
+3) Change log filename (with path)
+
+When run liquibase first time, it will create 2 extra tables in your database:
+1) databasechangelog
+2) databasechangeloglock
+
+Liquibase will go through changelog xml file, see if there are some change sets not in this table. If found, execute
+them and put a record in this table. By using this table, liquibase can trace which changeset has already executed,
+which changeset is new. Tags can be used to specify a version you want to go. To use liquibase, you don't need to
+touch this "databasechangelog" table, but it can help you understand how liquibase works.
+
+To use liquibase, you also need a change log file, in which all database operations are defined.

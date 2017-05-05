@@ -1,0 +1,5 @@
+In this demo, change log files are in XML format. Other available formats are JSON and YAML.
+
+The official recommended best practice is always using a "xxx-master.xml" file as an entry file.
+This is also the file set in the maven plugin. In this "db-changelog-master.xml" file, there's no logic defined, only
+ a bunch of includes.

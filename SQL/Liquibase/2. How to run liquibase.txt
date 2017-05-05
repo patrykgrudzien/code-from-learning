@@ -1,0 +1,14 @@
+Before the demo starts, let's first see how to run liquibase. In this tutorial, 2 ways are introduced:
+1) By command line
+2) By maven plugin
+
+Tu run liquibase in command line, you need:
+* download liquibase, unpack it executable file "liquibase" or "liquibase.bat" in the package
+* download your database jdbc driver to your local disk
+
+To run liquibase by using maven, you need:
+* change pom file, add "liquibase-maven-plugin"
+
+Since in pom.xml the jdbc driver dependency has already been added, you don't need the external jdbc .jar file.
+You can choose either command line or maven plugin to run liquibase. I personally prefer by maven plugin, cause the
+command can be much shorter.
