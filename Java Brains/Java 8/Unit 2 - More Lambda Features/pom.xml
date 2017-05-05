@@ -15,7 +15,7 @@
 
     <artifactId>unit-2-more-lambda-features</artifactId>
     <packaging>pom</packaging>
-    <name>Unit 2 - More Lambda Features</name>
+    <name>More Lambda Features</name>
 
     <dependencies>
         <dependency>

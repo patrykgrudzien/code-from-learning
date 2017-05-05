@@ -13,6 +13,6 @@
     <artifactId>unit-3-booting-spring-boot</artifactId>
     <packaging>pom</packaging>
 
-    <name>Unit 3 - Booting Spring Boot</name>
+    <name>Booting Spring Boot</name>
 
 </project>

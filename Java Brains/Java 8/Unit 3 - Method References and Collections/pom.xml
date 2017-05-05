@@ -12,7 +12,7 @@
 
     <artifactId>unit-3-method-references-and-collections</artifactId>
     <packaging>pom</packaging>
-    <name>Unit 3 - Method References and Collections</name>
+    <name>Method References and Collections</name>
 
     <dependencies>
         <dependency>

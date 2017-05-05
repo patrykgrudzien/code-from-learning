@@ -13,7 +13,7 @@
     <artifactId>unit-4-spring-data-jpa-the-data-tier</artifactId>
     <packaging>pom</packaging>
 
-    <name>Unit 4 - Spring Data JPA The Data Tier</name>
+    <name>Spring Data JPA The Data Tier</name>
 
     <modules>
         <module>Embedded Database</module>

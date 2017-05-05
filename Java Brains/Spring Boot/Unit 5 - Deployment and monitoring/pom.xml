@@ -13,6 +13,6 @@
     <artifactId>unit-5-deployment-and-monitoring</artifactId>
     <packaging>pom</packaging>
 
-    <name>Unit 5 - Deployment and monitoring</name>
+    <name>Deployment and monitoring</name>
 
 </project>
