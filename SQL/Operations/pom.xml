@@ -12,7 +12,7 @@
 
     <artifactId>operations-in-sql</artifactId>
     <packaging>pom</packaging>
-    <name>Definitions in SQL</name>
+    <name>Operations in SQL</name>
 
     <modules>
         <module>Oracle</module>

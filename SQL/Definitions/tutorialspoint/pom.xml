@@ -6,17 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>definitions-in-sql</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>definitions-in-sql</artifactId>
+    <artifactId>tutorialspoint</artifactId>
     <packaging>pom</packaging>
-    <name>Definitions in SQL</name>
-
-    <modules>
-        <module>w3schools.com</module>
-        <module>tutorialspoint</module>
-    </modules>
+    <name>Tutorials Point SQL</name>
 
 </project>
