@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>implementing-inheritance</artifactId>
-    <name>8. Implementing Inheritance</name>
+    <name>Implementing Inheritance</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
