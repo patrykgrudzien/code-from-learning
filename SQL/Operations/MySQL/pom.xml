@@ -6,17 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>operations-in-sql</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Journal-Dev</artifactId>
-    <name>Journal Dev</name>
+    <artifactId>mysql-operations</artifactId>
     <packaging>pom</packaging>
+    <name>MySQL</name>
 
-    <modules>
-        <module>Design Patterns</module>
-        <module>Java 8 Features</module>
-    </modules>
-    
 </project>
