@@ -14,9 +14,4 @@
     <packaging>pom</packaging>
     <name>Definitions in SQL</name>
 
-    <modules>
-        <module>w3schools.com</module>
-        <module>tutorialspoint</module>
-    </modules>
-
 </project>

@@ -14,9 +14,4 @@
     <packaging>pom</packaging>
     <name>Operations in SQL</name>
 
-    <modules>
-        <module>Oracle</module>
-        <module>MySQL</module>
-    </modules>
-
 </project>
