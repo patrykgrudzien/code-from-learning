@@ -22,7 +22,7 @@ public class RootConnectionTest
 	private static final String USER_COLUMN = "user";
 
 	@SuppressWarnings("Duplicates")
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		try
 		{

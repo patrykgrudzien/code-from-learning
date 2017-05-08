@@ -2,7 +2,7 @@ package com.jurik99.Strategy;
 
 public class ShoppingCardMain
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final ShoppingCard card = new ShoppingCard();
 

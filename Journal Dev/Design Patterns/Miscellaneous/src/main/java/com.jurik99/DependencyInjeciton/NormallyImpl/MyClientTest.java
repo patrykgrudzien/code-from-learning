@@ -2,7 +2,7 @@ package DependencyInjeciton.NormallyImpl;
 
 public class MyClientTest
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
         /**
          * MyApplication class is responsible to initialize the email serviceImpl and then use it. This leads to hard-coded
@@ -17,7 +17,7 @@ public class MyClientTest
          * Testing the application will be very difficult since our application is directly creating the email serviceImpl instance.
          * There is no way we can mock these objects in our test classes.
          */
-        MyApplication app = new MyApplication();
+        final MyApplication app = new MyApplication();
         app.processMessages("Test message", "testUser@gmail.com");
     }
 }

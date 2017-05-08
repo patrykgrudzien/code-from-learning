@@ -8,10 +8,10 @@ public class App
 {
     private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        Thread t1 = new Thread(App::producer);
-        Thread t2 = new Thread(App::consumer);
+        final Thread t1 = new Thread(App::producer);
+        final Thread t2 = new Thread(App::consumer);
 
         t1.start();
         t2.start();
@@ -22,7 +22,7 @@ public class App
             t1.join();
             t2.join();
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }
@@ -30,17 +30,17 @@ public class App
 
     public static void producer()
     {
-        Random random = new Random();
+        final Random random = new Random();
 
         while (true)
         {
             try
             {
-                int addedValue = random.nextInt(100);
+                final int addedValue = random.nextInt(100);
                 queue.put(addedValue);
                 System.out.println("Added value: " + addedValue + ", SIZE IS: " + queue.size());
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }
@@ -49,7 +49,7 @@ public class App
 
     private static void consumer()
     {
-        Random random = new Random();
+        final Random random = new Random();
 
         while (true)
         {
@@ -59,14 +59,14 @@ public class App
 
                 if (random.nextInt(10) == 0)
                 {
-                    Integer value = queue.take();
+                    final Integer value = queue.take();
 
                     System.out.println(
                             "Taken value: " + value + "; Queue size is: " + queue.size());
                 }
 
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }

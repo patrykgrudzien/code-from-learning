@@ -2,7 +2,7 @@ package com.jurik99;
 
 public class RunnableExample
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final Thread myThread = new Thread(new Runnable()
 		{

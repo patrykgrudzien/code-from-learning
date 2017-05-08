@@ -6,9 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 public class App
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        ExecutorService executor = Executors.newFixedThreadPool(2);
+        final ExecutorService executor = Executors.newFixedThreadPool(2);
 
         for (int i = 0; i < 2; i++)
         {
@@ -25,7 +25,7 @@ public class App
         {
             executor.awaitTermination(2, TimeUnit.SECONDS);
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }
@@ -52,7 +52,7 @@ class Processor implements Runnable
         {
             Thread.sleep(5000);
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }

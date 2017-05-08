@@ -40,7 +40,7 @@ public class Processor
                     lock.wait();
                 }
                 System.out.print("List size is: " + list.size());
-                int value = list.removeFirst();
+                final int value = list.removeFirst();
                 System.out.println("; value is: " + value);
                 lock.notify();
             }

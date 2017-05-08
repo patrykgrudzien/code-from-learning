@@ -2,7 +2,7 @@ package com.jurik99.Training.android_phones;
 
 public class Main
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final AndroidSystem system = new AndroidSystemImpl();
 		final Phone sonyXperiaZ3 = new SonyXperia("Z3");

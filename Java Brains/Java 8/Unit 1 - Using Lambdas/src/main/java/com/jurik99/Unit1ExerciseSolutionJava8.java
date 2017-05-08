@@ -7,7 +7,7 @@ import static com.jurik99.Unit1ExerciseSolutionJava7.printConditionally;
 
 public class Unit1ExerciseSolutionJava8
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final List<Person> people = prepareListOfPeople();
 

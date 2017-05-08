@@ -19,7 +19,7 @@ public class RandomFortuneService implements FortuneService
 	public String getFortune()
 	{
 		// --- pick a random strong from the array ---
-		int index = random.nextInt(data.length);
+		final int index = random.nextInt(data.length);
 
 		return data[index];
 	}

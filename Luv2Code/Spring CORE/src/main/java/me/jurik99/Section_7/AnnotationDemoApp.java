@@ -6,13 +6,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationDemoApp
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		// --- read spring config file ---
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(ANNOTATION_APPLICATION_CONTEXT);
+		final ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(ANNOTATION_APPLICATION_CONTEXT);
 
 		// --- get the bean from spring container ---
-		Coach theCoach = context.getBean("tennisCoach", Coach.class);
+		final Coach theCoach = context.getBean("tennisCoach", Coach.class);
 
 		// --- call a method ---
 		System.out.println(theCoach.getDailyWorkout());

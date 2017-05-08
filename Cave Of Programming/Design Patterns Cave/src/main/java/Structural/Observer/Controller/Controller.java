@@ -10,14 +10,14 @@ public class Controller implements LoginListener
     private Model model;
     private View view;
 
-    public Controller(Model model, View view)
+    public Controller(final Model model, final View view)
     {
         this.model = model;
         this.view = view;
     }
 
     @Override
-    public void loginPerformed(LoginFormEvent event)
+    public void loginPerformed(final LoginFormEvent event)
     {
         System.out.println("Login event received. " + event.getName() + ": " + event.getPassword());
     }

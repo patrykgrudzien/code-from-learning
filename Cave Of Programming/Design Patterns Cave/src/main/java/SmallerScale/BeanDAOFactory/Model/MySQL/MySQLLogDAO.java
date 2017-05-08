@@ -8,7 +8,7 @@ import java.util.List;
 public class MySQLLogDAO implements LogDAOInterface
 {
     @Override
-    public void addEntry(String message)
+    public void addEntry(final String message)
     {
         /**
          * Get current time and log message to database
@@ -16,7 +16,7 @@ public class MySQLLogDAO implements LogDAOInterface
     }
 
     @Override
-    public List<Log> getEntries(int number)
+    public List<Log> getEntries(final int number)
     {
         /**
          * Get latest "number" log messages

@@ -36,8 +36,8 @@ public class MySQLPersonDAOTest
 	{
 //        System.out.println("setUp");
 
-		DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
-		PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
+		final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
+		final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
 
 		mySQLPersonDAO.deleteAll();
 	}
@@ -63,16 +63,16 @@ public class MySQLPersonDAOTest
 	@Test
 	public void testCreate() throws SQLException
 	{
-		DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
-		PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
+		final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
+		final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
 
-		Person person1 = new Person("Bob", "password");
-		Person person2 = new Person("Sue", "hello");
+		final Person person1 = new Person("Bob", "password");
+		final Person person2 = new Person("Sue", "hello");
 
 		mySQLPersonDAO.addPerson(person1);
 		mySQLPersonDAO.addPerson(person2);
 
-		List<Person> people = mySQLPersonDAO.getPeople();
+		final List<Person> people = mySQLPersonDAO.getPeople();
 
 		assertEquals("Should be two people in database.", 2, people.size());
 		assertEquals("These 2 people should be the same.", person1, people.get(0));

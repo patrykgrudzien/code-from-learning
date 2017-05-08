@@ -3,27 +3,27 @@ package me.jurik99.Lecture9;
 public class App
 {
     @SuppressWarnings("Duplicates")
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        Processor processor = new Processor();
+        final Processor processor = new Processor();
 
-        Thread t1 = new Thread(() -> {
+        final Thread t1 = new Thread(() -> {
             try
             {
                 processor.produce();
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }
         });
 
-        Thread t2 = new Thread(() -> {
+        final Thread t2 = new Thread(() -> {
             try
             {
                 processor.consume();
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }
@@ -37,7 +37,7 @@ public class App
             t1.join();
             t2.join();
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }

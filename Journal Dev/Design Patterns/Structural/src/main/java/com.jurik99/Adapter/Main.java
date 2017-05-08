@@ -2,7 +2,7 @@ package com.jurik99.Adapter;
 
 public class Main
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		testClassAdapter();
 
@@ -24,10 +24,10 @@ public class Main
 
 	private static void testObjectAdapter()
 	{
-		SocketAdapter sockAdapter = new SocketObjectAdapterImpl();
-		Volt v3 = getVolt(sockAdapter, 3);
-		Volt v12 = getVolt(sockAdapter, 12);
-		Volt v120 = getVolt(sockAdapter, 120);
+		final SocketAdapter sockAdapter = new SocketObjectAdapterImpl();
+		final Volt v3 = getVolt(sockAdapter, 3);
+		final Volt v12 = getVolt(sockAdapter, 12);
+		final Volt v120 = getVolt(sockAdapter, 120);
 		System.out.println("v3 volts using Object Adapter = " + v3.getVolts());
 		System.out.println("v12 volts using Object Adapter = " + v12.getVolts());
 		System.out.println("v120 volts using Object Adapter = " + v120.getVolts());

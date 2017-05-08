@@ -16,7 +16,7 @@ public class CreateDescriptionFile
             printWriter = new PrintWriter(new File(path + "\\" + fileName + ".txt"));
             printWriter.write(description);
         }
-        catch (FileNotFoundException e)
+        catch (final FileNotFoundException e)
         {
             e.printStackTrace();
         }

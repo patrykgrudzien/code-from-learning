@@ -8,7 +8,7 @@ public class View extends JFrame
 {
 	private Model model;
 
-	public View(Model model)
+	public View(final Model model)
 	{
 		super("MVC Demo");
 

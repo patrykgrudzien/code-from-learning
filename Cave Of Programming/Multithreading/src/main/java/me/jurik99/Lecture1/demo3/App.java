@@ -3,9 +3,9 @@ package me.jurik99.Lecture1.demo3;
 public class App
 {
     @SuppressWarnings("Duplicates")
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        Thread t1 = new Thread(new Runnable()
+        final Thread t1 = new Thread(new Runnable()
         {
             @Override
             public void run()
@@ -17,7 +17,7 @@ public class App
                     {
                         Thread.sleep(1000);
                     }
-                    catch (InterruptedException e)
+                    catch (final InterruptedException e)
                     {
                         e.printStackTrace();
                     }

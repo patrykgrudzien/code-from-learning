@@ -12,7 +12,7 @@ public class CreateUserEvent
 {
     private String name, password;
 
-    CreateUserEvent(String name, String password)
+    CreateUserEvent(final String name, final String password)
     {
         this.name = name;
         this.password = password;
@@ -23,7 +23,7 @@ public class CreateUserEvent
         return name;
     }
 
-    public void setName(String name)
+    public void setName(final String name)
     {
         this.name = name;
     }
@@ -33,7 +33,7 @@ public class CreateUserEvent
         return password;
     }
 
-    public void setPassword(String password)
+    public void setPassword(final String password)
     {
         this.password = password;
     }

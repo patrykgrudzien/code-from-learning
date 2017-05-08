@@ -15,23 +15,23 @@ public class Controller implements CreateUserListener
     private Model model;
     private View view;
 
-    public Controller(Model model, View view)
+    public Controller(final Model model, final View view)
     {
         this.model = model;
         this.view = view;
     }
 
     @Override
-    public void loginPerformed(CreateUserEvent event)
+    public void loginPerformed(final CreateUserEvent event)
     {
         System.out.println("Login event received. " + event.getName() + ": " + event.getPassword());
 
-        String name = event.getName();
-        String password = event.getPassword();
+        final String name = event.getName();
+        final String password = event.getPassword();
 
-        DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
+        final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
         assert factory != null;
-        PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
+        final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
 
         if (name != null && password != null)
         {
@@ -39,7 +39,7 @@ public class Controller implements CreateUserListener
             {
                 mySQLPersonDAO.addPerson(new Person(name, password));
             }
-            catch (SQLException e)
+            catch (final SQLException e)
             {
                 e.printStackTrace();
             }

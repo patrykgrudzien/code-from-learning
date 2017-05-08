@@ -23,8 +23,8 @@ public class ThreadSafeSingleton_1
 
     // ================================================================================================ //
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        ThreadSafeSingleton_1 singleton = ThreadSafeSingleton_1.getInstance();
+        final ThreadSafeSingleton_1 singleton = ThreadSafeSingleton_1.getInstance();
     }
 }

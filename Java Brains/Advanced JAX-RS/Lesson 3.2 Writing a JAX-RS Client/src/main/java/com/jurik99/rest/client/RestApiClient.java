@@ -14,7 +14,7 @@ import com.jurik99.messenger.model.Message;
 
 public class RestApiClient
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		// --- Client is something that we initialize ONLY ONCE per application ---
 		final Client client = ClientBuilder.newClient();

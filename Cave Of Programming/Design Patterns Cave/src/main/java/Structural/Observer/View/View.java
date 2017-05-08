@@ -24,7 +24,7 @@ public class View extends JFrame implements ActionListener
 
     private LoginListener loginListener;
 
-    public View(Model model)
+    public View(final Model model)
     {
         super("MVC Demo");
 
@@ -36,7 +36,7 @@ public class View extends JFrame implements ActionListener
 
         setLayout(new GridBagLayout());
 
-        GridBagConstraints gc = new GridBagConstraints();
+        final GridBagConstraints gc = new GridBagConstraints();
         gc.anchor = GridBagConstraints.LAST_LINE_END;
         gc.gridx=1;
         gc.gridy=1;
@@ -93,10 +93,10 @@ public class View extends JFrame implements ActionListener
     }
 
     @Override
-    public void actionPerformed(ActionEvent e)
+    public void actionPerformed(final ActionEvent e)
     {
-        String password = new String(passField.getPassword());
-        String name = nameField.getText();
+        final String password = new String(passField.getPassword());
+        final String name = nameField.getText();
 
         fireLoginEvent(new LoginFormEvent(name, password));
     }
@@ -106,12 +106,12 @@ public class View extends JFrame implements ActionListener
      *
      * We want to store reference to the object which IMPLEMENTS "LoginListener" interface
      */
-    public void setLoginListener(LoginListener loginListener)
+    public void setLoginListener(final LoginListener loginListener)
     {
         this.loginListener = loginListener;
     }
 
-    private void fireLoginEvent(LoginFormEvent event)
+    private void fireLoginEvent(final LoginFormEvent event)
     {
         if (loginListener != null)
         {

@@ -7,12 +7,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanScopeDemoApp
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(BEAN_SCOPE_APPLICATION_CONTEXT);
+		final ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(BEAN_SCOPE_APPLICATION_CONTEXT);
 
-		Coach theCoach = context.getBean("myCoach", Coach.class);
-		Coach alphaCoach = context.getBean("myCoach", Coach.class);
+		final Coach theCoach = context.getBean("myCoach", Coach.class);
+		final Coach alphaCoach = context.getBean("myCoach", Coach.class);
 
 		System.out.println(theCoach);
 		System.out.println(alphaCoach);

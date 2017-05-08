@@ -40,8 +40,8 @@ public class Employees implements Cloneable
     @Override
     protected Object clone() throws CloneNotSupportedException
     {
-        List<String> temp = new ArrayList<>();
-        for (String s : this.getEmpList())
+        final List<String> temp = new ArrayList<>();
+        for (final String s : this.getEmpList())
         {
             temp.add(s);
         }

@@ -2,7 +2,7 @@ package com.jurik99.Adapter;
 
 public class AdapterPatternDemo
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final AudioPlayer audioPlayer = new AudioPlayer();
 

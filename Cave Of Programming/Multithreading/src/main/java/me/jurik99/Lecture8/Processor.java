@@ -16,7 +16,7 @@ public class Processor
 
     public void consume() throws InterruptedException
     {
-        Scanner scanner = new Scanner(System.in);
+        final Scanner scanner = new Scanner(System.in);
         Thread.sleep(2000);
 
         synchronized (this)

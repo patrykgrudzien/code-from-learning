@@ -30,14 +30,14 @@ public class MySQLPersonDAO implements PersonDAOInterface
 
     // ========================================================================================== //
     @Override
-    public int addPerson(Person person) throws SQLException
+    public int addPerson(final Person person) throws SQLException
     {
         connection = Database.getInstance().getConnection();
-        PreparedStatement addStatement = connection.prepareStatement("insert into people (name, password) values (?,?)");
+        final PreparedStatement addStatement = connection.prepareStatement("insert into people (name, password) values (?,?)");
         addStatement.setString(1, person.getName());
         addStatement.setString(2, person.getPassword());
 
-        int updated = addStatement.executeUpdate();
+        final int updated = addStatement.executeUpdate();
         addStatement.close();
 
         return updated;
@@ -45,20 +45,20 @@ public class MySQLPersonDAO implements PersonDAOInterface
 
     // ========================================================================================== //
     @Override
-    public Person getPerson(int id) throws SQLException
+    public Person getPerson(final int id) throws SQLException
     {
-        String sql = "select id, name, password from people where id=? order by id";
-        PreparedStatement getPersonStatement = connection.prepareStatement(sql);
+        final String sql = "select id, name, password from people where id=? order by id";
+        final PreparedStatement getPersonStatement = connection.prepareStatement(sql);
 
         getPersonStatement.setInt(1, id);
-        ResultSet results = getPersonStatement.executeQuery();
+        final ResultSet results = getPersonStatement.executeQuery();
 
         Person person = null;
 
         while (results.next())
         {
-            String name = results.getString(NAME_COLUMN);
-            String password = results.getString(PASSWORD_COLUMN);
+            final String name = results.getString(NAME_COLUMN);
+            final String password = results.getString(PASSWORD_COLUMN);
 
             person = new Person(id, name, password);
         }
@@ -73,19 +73,19 @@ public class MySQLPersonDAO implements PersonDAOInterface
     @Override
     public List<Person> getPeople() throws SQLException
     {
-        List<Person> people = new ArrayList<>();
+        final List<Person> people = new ArrayList<>();
 
-        String sql = "select id, name, password from people order by id";
-        Statement getPeopleStatement = connection.createStatement();
-        ResultSet results = getPeopleStatement.executeQuery(sql);
+        final String sql = "select id, name, password from people order by id";
+        final Statement getPeopleStatement = connection.createStatement();
+        final ResultSet results = getPeopleStatement.executeQuery(sql);
 
         while (results.next())
         {
-            int id = results.getInt(ID_COLUMN);
-            String name = results.getString(NAME_COLUMN);
-            String password = results.getString(PASSWORD_COLUMN);
+            final int id = results.getInt(ID_COLUMN);
+            final String name = results.getString(NAME_COLUMN);
+            final String password = results.getString(PASSWORD_COLUMN);
 
-            Person person = new Person(id, name, password);
+            final Person person = new Person(id, name, password);
             people.add(person);
         }
 
@@ -97,15 +97,15 @@ public class MySQLPersonDAO implements PersonDAOInterface
 
     // ========================================================================================== //
     @Override
-    public int updatePerson(Person person) throws SQLException
+    public int updatePerson(final Person person) throws SQLException
     {
-        PreparedStatement updateStatement = connection.prepareStatement("update people set name=?, password=? where id=?");
+        final PreparedStatement updateStatement = connection.prepareStatement("update people set name=?, password=? where id=?");
 
         updateStatement.setString(1, person.getName());
         updateStatement.setString(2, person.getPassword());
         updateStatement.setInt(3, person.getId());
 
-        int updated = updateStatement.executeUpdate();
+        final int updated = updateStatement.executeUpdate();
         updateStatement.close();
 
         return updated;
@@ -113,12 +113,12 @@ public class MySQLPersonDAO implements PersonDAOInterface
 
     // ========================================================================================== //
     @Override
-    public int deletePerson(int id) throws SQLException
+    public int deletePerson(final int id) throws SQLException
     {
-        PreparedStatement deleteStatement = connection.prepareStatement("delete from people where id=?");
+        final PreparedStatement deleteStatement = connection.prepareStatement("delete from people where id=?");
         deleteStatement.setInt(1, id);
 
-        int deleted = deleteStatement.executeUpdate();
+        final int deleted = deleteStatement.executeUpdate();
         deleteStatement.close();
 
         return deleted;
@@ -128,9 +128,9 @@ public class MySQLPersonDAO implements PersonDAOInterface
     @Override
     public int deleteAll() throws SQLException
     {
-        PreparedStatement deleteAllStatement = connection.prepareStatement("delete from people");
+        final PreparedStatement deleteAllStatement = connection.prepareStatement("delete from people");
 
-        int deletedAll = deleteAllStatement.executeUpdate();
+        final int deletedAll = deleteAllStatement.executeUpdate();
         deleteAllStatement.close();
 
         return deletedAll;

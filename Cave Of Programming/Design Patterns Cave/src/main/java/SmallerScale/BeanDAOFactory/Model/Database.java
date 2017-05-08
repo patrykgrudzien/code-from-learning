@@ -70,7 +70,7 @@ public class Database
                 connection.close();
                 System.out.println("Disconnected from database successfully.");
             }
-            catch (SQLException e)
+            catch (final SQLException e)
             {
                 System.out.println("CAN'T CLOSE CONNECTION!");
             }

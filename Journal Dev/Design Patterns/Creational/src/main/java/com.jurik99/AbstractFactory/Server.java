@@ -7,7 +7,7 @@ public class Server extends Computer
     private String hdd;
     private String cpu;
 
-    public Server(String ram, String hdd, String cpu)
+    public Server(final String ram, final String hdd, final String cpu)
     {
         this.type = Server.class.getSimpleName();
         this.ram = ram;

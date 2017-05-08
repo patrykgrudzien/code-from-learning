@@ -8,7 +8,7 @@ import javax.swing.SwingUtilities;
 
 public class Application
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
         SwingUtilities.invokeLater(new Runnable()
         {
@@ -28,14 +28,14 @@ public class Application
          * Model should never import ANYTHING FROM VIEW PACKAGE and
          * CONTROLLER PACKAGE either !!!
          */
-        Model model = new Model();
+        final Model model = new Model();
 
         /**
          * View of the Model.
          *
          * View is showing the DATA !!!
          */
-        View view = new View(model);
+        final View view = new View(model);
 
         /**
          * Controller sends commands to the Model (tells the Model what to do)
@@ -44,6 +44,6 @@ public class Application
          *
          * Controller also listens Model & View
          */
-        Controller controller = new Controller(model, view);
+        final Controller controller = new Controller(model, view);
     }
 }

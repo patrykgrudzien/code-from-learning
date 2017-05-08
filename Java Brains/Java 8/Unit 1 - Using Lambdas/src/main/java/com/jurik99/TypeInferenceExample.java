@@ -2,7 +2,7 @@ package com.jurik99;
 
 public class TypeInferenceExample
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final StringLengthLambda myLambda = s -> s.length();
 		System.out.println(myLambda.getLength("Patryk"));

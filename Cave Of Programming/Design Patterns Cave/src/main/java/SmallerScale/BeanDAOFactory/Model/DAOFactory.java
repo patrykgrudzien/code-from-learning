@@ -11,7 +11,7 @@ public abstract class DAOFactory
     public abstract PersonDAOInterface getPersonDAO();
     public abstract LogDAOInterface getLogDAO();
 
-    public static DAOFactory getFactory(int type)
+    public static DAOFactory getFactory(final int type)
     {
         switch (type)
         {

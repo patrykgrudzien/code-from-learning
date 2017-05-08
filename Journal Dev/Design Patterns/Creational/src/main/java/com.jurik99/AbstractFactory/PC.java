@@ -7,7 +7,7 @@ public class PC extends Computer
     private String hdd;
     private String cpu;
 
-    public PC(String ram, String hdd, String cpu)
+    public PC(final String ram, final String hdd, final String cpu)
     {
         this.type = PC.class.getSimpleName();
         this.ram = ram;

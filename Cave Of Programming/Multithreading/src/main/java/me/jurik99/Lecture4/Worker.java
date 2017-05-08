@@ -23,7 +23,7 @@ public class Worker
             {
                 Thread.sleep(1);
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }
@@ -40,7 +40,7 @@ public class Worker
             {
                 Thread.sleep(1);
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }
@@ -61,13 +61,13 @@ public class Worker
     {
         System.out.println("Starting...");
 
-        long start = System.currentTimeMillis();
+        final long start = System.currentTimeMillis();
 
-        Thread t1 = new Thread(() -> {
+        final Thread t1 = new Thread(() -> {
             process();
         });
 
-        Thread t2 = new Thread(() -> {
+        final Thread t2 = new Thread(() -> {
             process();
         });
 
@@ -79,12 +79,12 @@ public class Worker
             t1.join();
             t2.join();
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }
 
-        long end = System.currentTimeMillis();
+        final long end = System.currentTimeMillis();
         System.out.println("Time taken: " + (end - start));
         System.out.println("List1: " + list1.size() + "; List2: " + list2.size());
     }

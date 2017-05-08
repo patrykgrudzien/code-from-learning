@@ -6,11 +6,11 @@ import java.util.concurrent.Executors;
 
 public class App
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        CountDownLatch latch = new CountDownLatch(3);
+        final CountDownLatch latch = new CountDownLatch(3);
 
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        final ExecutorService executorService = Executors.newFixedThreadPool(3);
 
         for (int i = 0; i < 3; i++)
         {
@@ -21,7 +21,7 @@ public class App
         {
             latch.await();
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }
@@ -49,7 +49,7 @@ class Processor implements Runnable
             Thread.sleep(3000);
             countDownLatch.countDown();
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }

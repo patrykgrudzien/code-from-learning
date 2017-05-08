@@ -8,7 +8,7 @@ import javax.ws.rs.core.Response;
 
 public class InvocationDemo
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final InvocationDemo invocationDemo = new InvocationDemo();
 

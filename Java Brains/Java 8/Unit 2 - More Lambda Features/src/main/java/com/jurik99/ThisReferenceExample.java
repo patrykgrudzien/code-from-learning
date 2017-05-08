@@ -2,7 +2,7 @@ package com.jurik99;
 
 public class ThisReferenceExample
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final ThisReferenceExample thisReferenceExample = new ThisReferenceExample();
 		thisReferenceExample.doProcess(10, new Process()

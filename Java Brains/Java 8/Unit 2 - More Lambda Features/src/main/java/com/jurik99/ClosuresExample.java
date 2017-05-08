@@ -2,10 +2,10 @@ package com.jurik99;
 
 public class ClosuresExample
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final int a = 10;
-		int b = 20;
+		final int b = 20;
 
 		doProcess(a, new Process()
 		{

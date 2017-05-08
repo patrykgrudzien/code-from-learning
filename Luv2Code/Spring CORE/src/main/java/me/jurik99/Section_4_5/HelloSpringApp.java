@@ -6,15 +6,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		// --- load the spring configuration file ---
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(APPLICATION_CONTEXT_XML_CONFIG);
+		final ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(APPLICATION_CONTEXT_XML_CONFIG);
 
 		System.out.println("--------------------------------------------");
 
 		// --- retrieve bean from spring container ---
-		Coach trackCoach = context.getBean("trackCoach", Coach.class);
+		final Coach trackCoach = context.getBean("trackCoach", Coach.class);
 
 		// --- call methods on the bean ---
 		System.out.println(trackCoach.getDailyWorkout());
@@ -23,7 +23,7 @@ public class HelloSpringApp
 		System.out.println("--------------------------------------------");
 
 		// --- get baseballCoach ---
-		Coach baseballCoach = context.getBean("baseballCoach", Coach.class);
+		final Coach baseballCoach = context.getBean("baseballCoach", Coach.class);
 
 		// --- call baseballCoach methods ---
 		System.out.println(baseballCoach.getDailyWorkout());

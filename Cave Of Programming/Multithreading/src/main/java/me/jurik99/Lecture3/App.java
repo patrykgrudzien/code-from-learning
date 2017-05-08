@@ -9,15 +9,15 @@ public class App
         count++;
     }
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        App app = new App();
+        final App app = new App();
         app.doWork();
     }
 
     public void doWork()
     {
-        Thread t1 = new Thread(() -> {
+        final Thread t1 = new Thread(() -> {
             for (int i = 0; i < 10000; i++)
             {
                 increment();
@@ -25,7 +25,7 @@ public class App
             }
         });
 
-        Thread t2 = new Thread(() -> {
+        final Thread t2 = new Thread(() -> {
             for (int i = 0; i < 10000; i++)
             {
                 // count++;
@@ -41,7 +41,7 @@ public class App
             t1.join();
             t2.join();
         }
-        catch (InterruptedException e)
+        catch (final InterruptedException e)
         {
             e.printStackTrace();
         }

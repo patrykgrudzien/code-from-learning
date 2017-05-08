@@ -16,7 +16,7 @@ public class StaticBlockSingleton
         {
             instance = new StaticBlockSingleton();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             throw new RuntimeException("Exception occured in creating singleton instance!");
         }
@@ -29,8 +29,8 @@ public class StaticBlockSingleton
 
     // ================================================================================================ //
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        StaticBlockSingleton singleton = StaticBlockSingleton.getInstance();
+        final StaticBlockSingleton singleton = StaticBlockSingleton.getInstance();
     }
 }

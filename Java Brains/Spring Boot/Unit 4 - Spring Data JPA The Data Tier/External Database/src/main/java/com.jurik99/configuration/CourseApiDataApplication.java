@@ -16,7 +16,7 @@ public class CourseApiDataApplication
 	 * 4) Starts Tomcat server
 	 */
 
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		// --- WE DON'T NEED TO CREATE SPRING SERVLET CONTAINER ---
 		SpringApplication.run(CourseApiDataApplication.class, args);

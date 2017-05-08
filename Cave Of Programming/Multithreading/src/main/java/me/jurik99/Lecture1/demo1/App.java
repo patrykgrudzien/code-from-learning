@@ -15,7 +15,7 @@ class Runner extends Thread
             {
                 Thread.sleep(1000);
             }
-            catch (InterruptedException e)
+            catch (final InterruptedException e)
             {
                 e.printStackTrace();
             }
@@ -25,14 +25,14 @@ class Runner extends Thread
 
 public class App
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
         CreateDescriptionFile.createTextFileWithNameOfLecture(path, fileName, description);
 
-        Runner runner1 = new Runner();
+        final Runner runner1 = new Runner();
         runner1.start();
 
-        Runner runner2 = new Runner();
+        final Runner runner2 = new Runner();
         runner2.start();
     }
 

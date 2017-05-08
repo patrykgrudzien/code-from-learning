@@ -8,13 +8,13 @@ import java.util.List;
 public class OracleLogDAO implements LogDAOInterface
 {
     @Override
-    public void addEntry(String message)
+    public void addEntry(final String message)
     {
 
     }
 
     @Override
-    public List<Log> getEntries(int number)
+    public List<Log> getEntries(final int number)
     {
         return null;
     }

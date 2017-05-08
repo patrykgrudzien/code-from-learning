@@ -18,9 +18,9 @@ public class EagerInitialization
 
     // ================================================================================================ //
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        EagerInitialization singleton = EagerInitialization.getInstance();
+        final EagerInitialization singleton = EagerInitialization.getInstance();
         singleton.doSomething();
 
         System.out.println(EagerInitialization.class.getName());

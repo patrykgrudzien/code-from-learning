@@ -28,7 +28,7 @@ public class View extends JFrame implements ActionListener
 
     private CreateUserListener createUserListener;
 
-    public View(Model model)
+    public View(final Model model)
     {
         super("MVC Demo");
 
@@ -40,7 +40,7 @@ public class View extends JFrame implements ActionListener
 
         setLayout(new GridBagLayout());
 
-        GridBagConstraints gc = new GridBagConstraints();
+        final GridBagConstraints gc = new GridBagConstraints();
         gc.anchor = GridBagConstraints.LAST_LINE_END;
         gc.gridx = 1;
         gc.gridy = 1;
@@ -95,7 +95,7 @@ public class View extends JFrame implements ActionListener
         addWindowListener(new WindowAdapter()
         {
             @Override
-            public void windowOpened(WindowEvent e)
+            public void windowOpened(final WindowEvent e)
             {
                 try
                 {
@@ -105,14 +105,14 @@ public class View extends JFrame implements ActionListener
                         JOptionPane.showMessageDialog(View.this, "Connected to database", "Info", JOptionPane.INFORMATION_MESSAGE);
                     }
                 }
-                catch (Exception e1)
+                catch (final Exception e1)
                 {
                     JOptionPane.showMessageDialog(View.this, "Unable to connect to database.", "ERROR", JOptionPane.WARNING_MESSAGE);
                 }
             }
 
             @Override
-            public void windowClosing(WindowEvent e)
+            public void windowClosing(final WindowEvent e)
             {
                 Database.getInstance().disconnect();
                 if (Database.getInstance().isDisconnect())
@@ -122,7 +122,7 @@ public class View extends JFrame implements ActionListener
                         View.this.setVisible(false);
                         Thread.sleep(500);
                     }
-                    catch (InterruptedException e1)
+                    catch (final InterruptedException e1)
                     {
                         e1.printStackTrace();
                     }
@@ -139,14 +139,14 @@ public class View extends JFrame implements ActionListener
     }
 
     @Override
-    public void actionPerformed(ActionEvent e)
+    public void actionPerformed(final ActionEvent e)
     {
-        String password = new String(passField.getPassword());
-        String name = nameField.getText();
+        final String password = new String(passField.getPassword());
+        final String name = nameField.getText();
 
         fireLoginEvent(new CreateUserEvent(name, password));
 
-        int reply = JOptionPane.showConfirmDialog(null, "User has been added. Do you want to add next one?", "Info", JOptionPane.YES_NO_OPTION);
+        final int reply = JOptionPane.showConfirmDialog(null, "User has been added. Do you want to add next one?", "Info", JOptionPane.YES_NO_OPTION);
         if (reply == JOptionPane.YES_OPTION)
         {
             passField.setText("");
@@ -159,12 +159,12 @@ public class View extends JFrame implements ActionListener
      * <p>
      * We want to store reference to the object which IMPLEMENTS "LoginListener" interface
      */
-    public void setCreateUserListener(CreateUserListener createUserListener)
+    public void setCreateUserListener(final CreateUserListener createUserListener)
     {
         this.createUserListener = createUserListener;
     }
 
-    private void fireLoginEvent(CreateUserEvent event)
+    private void fireLoginEvent(final CreateUserEvent event)
     {
         if (createUserListener != null)
         {

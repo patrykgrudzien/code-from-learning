@@ -19,13 +19,13 @@ public class Person
 
     }
 
-    public Person(String name, String password)
+    public Person(final String name, final String password)
     {
         setName(name);
         setPassword(password);
     }
 
-    public Person(int id, String name, String password)
+    public Person(final int id, final String name, final String password)
     {
         setId(id);
         setName(name);
@@ -37,7 +37,7 @@ public class Person
         return id;
     }
 
-    public void setId(int id)
+    public void setId(final int id)
     {
         this.id = id;
     }
@@ -47,7 +47,7 @@ public class Person
         return name;
     }
 
-    public void setName(String name)
+    public void setName(final String name)
     {
         this.name = name;
     }
@@ -57,18 +57,18 @@ public class Person
         return password;
     }
 
-    public void setPassword(String password)
+    public void setPassword(final String password)
     {
         this.password = password;
     }
 
     @Override
-    public boolean equals(Object o)
+    public boolean equals(final Object o)
     {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
 
-        Person person = (Person) o;
+        final Person person = (Person) o;
 
         if (name != null ? !name.equals(person.name) : person.name != null) return false;
         return password != null ? password.equals(person.password) : person.password == null;

@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 public class MethodReferenceExample2
 {
 	@SuppressWarnings("Duplicates")
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final List<Person> people = Arrays.asList(new Person("Patryk", "Nowak", 10),
 		                                          new Person("Damian", "Grudzien", 20),

@@ -4,7 +4,7 @@ import java.util.function.BiConsumer;
 
 public class ExceptionHandlingExample
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final int[] someNumbers = {1, 2, 3, 4};
 		final int key = 0;

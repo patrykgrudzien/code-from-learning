@@ -9,13 +9,13 @@ import java.util.List;
 public class OraclePersonDAO implements PersonDAOInterface
 {
     @Override
-    public int addPerson(Person person) throws SQLException
+    public int addPerson(final Person person) throws SQLException
     {
         return 0;
     }
 
     @Override
-    public Person getPerson(int id) throws SQLException
+    public Person getPerson(final int id) throws SQLException
     {
         return null;
     }
@@ -27,13 +27,13 @@ public class OraclePersonDAO implements PersonDAOInterface
     }
 
     @Override
-    public int updatePerson(Person person) throws SQLException
+    public int updatePerson(final Person person) throws SQLException
     {
         return 0;
     }
 
     @Override
-    public int deletePerson(int id) throws SQLException
+    public int deletePerson(final int id) throws SQLException
     {
         return 0;
     }

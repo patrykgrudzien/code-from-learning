@@ -8,7 +8,7 @@ public class Controller
     private Model model;
     private View view;
 
-    public Controller(Model model, View view)
+    public Controller(final Model model, final View view)
     {
         this.model = model;
         this.view = view;

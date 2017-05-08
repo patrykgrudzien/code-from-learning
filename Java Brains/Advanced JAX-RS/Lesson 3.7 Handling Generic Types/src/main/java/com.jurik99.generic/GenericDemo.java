@@ -12,7 +12,7 @@ import com.jurik99.messenger.model.Message;
 
 public class GenericDemo
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final Client client = ClientBuilder.newClient();
 

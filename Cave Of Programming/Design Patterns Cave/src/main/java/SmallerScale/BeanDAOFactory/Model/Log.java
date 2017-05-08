@@ -13,7 +13,7 @@ public class Log
         return id;
     }
 
-    public void setId(int id)
+    public void setId(final int id)
     {
         this.id = id;
     }
@@ -23,7 +23,7 @@ public class Log
         return date;
     }
 
-    public void setDate(Date date)
+    public void setDate(final Date date)
     {
         this.date = date;
     }
@@ -33,7 +33,7 @@ public class Log
         return message;
     }
 
-    public void setMessage(String message)
+    public void setMessage(final String message)
     {
         this.message = message;
     }

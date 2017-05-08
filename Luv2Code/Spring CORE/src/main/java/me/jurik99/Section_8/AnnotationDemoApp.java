@@ -6,12 +6,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationDemoApp
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext
+		final ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext
 				                                         (DEPENDENCY_INJECTION_APPLICATION_CONTEXT);
 
-		Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
+		final Coach tennisCoach = context.getBean("tennisCoach", Coach.class);
 
 		System.out.println(tennisCoach.getDailyWorkout());
 		System.out.println(tennisCoach.getDailyFortune());

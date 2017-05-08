@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Unit1ExerciseSolutionJava7
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final List<Person> people = Arrays.asList(
 				new Person("Patryk", "Nowak", 10),

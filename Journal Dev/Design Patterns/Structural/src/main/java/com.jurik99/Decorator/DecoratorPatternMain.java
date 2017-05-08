@@ -2,7 +2,7 @@ package com.jurik99.Decorator;
 
 public class DecoratorPatternMain
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final Car sportsCar = new SportsCar(new BasicCar());
 		sportsCar.assembleCar();

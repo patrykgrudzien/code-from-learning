@@ -2,7 +2,7 @@ package com.jurik99.Implementation;
 
 public class Main
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final YTChannel ytChannel = new YTChannel();
 		final YTUser ytUser = new YTUser("JuRik99");

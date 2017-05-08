@@ -35,7 +35,7 @@ public class ShoppingCard
 
 	public void pay(final PaymentStrategy paymentStrategy)
 	{
-		int amount = calculateTotal();
+		final int amount = calculateTotal();
 		paymentStrategy.pay(amount);
 	}
 }

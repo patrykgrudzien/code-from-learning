@@ -2,7 +2,7 @@ package com.jurik99;
 
 public class AccountWithDouble
 {
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		double accountBalance = 0.0;
 

@@ -29,7 +29,7 @@ public class JDBC_Example
     private static Connection connection = null;
     private static Statement statement = null;
 
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
         try
         {
@@ -49,7 +49,7 @@ public class JDBC_Example
              */
             System.out.println("Creating statement...");
             statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(SELECT_STATEMENT);
+            final ResultSet resultSet = statement.executeQuery(SELECT_STATEMENT);
 
             /**
              * STEP 5. - Extract data from result set
@@ -57,10 +57,10 @@ public class JDBC_Example
             while (resultSet.next())
             {
                 // Retrieve by column name
-                int id = resultSet.getInt("id");
-                int age = resultSet.getInt("age");
-                String first = resultSet.getString("first");
-                String last = resultSet.getString("last");
+                final int id = resultSet.getInt("id");
+                final int age = resultSet.getInt("age");
+                final String first = resultSet.getString("first");
+                final String last = resultSet.getString("last");
 
                 // Display values
                 System.out.print("ID: " + id);
@@ -90,12 +90,12 @@ public class JDBC_Example
         }
     }
 
-    private static String whereClause(String where)
+    private static String whereClause(final String where)
     {
         return getSelectQuery().append(" WHERE ").append(where).toString();
     }
 
-    private static String selectStatement(String... columns)
+    private static String selectStatement(final String... columns)
     {
         selectQuery = new StringBuilder("SELECT ");
         for (int i = 0; i < columns.length; i++)
@@ -121,7 +121,7 @@ public class JDBC_Example
             if (connection != null)
                 connection.close();
         }
-        catch (SQLException e1)
+        catch (final SQLException e1)
         {
             e1.printStackTrace();
         }
@@ -130,7 +130,7 @@ public class JDBC_Example
             if (statement != null)
                 statement.close();
         }
-        catch (SQLException e2)
+        catch (final SQLException e2)
         {
             e2.printStackTrace();
         }

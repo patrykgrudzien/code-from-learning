@@ -1,10 +1,10 @@
 package DependencyInjeciton.InjectionImpl;
 
 public class MyMessageDITest {
-	public static void main(String[] args) {
-		String message = "Test message";
-		String email = "testUser@gmail.com";
-		String phone = "1235456758";
+	public static void main(final String[] args) {
+		final String message = "Test message";
+		final String email = "testUser@gmail.com";
+		final String phone = "1235456758";
 
 		MessageServiceInjector injector;
 		Consumer app;
