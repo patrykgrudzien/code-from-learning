@@ -1,0 +1,29 @@
+It has always been hard to work with Date, Time and Time Zones in java. There was no standard approach or API in java
+ for date and time in Java. One of the nice addition in Java 8 is the "java.time" package that will streamline the
+ process of working with time in java.
+
+ Just by looking at Java Time API packages, I can sense that it will be very easy to use. It has some sub-packages
+ "java.time.format" that provides classes to print and parse dates and times and "java.time.zone" provides support
+ for time-zones and their rules.
+
+ The new Time API prefers enums over integer constants for months and days of the week. One of the useful class is
+ "DateTimeFormatter" for converting datetime objects to strings.
+
+ --- WHY DO WE NEED NEW JAVA DATE TIME API? ---
+ Before we start looking at the Java 8 date Time API, let's see why do we need a new API for this. There have been
+ several problems with the existing date and time related classes in java, some of them are:
+
+ 1) Java Date Time classes are not defined consistently, we have Date Class in both "java.util" as well as "java.sql"
+  packages. Again formatting and parsing classes are defined in "java.text" package.
+ 2) "java.util.Date" contains both date and time, whereas "java.sql.Date" contains only date. Having this in "java
+ .sql" package does not make sense. Also both classes have same name, that is a very bad design itself.
+ 3) There are no clearly defined classes for time, timestamp, formatting and parsing. We have "java.text.DateFormat"
+ abstract class for parsing and formatting need. Usually "SimpleDateFormat" class is used for parsing and formatting.
+ 4) All the Data classes are mutable, so they are NOT THREAD SAFE. It's one of the biggest problem with Java Date and
+  Calendar classes.
+ 5) Date class does not provide internationalization, there is no timezone support. So "java.util.Calendar" and "java
+ .util.TimeZone" classes were introduced, but they also have all the problems listed above.
+
+ There are some other issues with the methods defined in Date and Calendar classes but above problems make it clear
+ that a robust Date Time API was needed in Java. That's why "Joda Time" played a key role as a quality replacement
+ for Java Date Time requirements.
