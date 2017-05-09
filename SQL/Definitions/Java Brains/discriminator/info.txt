@@ -1,0 +1,26 @@
+-- STACKOVERFLOW --
+The "discriminator-value" is used to determine the class type of the entity subclass type associated with a given
+database row entry in the base class database table.
+
+-- CODERANCH --
+You use a discriminator to flag to Hibernate which type of object a particular row in your table represents. It is
+there to support one table being used to represent an entire class hierarchy (the table per class hierarchy pattern).
+
+-- SIMPLE EXAMPLE --
+You have a table called "phone_numbers" BUT "home", "office" and "cell phone" numbers all could go in that one table.
+
+So "phone_numbers" table is:
+- id
+- phone_number
+- phone_type
+
+id      phone_number        phone_type
+1       123-555-888         home
+2       123-555-888         cell
+3       123-555-888         office
+
+In Java you have a class hierarchy of:
+- you have a "Phone" abstract class with two attributes "id" and "phoneNumber"
+- you have 3 subclasses: "Home", "Cell", "Office"
+
+Now how does Hibernate know which type of subclass to create, well it uses the DISCRIMINATOR COLUMN "phone_type"
