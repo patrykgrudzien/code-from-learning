@@ -11,6 +11,33 @@
     </parent>
 
     <artifactId>spring-security-hello-world-xml-example</artifactId>
+    <packaging>war</packaging>
     <name>Spring Security Hello World XML Example</name>
+
+    <build>
+        <sourceDirectory>${java.directory}</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${resources.directory}</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>${test.directory}</testSourceDirectory>
+        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${web.directory}</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

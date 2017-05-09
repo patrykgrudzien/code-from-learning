@@ -1,0 +1,3 @@
+In this tutorial, we will show you how to integrate "Spring Security" with a Spring MVC web application to secure a
+URL access. After implementing Spring Security, to access the content of an "admin" page, users need to key in the
+correct "username" and "password".
