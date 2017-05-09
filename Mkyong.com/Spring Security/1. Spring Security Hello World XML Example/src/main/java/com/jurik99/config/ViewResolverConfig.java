@@ -1,6 +1,7 @@
 package com.jurik99.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -9,13 +10,14 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
+@ComponentScan("com.jurik99")
 public class ViewResolverConfig extends WebMvcConfigurerAdapter
 {
 	@Bean
 	public InternalResourceViewResolver viewResolver()
 	{
 		final InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
-		internalResourceViewResolver.setPrefix("../../webapp/WEB-INF/view/");
+		internalResourceViewResolver.setPrefix("/WEB-INF/view/");
 		internalResourceViewResolver.setSuffix(".jsp");
 		return internalResourceViewResolver;
 	}
