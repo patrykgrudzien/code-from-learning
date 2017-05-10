@@ -1,0 +1,3 @@
+DML is abbreviation of DATA MANIPULATION LANGUAGE. It is used to retrieve, store, modify, delete, insert and update
+data in database.
+Examples: SELECT, UPDATE, INSERT statements.

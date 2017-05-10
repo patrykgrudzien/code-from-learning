@@ -1,0 +1,11 @@
+CSRF - Cross Site Request Forgery
+
+Alternatywnie używane nazwy: XSRF, session riding, one-click attack.
+To chyba jedna z najmniej rozumianych podatności opisywanych w ramach słynnego projektu "OWASP Top Ten".
+
+Jest to zmuszenie przeglądarki ofiary do wykonania pewnej nieautoryzowanej akcji (wykonania requesty HTTP).
+Zauważmy, że jest to atak na przeglądarkę internetową (a nie część serwerową aplikacji webowej. Dla serwera requesty
+powstałe w wyniku ataku to w pełni legalna komunikacja z przeglądarki użytkownika).
+
+W przypadku CSRF, system jak i przeglądarka ofiary nie są w żaden sposób trwale modyfikowane. Wykorzystywana jest po
+prostu pewna właściwość architektury web i przeglądarek internetowych.

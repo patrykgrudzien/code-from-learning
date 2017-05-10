@@ -1,0 +1,8 @@
+ONLINE is an Oracle statement which defines if DML (Data Manipulation Language) should be allowed during index
+build/rebuild.
+
+-- CREATING AN INDEX ONLINE --
+You can create and rebuild indexes online. This enables you to update base tables at the same time you are building
+or rebuilding indexes on that table. You can perform DML operations while the index build is taking place, but DDL
+(Data Definition Language) operations are not allowed. Parallel execution is not supported when creating or
+rebuilding an index online.

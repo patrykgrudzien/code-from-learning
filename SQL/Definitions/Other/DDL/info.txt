@@ -1,0 +1,1 @@
+DDL is abbreviation of DATA DEFINITION LANGUAGE. It is used to create and modify the structure of database objects.
