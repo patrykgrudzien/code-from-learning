@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>tutorials</artifactId>
+        <artifactId>whizdom-tr</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>youtube</artifactId>
+    <artifactId>spring-framework-security-introduction</artifactId>
     <packaging>pom</packaging>
-    <name>Youtube</name>
+    <name>Spring Framework Security Introduction</name>
 
     <modules>
-        <module>Corax The Tutor</module>
-        <module>whizdom tr</module>
+        <module>Security 1 - Form</module>
     </modules>
 
 </project>
