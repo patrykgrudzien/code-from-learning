@@ -4,10 +4,9 @@ Czas jest najcenniejszym dobrem jakim dysponujemy. W przeciwieństwie do np. pie
 nie można go odzyskać. Jedyne co możemy zrobić to go oszczędzać. Dlatego właśnie liczy się każda minuta.
 Ktoś może pomyśleć, że nie warto się wysilać dla oszczędzenia tych  5 minut, ale spójrzmy na to w inny sposób.
 
-Tematem przewodnim tego i następnego artykuł będzie Grunt.js (grunt oznacza chrząknięcie) moduł dla node.js dzięki,
-któremu można zautomatyzować wykonywanie takich zadań jak uruchamianie testów jednostkowych czy
-kompresja plików JS lub CSS. Oczywiście to nie wszystko co Grunt.js potrafi – a liczba rozszerzeń przeznaczony
-dla niego jest całkiem spora.
+Grunt.js (grunt oznacza chrząknięcie) moduł dla node.js dzięki, któremu można zautomatyzować wykonywanie takich
+zadań jak uruchamianie testów jednostkowych czy kompresja plików JS lub CSS. Oczywiście to nie wszystko co
+Grunt.js potrafi – a liczba rozszerzeń przeznaczony dla niego jest całkiem spora.
 
 
 --- https://blog.gutek.pl/ ---
