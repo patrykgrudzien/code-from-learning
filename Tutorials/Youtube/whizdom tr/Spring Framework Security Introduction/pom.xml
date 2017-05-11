@@ -16,6 +16,7 @@
 
     <modules>
         <module>Security 1 - Form</module>
+        <module>Security 2 - Hash Password</module>
     </modules>
 
 </project>
