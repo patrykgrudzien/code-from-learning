@@ -1,0 +1,30 @@
+--- www.ferrante.pl/ ---
+
+Node.js to w ostatnich latach jedna z najbardziej popularnych PLATFORM do tworzenia aplikacji internetowych. W prosty
+ sposób, o ile znamy język JavaScript, możemy napisać w nim RESTowy serwer czy zwykłego bloga, że nie wspomnę już o
+ różnych build systemach czy nieskomplikowanych skryptach I/O.
+
+ ** Czym jest node.js? **
+ Najprościej rzecz ujmując, node.js jest PLATFORMĄ, która pozwala uruchomić kod JavaScript. Wszystko dzięki temu, że
+ zbudowana jest na tym samym silniku JS, który używany jest choćby w Google Chrome - "mowa o V8". Sama możliwość
+ uruchomienia skryptów JavaScript w innym środowisku niż przeglądarka byłaby jednak mało atrakcyjna. Siła Node.js
+ tkwi w jego modułach.
+ Oferuje on ich kilkadziesiąt, dzięki którym możesz zbudować bardzo ciekawe aplikacje. Co za tym idzie, masz np. do
+ wyboru "moduł HTTP", dzięki którym obsłużysz wszystkie zapytania HTTP, tworząc serwer www. Dostępny jest też moduł
+ "File System", dzięki któremu dostaniesz się do systemu plików. Dzięki "Bufferowi" odsłużysz dane binarne. I tak
+ dalej. Jest tego naprawdę sporo i warto się temu przyjrzeć. Gwoli sprawiedliwości należy dodać, że odkumentacja node
+ .js to pięta achillesowa tego projektu, choć pocieszać się można, że na początku było z tym jeszcze gorzej.
+
+ Co więcej, dzięki globalnej bibliotece modułów "npm", każdy może łatwo zainstalować niestandardowe moduły np.
+ poprzez "npm install nazwaModułu", jak i również dodać swoje produkcje do niej.
+
+
+--- http://www.merixstudio.pl/ ---
+
+Node.js jest DZIAŁAJĄCYM PO STRONIE SERWERA, WIELOPLATFORMOWYM ŚRODOWISKIEM URUCHOMIENIOWYM JAVASCRIPT NA LICENCJI
+OPEN-SOURCE.
+Oznacza to, że za jego pomocą można uruchomić kod JavaScript bezpośrednio na komputerze, bez wykorzystania przeglądarki.
+
+Node.js sam w sobie nie jest serwerem, umożliwia on zaś stworzenie własnego serwera HTTP lub innych usług sieciowych.
+ Node.js daje również dostęp do między innymi systemu plików, metod pracy z plikami oraz innych narzędzi, dzięki
+ którym możliwe jest wykonywanie wielu operacji na systemie.

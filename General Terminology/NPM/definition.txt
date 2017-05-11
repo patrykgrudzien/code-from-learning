@@ -1,0 +1,15 @@
+--- https://blog.gutek.pl/ ---
+
+NODE PACKAGED MODULE (NPM)
+Jest systemem paczek dla środowiska Node. Aktualnie tych paczek jest ponad 74 tysiące i ich liczba wciąż rośnie.
+
+
+--- Wikipedia ---
+
+Npm - domyślny manager pakietów dla środowiska Node.js, może być także używany do zarządzania warstwą "front-end"
+aplikacji www.
+
+Jest to aplikacja wiersza poleceń, za pomocą której można instalować aplikacje dostępne w repozytorium Npm. Strona
+domowa aplikacji zawiera wyszukiwarkę pakietów. Repozytorium jest publiczne i darmowe dla pakietów Open Source, ale
+istnieją także prywatne repozytoria dostępne za opłatą. Npm jest standardowo dostępny, jeśli zainstalowane jest
+środowisko Node.js

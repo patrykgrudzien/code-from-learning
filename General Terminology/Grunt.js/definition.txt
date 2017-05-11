@@ -1,0 +1,17 @@
+--- http://michaljanicki.com.pl/ ---
+
+Czas jest najcenniejszym dobrem jakim dysponujemy. W przeciwieństwie do np. pieniędzy – czasu nie można zarobić,
+nie można go odzyskać. Jedyne co możemy zrobić to go oszczędzać. Dlatego właśnie liczy się każda minuta.
+Ktoś może pomyśleć, że nie warto się wysilać dla oszczędzenia tych  5 minut, ale spójrzmy na to w inny sposób.
+
+Tematem przewodnim tego i następnego artykuł będzie Grunt.js (grunt oznacza chrząknięcie) moduł dla node.js dzięki,
+któremu można zautomatyzować wykonywanie takich zadań jak uruchamianie testów jednostkowych czy
+kompresja plików JS lub CSS. Oczywiście to nie wszystko co Grunt.js potrafi – a liczba rozszerzeń przeznaczony
+dla niego jest całkiem spora.
+
+
+--- https://blog.gutek.pl/ ---
+
+Grunt jest to system automatyzacji pracy – nie zależnie co robimy, czy to ma być statyczna strona w HTML i JavaScript,
+czy bardziej zaawansowana aplikacja wykorzystująca coffee script, czy też po prostu coś co chcielibyśmy z automatyzować.
+

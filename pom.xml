@@ -27,7 +27,8 @@
         <module>Artur Owczarek</module>
         <module>Mirosław Zelent</module>
         <module>Mkyong.com</module>
-        <module>Terminology</module>
+        <module>General Terminology</module>
+        <module>Git</module>
     </modules>
 
     <build>

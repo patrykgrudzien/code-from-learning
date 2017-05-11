@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>git-terminology-and-commands</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>operations-in-sql</artifactId>
+    <artifactId>terminology-in-git</artifactId>
+    <name>Terminology in Git</name>
     <packaging>pom</packaging>
-    <name>Operations in SQL</name>
 
 </project>

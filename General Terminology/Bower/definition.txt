@@ -1,0 +1,11 @@
+--- http://blog.piotrnalepa.pl/ ---
+
+Bower jest to narzędzie wykorzystywane do zarządzania bibliotekami, które są dołączane do projektów webowych.
+To znaczy, za pomocą tego narzędzia, z wykorzystaniem linii komend, możesz dołączyć najnowszą wersję bibliotek,
+takich jak: jQuery czy Backbone.js, do swojego projektu.
+Dzięki niemu nie musisz martwić o kilka rzeczy:
+    1) Skąd pobrać daną bibliotekę czy rozszerzenie?
+    2) Czy dana biblioteka jest aktualna?
+
+Bower pomaga w dwóch wyżej wymienionych problemach. Tylko tyle i aż tyle.
+

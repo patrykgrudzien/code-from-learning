@@ -18,7 +18,7 @@
         <module>Example Database</module>
         <module>Liquibase</module>
         <module>Definitions</module>
-        <module>Operations</module>
+        <module>Queries</module>
     </modules>
 
     <dependencies>
