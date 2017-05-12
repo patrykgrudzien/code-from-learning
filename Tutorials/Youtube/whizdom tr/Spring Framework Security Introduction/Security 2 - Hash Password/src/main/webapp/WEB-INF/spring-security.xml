@@ -16,9 +16,11 @@
 
     <authentication-manager>
         <authentication-provider>
+            <!-- IMPORTANT: to authenticate user by encoded password -->
+            <password-encoder hash="sha-256"/>
             <user-service>
-                <user name="patryk.grudzien" password="password" authorities= "ROLE_USER"/>
-                <user name="root" password="localhost" authorities="ROLE_USER"/>
+                <user name="patryk.grudzien" password="5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
+                      authorities="ROLE_USER"/>
             </user-service>
         </authentication-provider>
     </authentication-manager>
