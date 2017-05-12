@@ -11,7 +11,7 @@
         <intercept-url pattern="/welcome*" access="hasRole('ROLE_USER')"/>
         <!-- Default form will be provided -->
         <form-login/>
-        <logout logout-success-url="/home"/>
+        <logout logout-success-url="/hello"/>
     </http>
 
     <authentication-manager>

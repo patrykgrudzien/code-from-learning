@@ -12,9 +12,19 @@ public class HelloController
 	public ModelAndView welcomePage()
 	{
 		final ModelAndView modelAndView = new ModelAndView();
-		modelAndView.addObject("tittle", "Spring Security Hello World");
+		modelAndView.addObject("title", "Spring Security Hello World");
 		modelAndView.addObject("message", "This is welcome page!");
 		modelAndView.setViewName("hello");
 		return modelAndView;
+	}
+
+	@RequestMapping(value = "/admin*", method = RequestMethod.GET)
+	public ModelAndView adminPage()
+	{
+		final ModelAndView model = new ModelAndView();
+		model.addObject("title", "Spring Security Hello World");
+		model.addObject("message", "This is protected page!");
+		model.setViewName("admin");
+		return model;
 	}
 }
