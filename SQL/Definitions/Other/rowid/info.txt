@@ -1,0 +1,8 @@
+All rows in Oracle have a "rowid". This is a physical locator.
+That is, it states where on disk Oracle stores the row. It's unique to each row.
+So you can use this value to identify and remove copies. To do this, replace min() with min(rowid) in the
+uncorrelated delete.
+
+MAX(rowid)  ->  returns the newest row, inserted as LATEST
+
+MIN(rowid)  ->  returns the oldest row, inserted as FIRST
