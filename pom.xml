@@ -75,6 +75,8 @@
         <test.target.directory>src/test/target</test.target.directory>
         <all.java.code.basedir>${project.basedir}</all.java.code.basedir>
         <jurik99.package>com/jurik99</jurik99.package>
+        <screenshots.resources.directory>src/main/resources/screenshots</screenshots.resources.directory>
+        <notes.resources.directory>src/main/resources/notes</notes.resources.directory>
     </properties>
 
 </project>
