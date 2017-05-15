@@ -6,21 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>html-lessons</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>miroslaw-zelent</artifactId>
+    <artifactId>pierwszy-projekt-wiedza-podstawowa</artifactId>
     <packaging>pom</packaging>
-    <name>Mirosław Zelent</name>
-
-    <modules>
-        <module>HTML</module>
-        <module>Java Script</module>
-    </modules>
-
-    <properties>
-        <java.script.directory>src/main/resources/javascript</java.script.directory>
-    </properties>
-
+    <name>Pierwszy projekt, wiedza podstawowa</name>
+    
 </project>
