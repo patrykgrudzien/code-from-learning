@@ -1,0 +1,11 @@
+UNION removes duplicate records (where all columns in the results are the same), UNION ALL does NOT !!!
+
+There is a performance hit when using UNION vs UNION ALL, since the database server must do additional work to
+remove the duplicate rows, but usually you do not want the duplicates (especially when developing reports).
+
+------------------------------------------------------------------------------------------------------------------------
+
+Both UNION and UNION ALL concatenate the result of two different SQLs. They differ in the way they handle duplicates.
+
+*) UNION performs a DISTINCT on the result set, eliminating any duplicate rows.
+*) UNION ALL does not remove duplicates, and it therefore faster than UNION.
