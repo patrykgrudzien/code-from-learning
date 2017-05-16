@@ -29,6 +29,7 @@
         <module>Mkyong.com</module>
         <module>General Terminology</module>
         <module>Git</module>
+        <module>JavaStart</module>
     </modules>
 
     <build>
