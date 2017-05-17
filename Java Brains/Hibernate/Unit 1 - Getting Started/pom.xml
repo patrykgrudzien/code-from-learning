@@ -11,24 +11,11 @@
     </parent>
 
     <artifactId>unit-1-getting-started</artifactId>
+    <packaging>pom</packaging>
     <name>Getting Started</name>
 
-    <build>
-        <sourceDirectory>${java.directory}</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${resources.directory}</directory>
-            </resource>
-            <resource>
-                <directory>${screenshots.resources.directory}</directory>
-            </resource>
-            <resource>
-                <directory>${notes.resources.directory}</directory>
-            </resource>
-        </resources>
-        <testSourceDirectory>${test.directory}</testSourceDirectory>
-        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${target.directory}</outputDirectory>
-    </build>
-    
+    <modules>
+        <module>1. Introduction to Hibernate</module>
+    </modules>
+
 </project>
