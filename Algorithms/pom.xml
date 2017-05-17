@@ -16,6 +16,7 @@
 
     <modules>
         <module>Bubble Sort</module>
+        <module>Binary Tree</module>
     </modules>
     
 </project>

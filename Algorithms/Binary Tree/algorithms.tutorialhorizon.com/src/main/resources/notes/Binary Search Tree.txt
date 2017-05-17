@@ -1,0 +1,45 @@
+Often we call it as BST (Binary Search Tree), is a type of Binary tree which has a special property.
+
+"Nodes smaller than root goes to the left of the root and Nodes greater than root goes to the right of the root".
+
+Operations:
+1) Insert(int n): add a node to the tree with value "n".
+2) Find(int n): find a node in the tree with value "n".
+3) Delete(int n): delete a node in the tree with value "n".
+4) Display(): Prints the entire tree in increasing order.
+
+Detail explanations for the Operations:
+----- Find(int n) -----
+*) It's very simple operation to perform
+*) Start from the root and compare root.data with "n"
+*) If root.data is greater than "n" that means we need to go to the left of the root.
+*) If root.data is smaller than "n" that means we need to go to the right of the root.
+*) If any point of time root.data is equal to the "n" we have found the node, return TRUE.
+*) If we reach to the leaves (end of the tree) return FALSE, we didn't find the element.
+
+----- Insert(int n) -----
+*) Very much similar to find() operation
+*) To insert a node our first task is to find a place to insert the node.
+*) Take current = root.
+*) Start from the current and compare root.data with "n".
+*) If current.data is greater than "n" that means we need to go to the left of the root.
+*) If current.data is smaller than "n" that means we need to go to the right of the root.
+*) If any point of time current is null that means we have reached to the leaf node, insert your node here with the
+help of parent node. (See code).
+
+----- Delete(int n) -----
+Complicated than find() and insert() operations. Here we have to deal with 3 cases.
+a) Node to be deleted is a leaf (no children).
+b) Node to be deleted has only ONE child.
+c) Node to be deleted has TWO children.
+
+Ad. a) NODE TO BE DELETED IS A LEAF NODE (NO CHILDREN)
+It's a very simple case, if a node to be deleted has no children then just TRAVERSE to that node, keep track of
+parent node and the side in which the node exists (left or right) and set "parent.left = null or parent.right=null".
+
+Ad. b) NODE TO BE DELETED HAS ONLY ONE CHILD
+- It's a slightly complex case. If a node to be deleted (deleteNode) has only one child then just traverse to that
+node, keep track of parent node and the side in which the node exists (left or right).
+- Check which side child is null (since it has only one child).
+- Say node to be deleted has child on its left side. Then take the entire sub tree from the left side and add it to
+the parent and the side on which "deleteNode" exist, see step 1 and example.
