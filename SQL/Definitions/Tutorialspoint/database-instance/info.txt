@@ -1,0 +1,8 @@
+Database Instance - it is very important that we distinguish these two terms individually. Database schema is the
+skeleton of database. It is designed when the database does NOT exists at all. Once the database is operational, it
+is very difficult to make any changes to it. A database schema does NOT contain any data or information.
+
+DATABASE INSTANCE - is a state of operational database with data at any given time. It contains a snapshot of the
+database. Database instances tend to change with time. A DBMS ensures that its every instance (state) is in valid
+state, by diligently following all the validations, constraints, and conditions that the database designers have
+imposed (nakładać, narzucać, dyktować).

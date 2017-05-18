@@ -1,0 +1,13 @@
+A database schema is the skeleton structure that represents the logical view of the entire database. It defines how
+the data is organized and how the relations among them are associated. It formulates all the constraints that are to
+be applied on the data.
+
+A database schema defines its entities and the relationship amond them. It contains a descriptive detail of the
+database, which can be depicted by means of schema diagrams. It's the database designers who design the schema to
+help programmers understand database and make it useful.
+
+A database schema can be divided broadly into two categories:
+1) PHYSICAL DATABASE SCHEMA - this schema pertains (odnosi się do) to the actual storage of data and its form of
+storage like files, indices, etc. It defines how the data will be stored in a secondary storage.
+2) LOGICAL DATABASE SCHEMA - this schema defines all the logical constraints that need to be applied on the data
+stored. It defines tables, views, and integrity constraints.
