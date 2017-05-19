@@ -1,0 +1,4 @@
+SET jest interfejsem wchodzącym w skład "Collections Framework" Javy. Reprezentuje on kolekcję UNIKALNYCH ELEMENTÓW,
+ale NIE WSPOMINA NIC O KOLEJNOŚCI ICH PRZECHOWYWANIA, ponieważ ta zależy już o konkretnej jego implementacji.
+Set jest typem generycznym, co oznacza, że możemy określić elementy jakiego typu będziemy w nim przechowywać, a to
+pozwoli nam uniknąć konieczności rzutowania.

@@ -16,6 +16,7 @@
 
     <modules>
         <module>Rekurencja</module>
+        <module>Interfejs Set</module>
     </modules>
 
 </project>

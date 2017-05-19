@@ -1,0 +1,13 @@
+Wsród dostępnych implementacji zbiorów możemy wyróżnić ich 3 rodzaje:
+
+1) HashSet - podstawowa implementacja, zapewnia unikalność elementów, ale nie mamy żadnej gwarancji co do ich
+kolejności. Wewnętrznie wykorzystywana jest TABLICA mieszająca, co wymaga poprawnej implementacji "hashCode()" oraz
+"equals()".
+
+2) TreeSet - implementacja oparta o drzewa czerwono czarne, które oprócz unikalności elementów gwarantuje nam
+uporządkowanie wstawianych elementów zgodnie Z NATURALNYM PORZĄDKIEM. Porządek ten wyznaczany jest poprzez
+implementację interfejsu "Cpmparable" lub zastosowanie odpowiedniego "Comparatora".
+
+3) LinkedHashSet - implementacja wykorzystująca wewnętrzenie zarówno tablicę mieszającą jak i dodatkową listę
+podwójnie wiązaną, dzięki czemu oprócz unikalności elementów zagwarantowana jest także kolejność elementów zgodna z
+tą w jakiej były one dodawane.

@@ -1,0 +1,19 @@
+Najważniejsze metody w interfejsie "Set" to odziedziczone z interfejsu "Collection":
+
+1) boolean add(E e) - dodaje unikalny element do zbioru, w przypadku, gdy element się powtarza DODAWANIE JEST
+IGNOROWANE. Unikalność jest sprawdzana na podstawie metod "hashCode()" i "equals()". Do zbioru MOŻNA DODAĆ JEDNĄ WARTOŚĆ
+"null".
+
+2) boolean containts(Object o) - sprawdza czy obiekt "o" znajduje się w zbiorze.
+
+3) boolean isEmpty() - sprawdza, czy zbiór jest pusty
+
+4) Iterator iterator() - zwraca iterator. Kolejność elementów jest zależna od tego z jakiej implementacji korzystamy.
+
+5) boolean remove(Object o) - usuwa element "o" ze zbioru.
+
+6) int size() - zwraca rozmiar (ilość elementów) zbioru.
+
+Dodatkowo w poszczególnych implementacjach znajdziemy dodatkowe metody, przykładowo w "TreeSet" znajdziemy metodę
+"first()", która zwraca "najmniejszy" obiekt w rozumieniu naturalnego porządku, oraz "last()", która zwraca
+największy z nich.

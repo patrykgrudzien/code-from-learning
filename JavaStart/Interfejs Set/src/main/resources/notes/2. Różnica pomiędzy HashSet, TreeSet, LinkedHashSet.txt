@@ -1,0 +1,7 @@
+"HashSet" jest podstawową implementacją, która zapewnia jedynie unikalność elementów,
+"TreeSet" gwarantuje dodatkowe sortowanie,
+"LinkedHashSet" dodatkowo kolejność wstawiania.
+
+Wybór odpowiedniej implementacji zależy przede wszystkim od naszych potrzeb. Wszystkie zbiory są strukturami
+wydajnymi, ponieważ opierają się albo o tablice mieszające lub struktury drzewiaste, a to zapewnia stałą lub
+logarytmiczną złożoność obliczeniową.
