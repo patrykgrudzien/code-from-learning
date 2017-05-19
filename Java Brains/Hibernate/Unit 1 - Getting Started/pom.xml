@@ -16,6 +16,9 @@
 
     <modules>
         <module>1. Introduction to Hibernate</module>
+        <module>3. Writing a Hibernate Application</module>
+        <module>4. Writing the Model Class with Annotations</module>
+        <module>5. Saving Objects using Hibernate APIs</module>
     </modules>
 
 </project>
