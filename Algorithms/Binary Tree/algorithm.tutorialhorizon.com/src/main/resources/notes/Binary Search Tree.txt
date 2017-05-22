@@ -43,3 +43,18 @@ node, keep track of parent node and the side in which the node exists (left or r
 - Check which side child is null (since it has only one child).
 - Say node to be deleted has child on its left side. Then take the entire sub tree from the left side and add it to
 the parent and the side on which "deleteNode" exist, see step 1 and example.
+
+Ad. c) NODE TO BE DELETED HAS TO CHILDREN
+Now this is quiet exciting :)
+You just cannot replace the "deleteNode" with any of its child, Why? Let's try out an example.
+
+What to do now ??
+- Don't worry, we have solution for this.
+
+Find the "SUCCESSOR (następca, dziedzic)":
+Successor is the node which will replace the deleted node. Now the question is to how to find and where to find it.
+"Successor is the smallest node in the right sub tree of the node to be deleted."
+
+------------------------------
+ANCESTOR - przodek
+ANCESTOR != SUCCESSOR
