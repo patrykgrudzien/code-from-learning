@@ -40,6 +40,13 @@ public class UserDetails
 
 	/*
 	 * Alternative way of changing column name is to ANNOTATE GETTERS INSTEAD OF FIELDS ITSEFL.
+	 * To make it works properly, annotations have to applied on EACH GETTER !!!
+	 * IT DOES NOT WORK IF WE ANNOTATE e.g. ONE FIELD and ONE GETTER bacause in that case columns' names will be
+	 * different than we specified in @Column(name = "") annotation !!!
+	 *
+	 * If it works properly, we should create user like:
+	 * USER_ID: 1
+	 * USER_NAME: First User from getter
 	 */
 	@Column(name = "USER_NAME")
 	public String getUserName()
