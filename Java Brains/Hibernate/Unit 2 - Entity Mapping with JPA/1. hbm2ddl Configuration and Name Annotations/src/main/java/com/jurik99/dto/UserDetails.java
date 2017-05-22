@@ -19,13 +19,15 @@ public class UserDetails
 {
 	/*
 	 * We can have also OWN column name similar to table name by annotating FIELD.
+	 *
+	 * @Column(name = "FIELD_NAME")
+	 * private String userName;
 	 */
-	@Id
-	@Column(name = "USER_ID")
 	private int userId;
-
 	private String userName;
 
+	@Id
+	@Column(name = "USER_ID")
 	public int getUserId()
 	{
 		return userId;

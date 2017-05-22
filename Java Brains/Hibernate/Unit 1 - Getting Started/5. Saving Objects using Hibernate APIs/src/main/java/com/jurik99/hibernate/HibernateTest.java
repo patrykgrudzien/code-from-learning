@@ -8,6 +8,7 @@ import com.jurik99.dto.UserDetails;
 
 public class HibernateTest
 {
+	@SuppressWarnings("Duplicates")
 	public static void main(final String[] args)
 	{
 		final UserDetails user = new UserDetails();
