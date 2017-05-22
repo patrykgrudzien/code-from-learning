@@ -16,6 +16,7 @@
 
     <modules>
         <module>1. hbm2ddl Configuration and Name Annotations</module>
+        <module>2. More Annotations</module>
     </modules>
 
 </project>
