@@ -18,6 +18,7 @@
     <modules>
         <module>Youtube</module>
         <module>Tutorials Point</module>
+        <module>Baeldung Mockito Annotations</module>
     </modules>
     
 </project>
