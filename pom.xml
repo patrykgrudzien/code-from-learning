@@ -30,6 +30,7 @@
         <module>General Terminology</module>
         <module>Git</module>
         <module>JavaStart</module>
+        <module>Vogella.com</module>
     </modules>
 
     <build>
