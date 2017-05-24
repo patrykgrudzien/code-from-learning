@@ -17,6 +17,8 @@
     <modules>
         <module>1. hbm2ddl Configuration and Name Annotations</module>
         <module>2. More Annotations</module>
+        <module>3. Retrieving Objects using session.get</module>
+        <module>4. Primary Keys</module>
     </modules>
 
 </project>
