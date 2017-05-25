@@ -60,8 +60,10 @@ public class UserDetails
 	 *
 	 * But if it HAS business usage or if it's a "login_ID" for example - then it would be a NATURAL KEY.
 	 *
+	 * ------------------ IMPORTANT ------------------
 	 * If we have NATURAL KEY, it makes sense for us to provide a value. We need to be able to control it.
 	 * If it's a SURROGATE KEY, we can ask Hibernate to do a job for us.
+	 * ------------------ IMPORTANT ------------------
 	 *
 	 * If we don't need "userId" for any other reasons than using it as "ID", we can ask in that case Hibernate to
 	 * generate that value for us every time when do an insert.

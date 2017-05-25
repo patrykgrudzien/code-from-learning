@@ -19,6 +19,7 @@
         <module>2. More Annotations</module>
         <module>3. Retrieving Objects using session.get</module>
         <module>4. Primary Keys</module>
+        <module>5. Value Types and Embedding Objects</module>
     </modules>
 
 </project>
