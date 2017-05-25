@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>mkyong-com</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>java-mail-api-sending-email-via-gmail-smtp</artifactId>
+    <packaging>pom</packaging>
+    <name>JavaMail API - Sending email via Gmail SMTP</name>
+    <url>https://www.mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/</url>
+
+    <modules>
+        <module>Gmail via TLS</module>
+        <module>Gmail via SSL</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+    </dependencies>
+
+</project>

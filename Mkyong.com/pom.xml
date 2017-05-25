@@ -16,6 +16,7 @@
 
     <modules>
         <module>Spring Security</module>
+        <module>JavaMail API - Sending email via Gmail SMTP</module>
     </modules>
     
 </project>
