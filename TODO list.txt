@@ -1,0 +1,13 @@
+1) Add binery tree algorithm implementation from Derek Banas.
+2) Finish "Spring Boot" in "JavaBrains" module.
+3) Finish "Introduction to Hibernate" in "JavaBrains" module.
+4) Start "Hibernate RunTime and API" from "JavaBrains" site.
+5) Remove all packages and files in JavaBrains / Introduction to Hibernate from previous lessons.
+6) Learn new stuff provided by Luv2Code on Udemy.com
+7) Investigate how to download videos from Udemy.com
+8) Proceed with HTML / JavaScript and CSS in Mirosław Zelent module.
+9) Finish JavaMail API in Mkyong.com module.
+9a) Implement JavaMail API from Vogella.com tutorials.
+10) Finish "Spring Security" in Mkyong.com module.
+11) Implement "Own Logger" module (slf4j || log4j)
+12) Think about connecting to PostgreSQL via Java code
