@@ -20,6 +20,7 @@
         <module>3. Retrieving Objects using session.get</module>
         <module>4. Primary Keys</module>
         <module>5. Value Types and Embedding Objects</module>
+        <module>6. AttributeOverrides and Embedded Object Keys</module>
     </modules>
 
 </project>
