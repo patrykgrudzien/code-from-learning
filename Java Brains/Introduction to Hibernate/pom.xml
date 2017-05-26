@@ -10,8 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Hibernate</artifactId>
+    <artifactId>introduction-to-hibernate</artifactId>
     <packaging>pom</packaging>
+    <name>Introduction to Hibernate</name>
 
     <modules>
         <module>Unit 1 - Getting Started</module>
