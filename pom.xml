@@ -103,6 +103,17 @@
         <mysql.connector.version>5.1.39</mysql.connector.version>
         <spring.version>4.3.8.RELEASE</spring.version>
         <spring.security.version>4.2.2.RELEASE</spring.security.version>
+        <postgre.sql.jdbc.version>9.1-901.jdbc4</postgre.sql.jdbc.version>
+        <hibernate.version>5.2.10.Final</hibernate.version>
+        <jsp.jstl.api.version>1.2.1</jsp.jstl.api.version>
+        <jstl.api.version>1.2</jstl.api.version>
+        <jstl.version>1.2</jstl.version>
+        <servlet.api.version>2.5</servlet.api.version>
+        <taglibs.version>1.2.5</taglibs.version>
+        <tomcat.servlet.version>8.0.32</tomcat.servlet.version>
+        <c3p0.version>0.9.5.2</c3p0.version>
+        <ibatis.common.version>2.1.7.597</ibatis.common.version>
+        <javax.mail.version>1.5.6</javax.mail.version>
     </properties>
 
 </project>

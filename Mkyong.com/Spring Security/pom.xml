@@ -69,20 +69,14 @@
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-            <version>1.2.1</version>
+            <version>${jsp.jstl.api.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl-api</artifactId>
-            <version>1.2</version>
+            <version>${jstl.api.version}</version>
         </dependency>
     </dependencies>
-
-    <properties>
-        <spring.version>4.3.8.RELEASE</spring.version>
-        <spring.security.version>4.2.2.RELEASE</spring.security.version>
-        <jstl.version>1.2</jstl.version>
-    </properties>
 
 </project>

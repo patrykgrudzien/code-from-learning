@@ -12,7 +12,6 @@
     </parent>
 
     <artifactId>archetype-creator</artifactId>
-    <version>1.0</version>
     <packaging>pom</packaging>
 
     <name>Archetype Creator</name>
