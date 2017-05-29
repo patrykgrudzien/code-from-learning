@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>introduction-to-hibernate</artifactId>
+    <artifactId>introduction-and-setting-up-hibernate</artifactId>
     <packaging>pom</packaging>
-    <name>Introduction to Hibernate</name>
+    <name>Introduction and Setting Up Hibernate</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
