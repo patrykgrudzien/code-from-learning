@@ -6,18 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>Journal-Dev</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Journal-Dev</artifactId>
-    <name>Journal Dev</name>
+    <artifactId>sending-mail-in-java-using-smtp</artifactId>
     <packaging>pom</packaging>
+    <name>Sending Mail in Java Using SMTP</name>
 
     <modules>
-        <module>Design Patterns</module>
-        <module>Java 8 Features</module>
-        <module>Sending Mail in Java Using SMTP</module>
+        <module>1. Without Authentication</module>
     </modules>
-    
+
 </project>
