@@ -11,19 +11,10 @@
 
     <artifactId>own-logger-implementation</artifactId>
     <packaging>pom</packaging>
-
     <name>Own Logger</name>
 
-    <build>
-        <sourceDirectory>${jurik99.package}/${java.directory}</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${jurik99.package}/${resources.directory}</directory>
-            </resource>
-        </resources>
-        <testSourceDirectory>${jurik99.package}/${test.directory}</testSourceDirectory>
-        <testOutputDirectory>${jurik99.package}/${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${jurik99.package}/${target.directory}</outputDirectory>
-    </build>
+    <modules>
+        <module>Log4j Mkyong example</module>
+    </modules>
 
 </project>
