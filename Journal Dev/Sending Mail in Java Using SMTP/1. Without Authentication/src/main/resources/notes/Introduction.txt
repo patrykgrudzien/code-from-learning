@@ -1,0 +1,12 @@
+Java Program to send email contains following steps:
+1) Creating (javax.mail.Session) object
+2) Creating (javax.mail.internet.MimeMessage) object. We have to set different properties in this object such as
+recipient email address, Email Subject, Reply-To email, email body, attachments etc.
+3) Using (javax.mail.Transport) to send the email message.
+
+The logic to create session differs based on the type of SMTP server, for example if SMTP server doesn't require any
+authentication we can create the Session object with some simple properties whereas if it requires TLS od SSL
+authentication, then logic to create will differ.
+
+So we will create a utility class with some methods to send emails and then we will use this utility method with
+different SMTP servers.
