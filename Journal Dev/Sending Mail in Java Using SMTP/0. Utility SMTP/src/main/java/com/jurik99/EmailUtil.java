@@ -1,5 +1,7 @@
 package com.jurik99;
 
+import org.apache.log4j.Logger;
+
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -12,6 +14,7 @@ import java.util.Date;
 
 public abstract class EmailUtil
 {
+	private static final Logger logger = Logger.getLogger(EmailUtil.class);
 	private static final String UTF_8 = "UTF-8";
 	/*
 	 * Our EmailUtil class that has a single method to send email looks like below. It requires (javax.mail.Session)
@@ -44,7 +47,7 @@ public abstract class EmailUtil
 			message.setText(body, UTF_8);
 			message.setSentDate(new Date());
 			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail, false));
-			System.out.println("Message is ready");
+			logger.info("Message is ready.");
 			Transport.send(message);
 
 			/*
@@ -54,7 +57,7 @@ public abstract class EmailUtil
 		}
 		catch (final MessagingException | UnsupportedEncodingException exception)
 		{
-			System.out.println("Cannot send e-mail...");
+			logger.error("Cannot send e-mail...");
 			exception.printStackTrace();
 		}
 	}

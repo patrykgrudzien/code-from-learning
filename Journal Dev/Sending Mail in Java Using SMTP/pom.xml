@@ -26,6 +26,11 @@
             <artifactId>javax.mail</artifactId>
             <version>${javax.mail.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.jurik99</groupId>
+            <artifactId>log4j-configuration</artifactId>
+            <version>1.0 Version</version>
+        </dependency>
     </dependencies>
 
 </project>
