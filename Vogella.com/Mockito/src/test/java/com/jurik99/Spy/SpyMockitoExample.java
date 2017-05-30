@@ -5,6 +5,7 @@ import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
+import org.apache.log4j.Logger;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -14,6 +15,8 @@ import java.util.List;
 
 public class SpyMockitoExample
 {
+	private static final Logger logger = Logger.getLogger(SpyMockitoExample.class);
+
 	@Rule
 	public ExpectedException expectedException = ExpectedException.none();
 	/*
@@ -50,6 +53,6 @@ public class SpyMockitoExample
 		doReturn("foo").when(spyList).get(0);
 
 		assertEquals("foo", spyList.get(0));
-		System.out.println("doReturn() -> CORRECT" );
+		logger.info("Expected = actual. spyList.get(0): " + spyList.get(0));
 	}
 }
