@@ -6,7 +6,7 @@ public class HelloExample
 {
 	private static final Logger logger = Logger.getLogger(HelloExample.class);
 
-	public static void main(String[] args)
+	public static void main(final String[] args)
 	{
 		final HelloExample obj = new HelloExample();
 		obj.runMe("JuRik99");
