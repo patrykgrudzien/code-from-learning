@@ -25,6 +25,7 @@
         <module>Java 8</module>
         <module>Advanced JAX-RS</module>
         <module>Spring Boot</module>
+        <module>Hibernate - APIs and Runtime</module>
     </modules>
 
 </project>
