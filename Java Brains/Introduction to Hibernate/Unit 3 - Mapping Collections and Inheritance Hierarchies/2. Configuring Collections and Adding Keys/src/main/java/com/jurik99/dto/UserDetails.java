@@ -36,7 +36,7 @@ public class UserDetails
 	 * HIBERNATE: insert into USER_ADDRESS (UserDetails_userId, CITY_NAME, PIN_CODE, STATE_NAME, STREET_NAME)
 	 * values (?, ?, ?, ?, ?)
 	 *
-	 * But we still have ugly name of foreign key in "USER"ADDRESS" table like "UserDetails_userId". It can be
+	 * But we still have ugly name of foreign key in "USER_ADDRESS" table like "UserDetails_userId". It can be
 	 * changed by adding additional attribute inside @JoinTable like:
 	 * @JoinTable(joinColumns = @JoinColumn(name = "COLUMN_NAME"))
 	 *
@@ -47,7 +47,18 @@ public class UserDetails
 	/*
 	 * @JoinTable is used in the mapping of associations. It's specified on the OWNING SIDE of an association.
 	 * @JoinTable = połącz ze sobą 2 tabele (główną oznaczoną @Entity i "poboczną" utworzoną przez
-	 * @ElementCollection) kluczem podstawowym i obcym.
+	 * @ElementCollection) kluczem podstawowym i obcym oraz nazwij kolumny przy pomocy atrybutu (name = " ").
+	 *
+	 * ----- PROFESSIONAL JAVA for WEB APPLICATIONS -----
+	 *
+	 * @JoinTable - you place this annotation only on the OWNER side of the relationship (the opposite side that you
+	 * specify "mappedBy"). In addition to the table name and other details, this annotation contains "joinColumns"
+	 * and "inverseJoinColumns" attributes. You use "joinColumns" to specify one or more @JoinColumn(s) that indicate
+	 * which column or columns "THIS" (the owning) entity's primary key maps to.
+	 * Likewise, you use "inverseJoinColumns" to specify one or more @JoinColumn(s) that indicate which column or
+	 * columns the other (owned) entity's primary key maps to.
+	 *
+	 * ----- PROFESSIONAL JAVA for WEB APPLICATIONS -----
 	 *
 	 * When a join table is used in mapping a relationship with an embeddable class on the owning side of the
 	 * relationship, the CONTAINING ENTITY rather than the EMBEDDABLE class is considered THE OWNER of the relationship.
