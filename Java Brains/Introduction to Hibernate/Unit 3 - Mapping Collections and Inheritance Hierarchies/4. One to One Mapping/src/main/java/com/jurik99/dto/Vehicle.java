@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "VEHICLE_3_4_one_to_one_mapping")
+@Table(name = "VEHICLE", schema = "one_to_one")
 public class Vehicle
 {
 	@Id

@@ -9,7 +9,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "USER_DETAILS_3_4_one_to_one_mapping")
+@Table(name = "USER_DETAILS", schema = "one_to_one")
 public class UserDetails
 {
 	@Id
@@ -30,6 +30,10 @@ public class UserDetails
 	 * ----- ORACLE DOCUMENTATION -----
 	 * @JoinColumn - specifies a column for joining an entity association or element collection. If the @JoinColumn
 	 * annotation itself is defaulted, a single join column is assumed and the default values apply.
+	 *
+	 * ----------------------------------------------------------------------------------------------------------------
+	 * The way how Hibernate does "OneToOne" mapping is by having a column in the "USER_DETAILS" table to point to
+	 * the "VEHICLE" table.
 	 */
 	@JoinColumn(name = "VEHICLE_ID")
 	private Vehicle vehicle;
