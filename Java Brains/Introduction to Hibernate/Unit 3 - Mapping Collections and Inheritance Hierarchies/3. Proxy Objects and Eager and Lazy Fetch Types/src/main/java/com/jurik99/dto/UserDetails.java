@@ -29,8 +29,9 @@ public class UserDetails
 	@ElementCollection(fetch = FetchType.EAGER)
 	/*
 	 * @JoinTable is used in the mapping of associations. It's specified on the OWNING SIDE of an association.
-	 * @JoinTable = połącz ze sobą 2 tabele (główną oznaczoną @Entity i "poboczną" utworzoną przez
-	 * @ElementCollection) kluczem podstawowym i obcym oraz nazwij kolumny przy pomocy atrybutu (name = " ").
+	 * @JoinTable = połącz ze sobą 2 tabele, stwórz "połączoną tabelę" - (główną oznaczoną @Entity i "poboczną"
+	 * utworzoną przez @ElementCollection) kluczem podstawowym i obcym oraz nazwij kolumny przy pomocy
+	 * atrybutu (name = " ").
 	 */
 	@JoinTable(name = "USER_ADDRESS", joinColumns = @JoinColumn(name = "USER_ID"))
 	private Collection<Address> listOfAddresses = new ArrayList<>();
