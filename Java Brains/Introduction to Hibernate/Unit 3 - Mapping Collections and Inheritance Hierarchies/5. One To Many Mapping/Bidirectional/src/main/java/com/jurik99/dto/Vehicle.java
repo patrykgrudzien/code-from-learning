@@ -17,13 +17,13 @@ public class Vehicle
 	private String vehicleName;
 
 	/*
-		 * Having @OneToMany for USER_DETAILS we can have @ManyToOne in VEHICLE table.
-		 * We created reverse relationship. Every VEHICLE has OWNER. So no matter what vehicle you take, it should be a
-		 * link pointing to the owner.
-		 *
-		 * We can simply take a Vehicle object in USER_DETAILS and we want to have the same functionality here - to take
-		 * a User object in VEHICLE table.
-		 */
+	 * Having @OneToMany for USER_DETAILS we can have @ManyToOne in VEHICLE table.
+	 * We created reverse relationship. Every VEHICLE has OWNER. So no matter what vehicle you take, it should be a
+	 * link pointing to the owner.
+	 *
+	 * We can simply take a Vehicle object in USER_DETAILS and we want to have the same functionality here - to take
+	 * a User object in VEHICLE table.
+	 */
 	@ManyToOne
 	private UserDetails user;
 
