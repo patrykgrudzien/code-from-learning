@@ -1,0 +1,28 @@
+A mocked object can also be asked to THROW AN EXCEPTION when particular methods are called on it.
+
+In the example below, the mock object is stubbed to throw "NullPointerException" when the method "get(...)" is called
+on it in LINE 21. The method used for this is "thenThrow(...)" of class org.mockito.Mockito.
+
+If we need to throw exception when a method whose RETURN TYPE is "void" (e.g. List.clear();), then we can use the
+alternative way of throwing exception, i.e. "doThrow(...)" of class org.mockito.Mockito as shown in LINE 22.
+
+------------------------------------------------------------------------------------------------------------------------
+import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ThrowException
+{
+    public static void main(String[] args)
+    {
+        List myMockedList = mock(ArrayList.class);
+
+        when(myMockedList.get(anyInt())).thenThrow(new NullPointerException());
+        doThrow(new RuntimeException()).when(myMockedList).clear();
+
+        System.out.println(myMockedList.get(1));
+        myMockedList.clear();
+    }
+}
+------------------------------------------------------------------------------------------------------------------------
