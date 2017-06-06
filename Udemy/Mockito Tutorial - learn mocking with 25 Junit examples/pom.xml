@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>udemy</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>mockito-tutorial-learn-mocking-with-25-junit-examples</artifactId>
+    <packaging>pom</packaging>
+    <name>Mockito Tutorial - learn mocking with 25 Junit examples</name>
+
+    <modules>
+        <module>Section 1 - Introduction</module>
+        <module>Section 2 - Unit Testing with Junit</module>
+        <module>Section 3 - Getting Ready for Mockito</module>
+        <module>Section 4 - Need For Mockito</module>
+        <module>Section 5 - Mockito Basics</module>
+        <module>Section 6 - Mockito Advanced</module>
+        <module>Section 7 - Powermock with Mockito</module>
+    </modules>
+    
+</project>

@@ -31,6 +31,7 @@
         <module>Git</module>
         <module>JavaStart</module>
         <module>Vogella.com</module>
+        <module>Udemy</module>
     </modules>
 
     <build>
