@@ -27,6 +27,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.connector.version}</version>
         </dependency>
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgre.sql.jdbc.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

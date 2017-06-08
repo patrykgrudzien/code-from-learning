@@ -1,3 +1,5 @@
+package mysql;
+
 import java.net.URISyntaxException;
 
 import com.jurik99.helper.ResourcesHelper;

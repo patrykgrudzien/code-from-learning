@@ -58,8 +58,8 @@ public abstract class ResourcesHelper
 		}
 	}
 
-	public static void closeJDBCResources(final Connection connection, final Statement statement,
-	                                      final ResultSet resultSet)
+	public static void closeJDBCResources(final ResultSet resultSet, final Statement statement,
+	                                      final Connection connection)
 	{
 		closeResultSet(resultSet);
 		closeStatement(statement);
