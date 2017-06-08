@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
-@Table(name = "USER_DETAILS_3_3_proxy_objects_eager_lazy_fetch_types")
+@Table(name = "USER_DETAILS", schema = "proxy_objects_eager_lazy_fetch_types")
 public class UserDetails
 {
 	/*

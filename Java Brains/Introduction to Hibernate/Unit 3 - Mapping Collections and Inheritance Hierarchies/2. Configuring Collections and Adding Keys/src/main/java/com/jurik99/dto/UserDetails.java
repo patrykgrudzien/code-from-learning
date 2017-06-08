@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
-@Table(name = "USER_DETAILS_3_2_configuring_collections_and_adding_keys")
+@Table(name = "USER_DETAILS", schema = "configuring_collections_adding_keys")
 public class UserDetails
 {
 	@Id

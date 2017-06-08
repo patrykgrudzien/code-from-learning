@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "USER_DETAILS_2_6_embedded_id")
+@Table(name = "USER_DETAILS", schema = "embedded_id_annotation")
 public class UserDetails
 {
 	/*
