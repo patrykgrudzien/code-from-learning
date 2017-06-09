@@ -28,4 +28,12 @@
         <module>11. Implementing Inheritance With Joined Strategy</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.jurik99</groupId>
+            <artifactId>init-schemas-helper</artifactId>
+            <version>1.0 Version</version>
+        </dependency>
+    </dependencies>
+
 </project>

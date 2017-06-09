@@ -122,7 +122,7 @@ public class PostgreSQLUser extends User
 
 				statement.executeUpdate(String.format(DatabaseProperties.PostgreSQL.Queries.CREATE_SCHEMA,
 				                                      schema.getSchemaName()));
-				logger.info("Schema created successfully.");
+				logger.info("Schema " + schema.getSchemaName() + " created successfully.");
 			}
 		}
 		catch (final SQLException exception)

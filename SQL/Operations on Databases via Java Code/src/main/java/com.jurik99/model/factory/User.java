@@ -70,6 +70,7 @@ public abstract class User
 		try
 		{
 			connection = createRootConnection();
+			logger.info("Trying to retrieve list of schemas...");
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery(schema.getAllSchemasQuery());
 
@@ -116,9 +117,8 @@ public abstract class User
 		{
 			registerJDBCDriver();
 
-			logger.info("Connecting to database.");
 			connection = DriverManager.getConnection(getDatabaseRootURL(), getRootUser(), getRootPassword());
-			logger.info("Connected.");
+			logger.info("Connected to ROOT user.");
 		}
 		catch (final SQLException exception)
 		{
@@ -138,11 +138,11 @@ public abstract class User
 		final Connection connection;
 		registerJDBCDriver();
 
-		logger.info("Connecting to database.");
 		try
 		{
 			connection = DriverManager.getConnection(createDatabaseURLForUser(), this.getUserName(),
 			                                         this.getUserPassword());
+			logger.info("Connected to NEW user.");
 		}
 		catch (final SQLException exception)
 		{

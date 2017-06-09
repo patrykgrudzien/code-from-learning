@@ -6,18 +6,22 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>unit-3-mapping-collections-and-inheritance-hierarchies</artifactId>
+        <artifactId>cascadetypes-and-other-things</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>cascadetypes-and-other-things</artifactId>
-    <packaging>pom</packaging>
-    <name>CascadeTypes and Other Things</name>
+    <artifactId>hibernate-collections</artifactId>
+    <name>Hibernate Collections</name>
 
-    <modules>
-        <module>NotFound Annotation</module>
-        <module>Hibernate Collections</module>
-        <module>Cascade</module>
-    </modules>
+    <build>
+        <resources>
+            <resource>
+                <directory>screenshots</directory>
+            </resource>
+            <resource>
+                <directory>notes</directory>
+            </resource>
+        </resources>
+    </build>
 
 </project>
