@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>example-database</artifactId>
-    <name>Example Database</name>
+    <artifactId>operations-on-databases-via-java-code</artifactId>
+    <name>Operations on Databases via Java Code</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
