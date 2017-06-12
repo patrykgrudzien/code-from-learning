@@ -1,0 +1,16 @@
+Hibernate has its own internal DATA TYPES that it maps to for collecion objects.
+There are a couple of semantics (listed in the screenshot attached in "screenshots" folder).
+
+1) Bag semantic - List / ArrayList
+Bag - it doesn't matter how we put things inside. We can put/retrieve in any order.
+
+2) Bag semantic with ID - List / ArrayList
+As previous we can use that kind of DATA TYPE by using List or ArrayList in Java.
+Both List and ArrayList has INDEX property.
+
+3) List semantic - List / ArrayList
+The only difference here is that (LIST) CAN BE ORDERED. We can have sorted list but bag doesn't matter of order.
+
+4) Set semantic - Set
+
+5) Map semantic - Map
