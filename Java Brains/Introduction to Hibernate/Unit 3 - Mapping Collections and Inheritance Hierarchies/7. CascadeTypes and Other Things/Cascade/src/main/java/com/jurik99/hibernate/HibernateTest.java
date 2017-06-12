@@ -26,8 +26,6 @@ public class HibernateTest
 
 		user1.getVehiclesList().add(vehicle1);
 		user1.getVehiclesList().add(vehicle2);
-		vehicle1.getUsersList().add(user1);
-		vehicle2.getUsersList().add(user1);
 
 		// --- STEP 1: Create SessionFactory ---
 		final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
@@ -39,11 +37,24 @@ public class HibernateTest
 		session.beginTransaction();
 
 		/*
-		 * We have to save EVERY ENTITY which is annotated by @Entity
+		 * If we remove those lines below, Hibernate will throw an EXCEPTION:
+		 *
+		 * org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient
+		 * instance beforeQuery flushing: com.jurik99.dto.Vehicle
+		 *
+		 * because we assigned 2 vehicles above to user object but we are NOT saving them !!!
+		 * session.save(vehicle1);
+		 * session.save(vehicle2);
+		 *
+		 * Hibernate does NOT save vehicle objects automatically because they are ALSO ENTITY objects and we could
+		 * want to save them differently than by using some default behavior.
+		 *
+		 * In case of VALUE TYPE for Vehicle, hibernate would save everything.
+		 *
+		 * USE "session.persist(...)" instead of "session.save(...)" to save all corresponding entities associated
+		 * with USER object !!! IMPORTANT !!!
 		 */
-		session.save(user1);
-		session.save(vehicle1);
-		session.save(vehicle2);
+		session.persist(user1);
 
 		// --- STEP 5: Get transaction, Commit ---
 		session.getTransaction().commit();
