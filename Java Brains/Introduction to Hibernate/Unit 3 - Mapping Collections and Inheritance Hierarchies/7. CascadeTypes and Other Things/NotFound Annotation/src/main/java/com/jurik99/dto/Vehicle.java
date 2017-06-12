@@ -1,14 +1,14 @@
 package com.jurik99.dto;
 
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import java.util.ArrayList;
-import java.util.Collection;
 
 import com.jurik99.schemas.SchemaNames;
 
@@ -21,9 +21,24 @@ public class Vehicle
 	private int vehicleId;
 	private String vehicleName;
 
-	// --- We want to have mapping on USER_DETAILS table (to have there VEHICLE_ID column) ---
-	@ManyToMany(mappedBy = "vehiclesList")
-	private Collection<UserDetails> usersList = new ArrayList<>();
+	/*
+	 * Let's assume that this VEHICLE does NOT HAVE an owner (this vehicle is not rented yet).
+	 * So, what would happen in case of that association here if we have getter and setter for user?
+	 * When we would want to retrieve USER from VEHICLE, Hibernate will throw an EXCEPTION because there is no user
+	 * associated to vehicle.
+	 *
+	 * There is a way to suppress that exception and Hibernate won't come up with an error.
+	 * To prevent throwing such exceptions, we can use:
+	 * @NotFound - annotation (if the user is not found, then what to do...)
+	 * This annotation comes from "org.hibernate.annotations" so IT IS NOT A JPA STANDARD !!! This is a feature that
+	 * Hibernate provides for us.
+	 *
+	 * We can specify an ACTION in @NotFound properties:
+	 * @NotFound(action = NotFoundAction.IGNORE || NotFoundAction.EXCEPTION)
+	 */
+	@ManyToOne
+	@NotFound(action = NotFoundAction.IGNORE)
+	private UserDetails user;
 
 	public int getVehicleId()
 	{
@@ -45,13 +60,13 @@ public class Vehicle
 		this.vehicleName = vehicleName;
 	}
 
-	public Collection<UserDetails> getUsersList()
+	public UserDetails getUser()
 	{
-		return usersList;
+		return user;
 	}
 
-	public void setUsersList(final Collection<UserDetails> usersList)
+	public void setUser(final UserDetails user)
 	{
-		this.usersList = usersList;
+		this.user = user;
 	}
 }

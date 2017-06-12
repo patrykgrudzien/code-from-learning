@@ -26,8 +26,6 @@ public class HibernateTest
 
 		user1.getVehiclesList().add(vehicle1);
 		user1.getVehiclesList().add(vehicle2);
-		vehicle1.getUsersList().add(user1);
-		vehicle2.getUsersList().add(user1);
 
 		// --- STEP 1: Create SessionFactory ---
 		final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
