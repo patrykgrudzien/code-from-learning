@@ -21,7 +21,7 @@ public class Vehicle
 	 * FourWheeler will be a separate table.
 	 */
 	@Id
-	@GeneratedValue     // that @GeneratedValue is also inheritanted in child classes !!!
+	@GeneratedValue     // that @GeneratedValue is also inherited in child classes !!!
 	private int vehicleId;
 	private String vehicleName;
 
