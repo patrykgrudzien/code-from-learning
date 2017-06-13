@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.List;
 
 import com.jurik99.database.DatabaseProperties;
+import com.jurik99.helper.ResourcesHelper;
 import com.jurik99.model.domain.Schema;
 import com.jurik99.model.factory.User;
 
@@ -105,8 +106,8 @@ public class PostgreSQLUser extends User
 	@Override
 	public void createNewSchema(final Schema schema)
 	{
-		final Connection connection;
-		final Statement statement;
+		Connection connection = null;
+		Statement statement = null;
 
 		try
 		{
@@ -132,6 +133,8 @@ public class PostgreSQLUser extends User
 		}
 		finally
 		{
+			ResourcesHelper.closeStatement(statement);
+			ResourcesHelper.closeConnection(connection);
 			logger.info("Resources have been closed.");
 		}
 	}
