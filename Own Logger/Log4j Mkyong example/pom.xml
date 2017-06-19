@@ -11,7 +11,6 @@
     </parent>
 
     <artifactId>log4j-configuration</artifactId>
-    <packaging>pom</packaging>
 
     <name>Log4j Mkyong example</name>
 

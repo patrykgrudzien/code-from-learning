@@ -68,10 +68,4 @@
         </dependency>
     </dependencies>
 
-    <!-- PROPERTIES -->
-    <properties>
-        <jersey.version>2.25</jersey.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-    
 </project>
