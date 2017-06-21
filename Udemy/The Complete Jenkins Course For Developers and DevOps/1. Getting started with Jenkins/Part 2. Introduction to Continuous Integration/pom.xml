@@ -6,17 +6,19 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>getting-started-with-jenkins</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>udemy</artifactId>
-    <packaging>pom</packaging>
-    <name>Udemy</name>
+    <artifactId>part-2-introduction-to-continuous-integration</artifactId>
+    <name>Part 2. Introduction to Continuous Integration</name>
 
-    <modules>
-        <module>Mockito Tutorial - learn mocking with 25 Junit examples</module>
-        <module>The Complete Jenkins Course For Developers and DevOps</module>
-    </modules>
-
+    <build>
+        <resources>
+            <resource>
+                <directory>${screenshots.main.directory}</directory>
+            </resource>
+        </resources>
+    </build>
+    
 </project>

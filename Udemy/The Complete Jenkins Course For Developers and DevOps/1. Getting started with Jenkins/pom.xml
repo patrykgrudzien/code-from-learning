@@ -6,17 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>the-complete-jenkins-course-for-developers-and-devops</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>udemy</artifactId>
+    <artifactId>getting-started-with-jenkins</artifactId>
     <packaging>pom</packaging>
-    <name>Udemy</name>
+    <name>1. Getting started with Jenkins</name>
 
     <modules>
-        <module>Mockito Tutorial - learn mocking with 25 Junit examples</module>
-        <module>The Complete Jenkins Course For Developers and DevOps</module>
+        <module>Part 2. Introduction to Continuous Integration</module>
     </modules>
 
 </project>

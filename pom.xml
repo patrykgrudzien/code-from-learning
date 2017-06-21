@@ -100,6 +100,7 @@
         <jurik99.package>com/jurik99</jurik99.package>
         <screenshots.resources.directory>src/main/resources/screenshots</screenshots.resources.directory>
         <notes.resources.directory>src/main/resources/notes</notes.resources.directory>
+        <screenshots.main.directory>screenshots</screenshots.main.directory>
 
         <!-- PLUGINS VERSIONS -->
         <compiler.plugin.version>3.6.0</compiler.plugin.version>
