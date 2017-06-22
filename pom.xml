@@ -32,6 +32,7 @@
         <module>JavaStart</module>
         <module>Vogella.com</module>
         <module>Udemy</module>
+        <module>Jenkov.com</module>
     </modules>
 
     <build>
