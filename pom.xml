@@ -33,6 +33,7 @@
         <module>Vogella.com</module>
         <module>Udemy</module>
         <module>Jenkov.com</module>
+        <module>Reports</module>
     </modules>
 
     <build>
