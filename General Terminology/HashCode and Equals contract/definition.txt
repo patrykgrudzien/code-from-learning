@@ -1,0 +1,3 @@
+1. If "Object1" and "Object2" are equal according to their "equals()" method, they MUST also have THE SAME HASH CODE.
+
+2. If "Object1" and "Object2" have the SAME HASH CODE, they DO NOT have to be equal.
