@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>java-podstawy-viii</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>rozdzial-6-interfejsy-i-klasy-wewnetrzne</artifactId>
+    <packaging>pom</packaging>
+    <name>Rozdzial 6 - Interfejsy i klasy wewnetrzne</name>
+
+    <modules>
+        <module>Klonowanie obiektow</module>
+    </modules>
+
+</project>

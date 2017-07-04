@@ -34,6 +34,7 @@
         <module>Udemy</module>
         <module>Jenkov.com</module>
         <module>Reports</module>
+        <module>Java Podstawy VIII</module>
     </modules>
 
     <build>
