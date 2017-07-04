@@ -35,6 +35,7 @@
         <module>Jenkov.com</module>
         <module>Reports</module>
         <module>Java Podstawy VIII</module>
+        <module>Miscellaneous Examples</module>
     </modules>
 
     <build>
