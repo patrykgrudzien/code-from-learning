@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>java-podstawy-viii</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>java-podstawy-viii</artifactId>
+    <artifactId>rozdzial-14-wielowatkowosc</artifactId>
     <packaging>pom</packaging>
-    <name>Java Podstawy VIII</name>
+    <name>Rozdzial 14 - Wielowatkowosc</name>
 
     <modules>
-        <module>Rozdzial 6 - Interfejsy i klasy wewnetrzne</module>
-        <module>Rozdzial 14 - Wielowatkowosc</module>
+        <module>1. Czym sa watki</module>
+        <module>2. Przerywanie watkow</module>
     </modules>
-    
+
 </project>
