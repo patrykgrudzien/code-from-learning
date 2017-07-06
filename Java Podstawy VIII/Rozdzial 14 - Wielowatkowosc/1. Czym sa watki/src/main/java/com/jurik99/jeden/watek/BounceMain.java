@@ -1,4 +1,4 @@
-package com.jurik99;
+package com.jurik99.jeden.watek;
 
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;

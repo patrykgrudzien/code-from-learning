@@ -1,4 +1,4 @@
-package com.jurik99;
+package com.jurik99.jeden.watek;
 
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;

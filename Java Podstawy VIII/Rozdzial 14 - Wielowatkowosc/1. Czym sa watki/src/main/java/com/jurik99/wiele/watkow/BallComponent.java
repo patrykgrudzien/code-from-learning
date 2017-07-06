@@ -1,4 +1,4 @@
-package com.jurik99;
+package com.jurik99.wiele.watkow;
 
 import javax.swing.JPanel;
 

@@ -1,4 +1,4 @@
-package com.jurik99;
+package com.jurik99.jeden.watek;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
