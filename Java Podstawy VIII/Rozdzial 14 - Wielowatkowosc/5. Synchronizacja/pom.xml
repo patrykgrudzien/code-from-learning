@@ -6,17 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>java-podstawy-viii</artifactId>
+        <artifactId>rozdzial-14-wielowatkowosc</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>rozdzial-14-wielowatkowosc</artifactId>
+    <artifactId>synchronizacja</artifactId>
     <packaging>pom</packaging>
-    <name>Rozdzial 14 - Wielowatkowosc</name>
+    <name>5. Synchronizacja</name>
 
     <modules>
-        <module>1. Czym sa watki</module>
-        <module>5. Synchronizacja</module>
+        <module>1. Przyklad sytuacji powodujacej wyscig</module>
     </modules>
 
 </project>
