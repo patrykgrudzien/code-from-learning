@@ -2,7 +2,7 @@ package com.jurik99;
 
 public class Bank
 {
-	private final double[] accouts;
+	private final double[] accounts;
 
 	/**
 	 * Tworzy bank.
@@ -11,11 +11,11 @@ public class Bank
 	 */
 	public Bank(final int howManyAccounts, final double initialBalance)
 	{
-		accouts = new double[howManyAccounts];
+		accounts = new double[howManyAccounts];
 
-		for (int i = 0; i < accouts.length; i++)
+		for (int i = 0; i < accounts.length; i++)
 		{
-			accouts[i] = initialBalance;
+			accounts[i] = initialBalance;
 		}
 	}
 
@@ -27,7 +27,7 @@ public class Bank
 	{
 		double sum = 0;
 
-		for (final double balance : accouts)
+		for (final double balance : accounts)
 		{
 			sum += balance;
 		}
@@ -38,9 +38,9 @@ public class Bank
 	 * Zwraca liczbe kont w banku.
 	 * @return liczba kont
 	 */
-	public int size()
+	public int getAccountsSize()
 	{
-		return accouts.length;
+		return accounts.length;
 	}
 
 	/**
@@ -51,15 +51,15 @@ public class Bank
 	 */
 	public void transfer(final int from, final int to, final double amount)
 	{
-		if (accouts[from] < amount)
+		if (accounts[from] < amount)
 			return;
 
 		System.out.println(
 				"(ID: " + Thread.currentThread().getId() + ") : (Name: " + Thread.currentThread().getName() + ")");
 
-		accouts[from] -= amount;
+		accounts[from] -= amount;
 		System.out.printf("Transfer %.2f z konta %d na konto %d. ", amount, from, to);
-		accouts[to] += amount;
+		accounts[to] += amount;
 		System.out.printf("Saldo ogolne na wszystkich kontach łącznie: %.2f%n", getTotalBalance());
 	}
 }

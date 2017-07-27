@@ -16,6 +16,7 @@
 
     <modules>
         <module>1. Przyklad sytuacji powodujacej wyscig</module>
+        <module>2. Blokada i warunek</module>
     </modules>
 
 </project>

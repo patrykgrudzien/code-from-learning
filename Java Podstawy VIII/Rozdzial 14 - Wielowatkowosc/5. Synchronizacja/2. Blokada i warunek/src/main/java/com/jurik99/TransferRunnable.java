@@ -1,5 +1,6 @@
 package com.jurik99;
 
+@SuppressWarnings("ALL")
 public class TransferRunnable implements Runnable
 {
 	private Bank bank;
@@ -27,7 +28,7 @@ public class TransferRunnable implements Runnable
 		{
 			while (true)
 			{
-				final int toAccount = (int) (bank.getAccountsSize() * Math.random());
+				final int toAccount = (int) (bank.size() * Math.random());
 				final double amount = maxAmount * Math.random();
 				bank.transfer(fromAccount, toAccount, amount);
 				Thread.sleep((long) (DELAY * Math.random()));
