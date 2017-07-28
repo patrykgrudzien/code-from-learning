@@ -17,6 +17,7 @@
     <modules>
         <module>Odcinek 1</module>
         <module>Odcinek 2</module>
+        <module>Odcinek 3</module>
     </modules>
 
 </project>
