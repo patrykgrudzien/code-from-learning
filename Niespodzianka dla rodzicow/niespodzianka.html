@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Niespodzianka!</title>
+
+    <link rel="stylesheet" href="index_style.css" type="text/css">
+
+    <script type="text/javascript">
+        function pokazZdjecie()
+        {
+            var zdjecie = "<img src='polaroid-template.jpg' class='center_photo'/>";
+            document.getElementById("movie-2-div").innerHTML = zdjecie;
+        }
+    </script>
+</head>
+<body>
+    <div id="movie-2-div">
+        <video controls id="video" class="center_text" autoplay onended="pokazZdjecie()">
+            <source src="movie-1.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>

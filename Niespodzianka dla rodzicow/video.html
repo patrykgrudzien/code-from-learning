@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>To ponownie my!</title>
+
+    <link rel="stylesheet" href="video_style.css" type="text/css">
+    <link rel="stylesheet" href="index_style.css" type="text/css">
+
+    <script type="text/javascript">
+        function zaladujSzubienice()
+        {
+            window.location = 'szubienica.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <video controls id="video" autoplay onended="zaladujSzubienice()" class="center_text">
+            <source src="movie-1.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>

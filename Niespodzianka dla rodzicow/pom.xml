@@ -14,14 +14,4 @@
     <packaging>pom</packaging>
     <name>Niespodzianka dla rodzicow</name>
 
-    <build>
-        <outputDirectory>${target.directory}</outputDirectory>
-        <scriptSourceDirectory>${java.script.directory}</scriptSourceDirectory>
-        <resources>
-            <resource>
-                <directory>${resources.directory}</directory>
-            </resource>
-        </resources>
-    </build>
-
 </project>
