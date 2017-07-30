@@ -36,6 +36,7 @@
         <module>Reports</module>
         <module>Java Podstawy VIII</module>
         <module>Miscellaneous Examples</module>
+        <module>Niespodzianka dla rodzicow</module>
     </modules>
 
     <build>
@@ -105,6 +106,7 @@
         <screenshots.resources.directory>src/main/resources/screenshots</screenshots.resources.directory>
         <notes.resources.directory>src/main/resources/notes</notes.resources.directory>
         <screenshots.main.directory>screenshots</screenshots.main.directory>
+        <java.script.directory>src/main/resources/javascript</java.script.directory>
 
         <!-- PLUGINS VERSIONS -->
         <compiler.plugin.version>3.6.0</compiler.plugin.version>

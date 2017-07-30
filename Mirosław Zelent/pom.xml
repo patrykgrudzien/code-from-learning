@@ -19,8 +19,4 @@
         <module>Java Script</module>
     </modules>
 
-    <properties>
-        <java.script.directory>src/main/resources/javascript</java.script.directory>
-    </properties>
-
 </project>

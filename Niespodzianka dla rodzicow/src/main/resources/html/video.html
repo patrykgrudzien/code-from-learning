@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>To ponownie my!</title>
+
+    <link rel="stylesheet" href="../css/video_style.css" type="text/css">
+
+    <script type="text/javascript">
+        function playVideo()
+        {
+            var video = document.getElementById("video");
+            video.play();
+            video.addEventListener('ended', function ()
+            {
+                window.location = 'http://www.google.pl'
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <video controls id="video" onclick="playVideo()">
+            <source src="../media/video/patka-jezor-grecja.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>
