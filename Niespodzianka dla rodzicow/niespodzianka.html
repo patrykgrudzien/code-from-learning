@@ -9,15 +9,15 @@
     <script type="text/javascript">
         function pokazZdjecie()
         {
-            var zdjecie = "<img src='polaroid-template.jpg' class='center_photo'/>";
-            document.getElementById("movie-2-div").innerHTML = zdjecie;
+            document.getElementById("movie-2-div").innerHTML =
+                "<img src='polaroid-template.jpg' class='center_photo'/>";
         }
     </script>
 </head>
 <body>
     <div id="movie-2-div">
         <video controls id="video" class="center_text" autoplay onended="pokazZdjecie()">
-            <source src="movie-1.mp4" type="video/mp4">
+            <source src="movie-2.mp4" type="video/mp4">
         </video>
     </div>
 </body>
