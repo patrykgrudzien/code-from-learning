@@ -5,22 +5,22 @@
     <title>Niespodzianka</title>
 
     <link href="index_style.css" rel="stylesheet" type="text/css">
-    <script src="timer.js"></script>
+    <script src="index-js.js"></script>
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <script>
-        $(document).ready(function ()
-        {
-            $('div.hidden').fadeIn(3000).removeClass('hidden');
-        })
-    </script>
 </head>
-
 <body>
-    <div id="patryk" class="hidden">
-        <script type="text/javascript">countDown(10, "patryk")</script>
+    <div id="niespodzianka">
+        GOTOWI NA NIESPODZIANKĘ?
+    </div>
+    <div id="odliczanie">
+        <script type="text/javascript">
+            setTimeout("countDown(5, 'odliczanie');", 5000);
+            $(document).ready(function ()
+            {
+                $("#niespodzianka").delay(9500).fadeOut();
+            })
+        </script>
     </div>
 </body>
-
 </html>
