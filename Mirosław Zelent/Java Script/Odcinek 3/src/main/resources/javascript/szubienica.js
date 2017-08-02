@@ -1,4 +1,4 @@
-var haslo = "Może wycieczka dla kochanych rodziców";
+var haslo = "test";
 haslo = haslo.toUpperCase();
 var dlugosc = haslo.length;
 
@@ -85,6 +85,11 @@ String.prototype.ustawZnak = function (miejsce, znak)
         return this.substr(0, miejsce) + znak + this.substr(miejsce + 1);
 }
 
+function Redirect()
+{
+    window.location = "http://www.tutorialspoint.com";
+}
+
 function sprawdz(nr)
 {
     var trafiona = false;
@@ -132,8 +137,7 @@ function sprawdz(nr)
     // wygrana
     if (haslo == haslo_zaszyfrowane)
     {
-        document.getElementById("alfabet").innerHTML = "Tak jest! Podano prawidłowe hasło: " + haslo +
-            "<br/><br/><span class='reset' onclick='location.reload()'>JESZCZE RAZ?</span> ";
+        Redirect();
     }
 
     // przegrana

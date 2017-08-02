@@ -71,3 +71,11 @@ body
 {
     color: white;
 }
+
+.podziekowania
+{
+    width: 900px;
+    color: green;
+    font-size: 60px;
+    margin: auto;
+}
