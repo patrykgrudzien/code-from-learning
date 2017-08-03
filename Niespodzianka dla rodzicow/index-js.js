@@ -1,15 +1,12 @@
-var text = "gotowi na niespodziankę?";
-text = text.toUpperCase();
-
 function countDown(secs, elem)
 {
     var element = document.getElementById(elem);
-    element.innerHTML = text + '<br>' + secs;
+    element.innerHTML = secs;
 
     if (secs <= 0)
     {
         element.innerHTML = " ";
-        loadNextPageAfterSeconds(1);
+        loadNextPageAfterSeconds(0);
         clearTimeout(timer);
     }
     secs--;

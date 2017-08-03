@@ -1,42 +1,43 @@
-html, body
+body, html
 {
     background-color: black;
     color: lightgrey;
     font-size: 50px;
     font-family: 'Inconsolata', monospace;
     font-weight: 700;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
-.center_text
+/*#container*/
+/*{*/
+    /*font-size: 50px;*/
+    /*font-family: 'Inconsolata', monospace;*/
+    /*font-weight: 700;*/
+/*}*/
+
+@keyframes niespodziankaAnimation
+{
+    from {
+        opacity: 0;
+        top: 0%;
+    }
+    to {
+        opacity: 1.0;
+        top: 45%;
+    }
+}
+
+#niespodzianka
 {
     position: absolute;
-    width: 800px;
-    height: auto;
     left: 50%;
-    top: 50%;
-    margin-left: -400px;
-    transform: translateY(-50%);
-    text-align: center;
-    vertical-align: middle;
+    transform: translate(-50%, -50%);
+    animation: niespodziankaAnimation 5s forwards;
 }
 
-.center_photo
+#odliczanie
 {
     position: absolute;
-    width: 400px;
+    top: 55%;
     left: 50%;
-    top: 50%;
-    margin-left: -200px;
-    transform: translateY(-50%);
-    text-align: center;
-    vertical-align: middle;
-}
-
-.hidden
-{
-    display: none;
+    transform: translate(-50%, -50%);
 }
