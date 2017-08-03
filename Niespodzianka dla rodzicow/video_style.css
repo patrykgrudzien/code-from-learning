@@ -11,3 +11,14 @@ video
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.animate-in
+{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
