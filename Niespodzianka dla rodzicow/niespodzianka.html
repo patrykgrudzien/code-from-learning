@@ -5,20 +5,52 @@
     <title>Niespodzianka!</title>
 
     <link rel="stylesheet" href="niespodzianka_style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=latin-ext" rel="stylesheet">
 
     <script type="text/javascript">
-        function pokazZdjecie()
+        function showDiv()
         {
-            document.getElementById("movie-2-div").innerHTML =
-                "<img src='polaroid-template.jpg' class='photo'/>";
+            document.getElementById("link-block").className = "links";
+        }
+
+        window.onload = function ()
+        {
+            setTimeout(showDiv, 21000);
+        };
+
+
+        function zaladujVoucher()
+        {
+            var video = document.getElementById("video");
+            var linDoVouchera = document.getElementById("link-do-vouchera");
+
+            if (video.ended == true)
+            {
+                window.location.href = "voucher.html";
+            }
+            else
+            {
+                linDoVouchera.innerHTML = "Poczekaj do końca :)";
+            }
+        }
+
+        function zmienOpisLinkaNaKoniecVideo()
+        {
+            var linDoVouchera = document.getElementById("link-do-vouchera");
+            linDoVouchera.innerHTML = "Tutaj można odebrać nagrodę :)";
         }
     </script>
 </head>
 <body class="animate-in">
-    <div id="movie-2-div">
-        <video id="video" autoplay onended="pokazZdjecie()">
-            <source src="movie-2.mp4" type="video/mp4">
-        </video>
+    <div id="container">
+        <div id="movie-2-div">
+            <video id="video" autoplay onended="zmienOpisLinkaNaKoniecVideo()">
+                <source src="movie-2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="link-block" class="hide">
+            <a id="link-do-vouchera" onclick="zaladujVoucher()">Tutaj można odebrać nagrodę :)</a>
+        </div>
     </div>
     <script type="text/javascript">
         window.addEventListener("beforeunload", function ()

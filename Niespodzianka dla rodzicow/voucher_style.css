@@ -1,0 +1,20 @@
+body, html
+{
+    background-color: black;
+    color: lightgrey;
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    text-align: center;
+}
+
+.animate-in
+{
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn
+{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

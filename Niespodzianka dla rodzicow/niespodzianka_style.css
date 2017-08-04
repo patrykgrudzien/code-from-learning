@@ -6,17 +6,53 @@ body, html
 
 #movie-2-div
 {
-    position: absolute;
-    top: 50%;
+    margin: 0 auto;
+}
+
+#video
+{
+    margin-top: 3%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
 .photo
 {
-    height: 75vh;
-    width: auto;
+    margin-top: 3%;
+    width: 400px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
     animation: photoAnimation 8s forwards;
+}
+
+.links
+{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: lightgrey;
+    font-size: 60px;
+    font-family: 'Amatic SC', monospace;
+    animation: fadeIn 2s ease-in;
+}
+
+a
+{
+    color: lightgrey;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: green;
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
 }
 
 @keyframes photoAnimation {
