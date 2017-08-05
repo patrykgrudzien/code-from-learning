@@ -44,40 +44,68 @@
             var parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
             var password;
 
-            if (parentsLastName != null && (parentsLastName == "Grudzień" || parentsLastName == "Grudniowie"))
+            var trueGrudzienName1 = "Grudzień";
+            var trueGrudzienName2 = "Grudniowie";
+            var trueGrudzienHaslo = "test1";
+
+            var trueStawiarzName1 = "Stawiarz";
+            var trueStawiarzName2 = "Stawiarzowie";
+            var trueStawiarzHaslo = "test2";
+
+            var match;
+
+            while (parentsLastName != trueGrudzienName1 && parentsLastName != trueGrudzienName2
+                    && parentsLastName != trueStawiarzName1 && parentsLastName != trueStawiarzName2)
+            {
+                if (parentsLastName != null && parentsLastName == "Grudzien")
+                {
+                    alert("Chyba brakło ogonka nad 'n' :)");
+                    parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
+                }
+                else if (parentsLastName == null || parentsLastName == "")
+                {
+                    alert("Pusto wszędzie, głucho wszędzie :)");
+                    parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
+                }
+                else
+                {
+                    alert("Czemu kłamiecie? :D");
+                    parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
+                }
+            }
+
+            do
             {
                 password = prompt("Hasełko z listu:");
 
-                while (password != "password")
+                if (parentsLastName == trueGrudzienName1 && password == trueGrudzienHaslo)
                 {
-                    alert("Ktoś tu podaje nieprawidłowe hasło :)");
+                    match = true;
+                    window.location.href = "voucher-viola-franus.html";
+                }
+                else if (parentsLastName == trueGrudzienName2 && password == trueGrudzienHaslo)
+                {
+                    match = true;
+                    window.location.href = "voucher-viola-franus.html";
+                }
+                else if (parentsLastName == trueStawiarzName1 && password == trueStawiarzHaslo)
+                {
+                    match = true;
+                    window.location.href = "voucher-asia-stasiu.html";
+                }
+                else if (parentsLastName == trueStawiarzName2 && password == trueStawiarzHaslo)
+                {
+                    match = true;
+                    window.location.href = "voucher-asia-stasiu.html";
+                }
+                else
+                {
+                    match = false;
+                    alert("Nieprawidłowe hasło :)");
                     password = prompt("Hasełko z listu:");
                 }
-                window.location.href = "voucher-viola-franus.html";
             }
-            else if (parentsLastName != null && (parentsLastName == "Grudzien" || parentsLastName == "Grudniowie"))
-            {
-                alert("Chyba brakło ogonka nad 'n' :)");
-            }
-            else if (parentsLastName != null && (parentsLastName == "Stawiarz" || parentsLastName == "Stawiarzowie"))
-            {
-                password = prompt("Hasełko z listu:");
-
-                while (password != "password")
-                {
-                    alert("Ktoś tu podaje nieprawidłowe hasło :)");
-                    password = prompt("Hasełko z listu:");
-                }
-                window.location.href = "voucher-asia-stasiu.html";
-            }
-            else if (parentsLastName == null || parentsLastName == "")
-            {
-                alert("Pusto wszędzie, głucho wszędzie :)")
-            }
-            else
-            {
-                alert("Czemu kłamiecie? :D");
-            }
+            while (password != trueGrudzienHaslo && password != trueStawiarzHaslo && match == false);
         }
     </script>
 </head>

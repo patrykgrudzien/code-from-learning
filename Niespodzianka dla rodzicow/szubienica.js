@@ -1,4 +1,4 @@
-var haslo = "zdrowie przez wodę";
+var haslo = "należy wam się odpoczynek";
 haslo = haslo.toUpperCase();
 var dlugosc = haslo.length;
 
