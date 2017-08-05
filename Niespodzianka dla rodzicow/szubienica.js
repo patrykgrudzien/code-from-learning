@@ -139,7 +139,7 @@ function sprawdz(nr)
     // przegrana
     if (ile_skuch >= 9)
     {
-        document.getElementById("alfabet").innerHTML = "Przegrana :(" +
+        document.getElementById("alfabet").innerHTML = "Próbujcie dalej :)" +
             "<br/><br/><span class='reset' onclick='location.reload()'>JESZCZE RAZ?</span> ";
     }
 }

@@ -18,7 +18,6 @@
             setTimeout(showDiv, 21000);
         };
 
-
         function zaladujVoucher()
         {
             var video = document.getElementById("video");
@@ -26,18 +25,59 @@
 
             if (video.ended == true)
             {
-                window.location.href = "voucher.html";
+                redirectToNamedVoucher();
             }
             else
             {
-                linDoVouchera.innerHTML = "Poczekaj do końca :)";
+                linDoVouchera.innerHTML = "Poczekajcie do końca :)";
             }
         }
 
         function zmienOpisLinkaNaKoniecVideo()
         {
             var linDoVouchera = document.getElementById("link-do-vouchera");
-            linDoVouchera.innerHTML = "Tutaj można odebrać nagrodę :)";
+            linDoVouchera.innerHTML = "Teraz można odebrać nagrodę :)";
+        }
+
+        function redirectToNamedVoucher()
+        {
+            var parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
+            var password;
+
+            if (parentsLastName != null && (parentsLastName == "Grudzień" || parentsLastName == "Grudniowie"))
+            {
+                password = prompt("Hasełko z listu:");
+
+                while (password != "password")
+                {
+                    alert("Ktoś tu podaje nieprawidłowe hasło :)");
+                    password = prompt("Hasełko z listu:");
+                }
+                window.location.href = "voucher-viola-franus.html";
+            }
+            else if (parentsLastName != null && (parentsLastName == "Grudzien" || parentsLastName == "Grudniowie"))
+            {
+                alert("Chyba brakło ogonka nad 'n' :)");
+            }
+            else if (parentsLastName != null && (parentsLastName == "Stawiarz" || parentsLastName == "Stawiarzowie"))
+            {
+                password = prompt("Hasełko z listu:");
+
+                while (password != "password")
+                {
+                    alert("Ktoś tu podaje nieprawidłowe hasło :)");
+                    password = prompt("Hasełko z listu:");
+                }
+                window.location.href = "voucher-asia-stasiu.html";
+            }
+            else if (parentsLastName == null || parentsLastName == "")
+            {
+                alert("Pusto wszędzie, głucho wszędzie :)")
+            }
+            else
+            {
+                alert("Czemu kłamiecie? :D");
+            }
         }
     </script>
 </head>
