@@ -1,4 +1,4 @@
-var haslo = "należy wam się odpoczynek";
+var haslo = "po prostu dziękujemy";
 haslo = haslo.toUpperCase();
 var dlugosc = haslo.length;
 
@@ -7,6 +7,7 @@ var ile_skuch = 0;
 
 var yes = new Audio("yes.wav");
 var no = new Audio("no.wav");
+var tadam = new Audio("tadam.wav");
 
 for (i = 0; i < dlugosc; i++)
 {
@@ -83,7 +84,7 @@ String.prototype.ustawZnak = function (miejsce, znak)
         return this.toString();
     else
         return this.substr(0, miejsce) + znak + this.substr(miejsce + 1);
-}
+};
 
 function sprawdz(nr)
 {
@@ -132,6 +133,7 @@ function sprawdz(nr)
     // wygrana
     if (haslo == haslo_zaszyfrowane)
     {
+        tadam.play();
         document.getElementById("alfabet").innerHTML = "<span class='reset' onclick='redirectToSurprise()'>" +
             "BRAWO!<br/><br/>Sprawdźcie teraz co na Was czeka!</span> ";
     }

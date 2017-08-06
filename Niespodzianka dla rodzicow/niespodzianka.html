@@ -39,32 +39,46 @@
             linDoVouchera.innerHTML = "Teraz można odebrać nagrodę :)";
         }
 
+        var GRUDZIEN = "Grudzień";
+        var GRUDNIOWIE = "Grudniowie";
+        var GRUDZ_HASLO = "adamsy";
+
+        var STAWIARZ = "Stawiarz";
+        var STAWIARZOWIE = "Stawiarzowie";
+        var STAW_HASLO = "kombi";
+
         function redirectToNamedVoucher()
         {
             var parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
             var password;
 
-            var trueGrudzienName1 = "Grudzień";
-            var trueGrudzienName2 = "Grudniowie";
-            var trueGrudzienHaslo = "test1";
-
-            var trueStawiarzName1 = "Stawiarz";
-            var trueStawiarzName2 = "Stawiarzowie";
-            var trueStawiarzHaslo = "test2";
-
-            var match;
-
-            while (parentsLastName != trueGrudzienName1 && parentsLastName != trueGrudzienName2
-                    && parentsLastName != trueStawiarzName1 && parentsLastName != trueStawiarzName2)
+            while (parentsLastName != GRUDZIEN && parentsLastName != GRUDNIOWIE
+                    && parentsLastName != STAWIARZ && parentsLastName != STAWIARZOWIE)
             {
-                if (parentsLastName != null && parentsLastName == "Grudzien")
+                if (parentsLastName != null &&
+                        (parentsLastName == "Grudzien" || parentsLastName == "grudzien" ||
+                            parentsLastName == "grudniowie"))
                 {
-                    alert("Chyba brakło ogonka nad 'n' :)");
+                    if (parentsLastName == "Grudzien")
+                    {
+                        alert("Chyba brakło ogonka nad 'n' :)");
+                        parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
+                    }
+                    else if (parentsLastName == "grudzien" || parentsLastName == "grudniowie")
+                    {
+                        alert("Nazwisko zaczynamy od DUŻEJ litery :)");
+                        parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
+                    }
+                }
+                else if (parentsLastName != null &&
+                            (parentsLastName == "stawiarz" || parentsLastName == "stawiarzowie"))
+                {
+                    alert("Nazwisko zaczynamy od DUŻEJ litery :)");
                     parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
                 }
                 else if (parentsLastName == null || parentsLastName == "")
                 {
-                    alert("Pusto wszędzie, głucho wszędzie :)");
+                    alert("Nazwisko puste bądź kliknięto przycisk 'Anuluj'");
                     parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
                 }
                 else
@@ -78,34 +92,48 @@
             {
                 password = prompt("Hasełko z listu:");
 
-                if (parentsLastName == trueGrudzienName1 && password == trueGrudzienHaslo)
+                if (password != null)
                 {
-                    match = true;
-                    window.location.href = "voucher-viola-franus.html";
-                }
-                else if (parentsLastName == trueGrudzienName2 && password == trueGrudzienHaslo)
-                {
-                    match = true;
-                    window.location.href = "voucher-viola-franus.html";
-                }
-                else if (parentsLastName == trueStawiarzName1 && password == trueStawiarzHaslo)
-                {
-                    match = true;
-                    window.location.href = "voucher-asia-stasiu.html";
-                }
-                else if (parentsLastName == trueStawiarzName2 && password == trueStawiarzHaslo)
-                {
-                    match = true;
-                    window.location.href = "voucher-asia-stasiu.html";
+                    if (!checkMatch(parentsLastName, password))
+                    {
+                        alert("Nieprawidłowe hasło :)")
+                    }
                 }
                 else
                 {
-                    match = false;
-                    alert("Nieprawidłowe hasło :)");
+                    alert("Hasełko puste bądź kliknięto przycisk 'Anuluj'");
                     password = prompt("Hasełko z listu:");
                 }
             }
-            while (password != trueGrudzienHaslo && password != trueStawiarzHaslo && match == false);
+            while (!checkMatch(parentsLastName, password));
+        }
+
+        function checkMatch(parentsLastName, password)
+        {
+            if (parentsLastName == GRUDZIEN && password == GRUDZ_HASLO)
+            {
+                window.location.href = "voucher-viola-franus.html";
+                return true;
+            }
+            else if (parentsLastName == GRUDNIOWIE && password == GRUDZ_HASLO)
+            {
+                window.location.href = "voucher-viola-franus.html";
+                return true;
+            }
+            else if (parentsLastName == STAWIARZ && password == STAW_HASLO)
+            {
+                window.location.href = "voucher-asia-stasiu.html";
+                return true;
+            }
+            else if (parentsLastName == STAWIARZOWIE && password == STAW_HASLO)
+            {
+                window.location.href = "voucher-asia-stasiu.html";
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     </script>
 </head>
