@@ -57,14 +57,14 @@
             {
                 if (parentsLastName != null &&
                         (parentsLastName == "Grudzien" || parentsLastName == "grudzien" ||
-                            parentsLastName == "grudniowie"))
+                            parentsLastName == "grudniowie" || parentsLastName == "grudzień"))
                 {
                     if (parentsLastName == "Grudzien")
                     {
                         alert("Chyba brakło ogonka nad 'n' :)");
                         parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
                     }
-                    else if (parentsLastName == "grudzien" || parentsLastName == "grudniowie")
+                    else if (parentsLastName == "grudzien" || parentsLastName == "grudniowie" || "grudzień")
                     {
                         alert("Nazwisko zaczynamy od DUŻEJ litery :)");
                         parentsLastName = prompt("Podajcie proszę Wasze nazwisko. Wzór poniżej:", "Kowalscy");
