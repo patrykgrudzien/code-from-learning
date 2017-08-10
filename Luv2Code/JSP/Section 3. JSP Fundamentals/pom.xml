@@ -12,5 +12,14 @@
 
     <artifactId>section-3-jsp-fundamentals</artifactId>
     <name>Section 3. JSP Fundamentals</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>16. JSP Hello World</module>
+        <module>17. JSP Expressions</module>
+        <module>18. JSP Scriplets</module>
+        <module>19. JSP Declarations</module>
+        <module>20. Call Java Class from JSP</module>
+    </modules>
 
 </project>
