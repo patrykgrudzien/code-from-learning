@@ -16,6 +16,7 @@
 
     <modules>
         <module>Spring</module>
+        <module>JSP</module>
     </modules>
 
 </project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Luv2Code</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>JSP</artifactId>
+    <packaging>pom</packaging>
+    <name>JSP from Luv2Code</name>
+
+    <modules>
+        <module>Section 3. JSP Fundamentals</module>
+        <module>Section 4. Reading HTML Form Data with JSP</module>
+        <module>Section 5. State Management with JSP</module>
+        <module>Section 6. JSP Standard Tag Library (JSTL) Core Tags</module>
+        <module>Section 7. JSP Standard Tag Library (JSTL) Function Tags</module>
+        <module>Section 8. Build a Multi Lingual App with JSTL i18n Tags</module>
+        <module>Section 9. Servlet Fundamentals</module>
+        <module>Section 10. MVC Build an MVC App with Servlets and JSP</module>
+        <module>Section 11. Build A Complete Database Web App with JDBC Part 1</module>
+        <module>Section 12. Build A Complete Database Web App with JDBC Part 2</module>
+        <module>Section 13. Build A Complete Database Web App with JDBC Part 3</module>
+        <module>Section 14. Build A Complete Database Web App with JDBC Part 4</module>
+        <module>Section 15. Build A Complete Database Web App with JDBC Part 5</module>
+    </modules>
+
+</project>
