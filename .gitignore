@@ -6,3 +6,4 @@ target/
 *.lst
 derby.log
 Unversioned Code/
+out/
