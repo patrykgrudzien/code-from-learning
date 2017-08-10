@@ -17,6 +17,7 @@
     <modules>
         <module>Spring Security</module>
         <module>JavaMail API - Sending email via Gmail SMTP</module>
+        <module>Java 8 Mkyong</module>
     </modules>
     
 </project>
