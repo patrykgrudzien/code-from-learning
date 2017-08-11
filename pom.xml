@@ -99,6 +99,7 @@
         <resources.directory>src/main/resources</resources.directory>
         <test.directory>src/test/java</test.directory>
         <target.directory>target</target.directory>
+        <src.target.directory>src/target</src.target.directory>
         <web.directory>src/main/webapp</web.directory>
         <test.target.directory>src/test/target</test.target.directory>
         <all.java.code.basedir>${project.basedir}</all.java.code.basedir>

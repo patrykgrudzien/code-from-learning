@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>20-call-java-class-from-jsp</artifactId>
-    <name>20. Call Java Class from JSP</name>
+    <artifactId>22-including-files-in-jsp</artifactId>
+    <name>22. Including Files in JSP</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -22,7 +22,7 @@
         </resources>
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${src.target.directory}</outputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

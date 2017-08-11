@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>20-call-java-class-from-jsp</artifactId>
-    <name>20. Call Java Class from JSP</name>
+    <artifactId>21-jsp-built-in-objects</artifactId>
+    <name>21. JSP Built-in Objects</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -29,6 +29,8 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${war.plugin.version}</version>
                 <configuration>
+                    <outputDirectory>${src.target.directory}</outputDirectory>
+                    <webappDirectory>${web.directory}</webappDirectory>
                     <webResources>
                         <resource>
                             <directory>${web.directory}</directory>

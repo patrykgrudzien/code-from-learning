@@ -30,4 +30,12 @@
         <module>Section 15. Build A Complete Database Web App with JDBC Part 5</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet.api.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>
