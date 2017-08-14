@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>19-jsp-declarations</artifactId>
+    <packaging>war</packaging>
     <name>19. JSP Declarations</name>
 
     <build>
@@ -29,6 +30,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${war.plugin.version}</version>
                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <webResources>
                         <resource>
                             <directory>${web.directory}</directory>
