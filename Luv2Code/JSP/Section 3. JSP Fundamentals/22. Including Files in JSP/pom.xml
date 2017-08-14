@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>22-including-files-in-jsp</artifactId>
+    <packaging>war</packaging>
     <name>22. Including Files in JSP</name>
 
     <build>
@@ -29,6 +30,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${war.plugin.version}</version>
                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>${src.target.directory}</outputDirectory>
                     <webappDirectory>${web.directory}</webappDirectory>
                     <webResources>
