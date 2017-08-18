@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>section-4-reading-html-form-data-with-jsp</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>26-radio-buttons</artifactId>
+    <packaging>war</packaging>
+    <name>26. Radio Buttons</name>
+
+    <build>
+        <sourceDirectory>${java.directory}</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${resources.directory}</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>${test.directory}</testSourceDirectory>
+        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.plugin.version}</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webappDirectory>${web.directory}</webappDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

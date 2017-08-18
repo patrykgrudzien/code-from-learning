@@ -11,6 +11,13 @@
     </parent>
 
     <artifactId>section-4-reading-html-form-data-with-jsp</artifactId>
+    <packaging>pom</packaging>
     <name>Section 4. Reading HTML Form Data with JSP</name>
+
+    <modules>
+        <module>24. HTML Forms Overview Part 2</module>
+        <module>25. Drop Down Lists</module>
+        <module>26. Radio Buttons</module>
+    </modules>
 
 </project>
