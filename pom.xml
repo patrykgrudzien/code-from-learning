@@ -37,6 +37,7 @@
         <module>Java Podstawy VIII</module>
         <module>Miscellaneous Examples</module>
         <module>Niespodzianka dla rodzicow</module>
+        <module>Found in the Internet</module>
     </modules>
 
     <build>
