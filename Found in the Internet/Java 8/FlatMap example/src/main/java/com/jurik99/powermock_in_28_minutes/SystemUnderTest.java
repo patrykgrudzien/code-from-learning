@@ -1,0 +1,53 @@
+package com.jurik99.powermock_in_28_minutes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+interface Dependency
+{
+	List<Integer> retrieveAllStats();
+}
+
+class UtilityClass
+{
+	static int staticMethod(long value)
+	{
+		// some comples logic here...
+		throw new RuntimeException("I don't want to be executed.");
+	}
+}
+
+public class SystemUnderTest
+{
+	private Dependency dependency;
+
+	public int methodUsingAnArrayListConstructor()
+	{
+		ArrayList list = new ArrayList();
+		return list.size();
+	}
+
+	public int methodCallingStaticMethod()
+	{
+		List<Integer> stats = dependency.retrieveAllStats();
+		long sum = 0 ;
+
+		for (int stat : stats)
+		{
+			sum += stat;
+		}
+		return UtilityClass.staticMethod(sum);
+	}
+
+	private long privateMethodUnderTest()
+	{
+		List<Integer> stats = dependency.retrieveAllStats();
+		long sum = 0;
+
+		for (int stat : stats)
+		{
+			sum += stat;
+		}
+		return sum;
+	}
+}

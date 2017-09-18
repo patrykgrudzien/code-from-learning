@@ -138,6 +138,8 @@
         <!-- This dependency provides posibility to color logger console messages -->
         <jcabi.log.version>0.17.1</jcabi.log.version>
         <jersey.version>2.25</jersey.version>
+        <powermock.api.mockito>LATEST</powermock.api.mockito>
+        <powermock.module.junit4>LATEST</powermock.module.junit4>
     </properties>
 
 </project>
