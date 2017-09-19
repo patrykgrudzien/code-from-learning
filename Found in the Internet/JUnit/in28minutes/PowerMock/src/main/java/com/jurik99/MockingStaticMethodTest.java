@@ -1,4 +1,4 @@
-package com.jurik99.powermock_in_28_minutes;
+package com.jurik99;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -33,18 +33,19 @@ public class MockingStaticMethodTest
 	@Test
 	public void test()
 	{
-		List<Integer> stats = Arrays.asList(1, 2, 3);
+		final List<Integer> stats = Arrays.asList(1, 2, 3);
 		when(dependency.retrieveAllStats()).thenReturn(stats);
 
 		PowerMockito.mockStatic(UtilityClass.class);    // third requirement
 		when(UtilityClass.staticMethod(5)).thenReturn(150);
+		assertEquals(150, UtilityClass.staticMethod(5));
 
-		int result = systemUnderTest.methodCallingStaticMethod();
+		when(systemUnderTest.methodCallingStaticMethod()).thenReturn(150);
+		final int result = systemUnderTest.methodCallingStaticMethod();
 		assertEquals(150, result);
 
 		// we wanna now check method invocation
 		PowerMockito.verifyStatic();
-		UtilityClass.staticMethod(6);
-		// it is a result of staticMethod() itself cause we provide list (1,2,3) and inside that method there is sum
+		UtilityClass.staticMethod(5);
 	}
 }

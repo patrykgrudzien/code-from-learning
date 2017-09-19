@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>java-8-found-in-the-internet</artifactId>
+        <artifactId>junit-examples</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>flatmap-example</artifactId>
-    <name>FlatMap example</name>
+    <artifactId>how-to-create-global-test-rules</artifactId>
+    <name>How to create Global Test Rules</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

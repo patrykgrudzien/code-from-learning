@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>junit-examples</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>found-in-the-internet</artifactId>
+    <artifactId>n-28-minutes</artifactId>
     <packaging>pom</packaging>
-    <name>Found in the Internet</name>
+    <name>in28minutes</name>
 
     <modules>
-        <module>Java 8</module>
-        <module>JUnit</module>
+        <module>Spy vs Mock</module>
+        <module>PowerMock</module>
     </modules>
 
 </project>

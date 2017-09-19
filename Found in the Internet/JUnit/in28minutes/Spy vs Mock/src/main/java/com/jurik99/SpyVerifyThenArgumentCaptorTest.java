@@ -1,4 +1,4 @@
-package com.jurik99.mock_spy_in_28_minutes;
+package com.jurik99;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
@@ -72,12 +72,9 @@ public class SpyVerifyThenArgumentCaptorTest
 		 * 1) declare Argument Captor
 		 * 2) Define Argument Captor on specific method call
 		 * 3) Capture the argument
- 		 */
+		 */
 		ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
 		then(arrayListSpy).should(times(2)).add(argumentCaptor.capture());
 		assertThat(argumentCaptor.getValue(), is("SECOND"));
 	}
 }
-
-
-

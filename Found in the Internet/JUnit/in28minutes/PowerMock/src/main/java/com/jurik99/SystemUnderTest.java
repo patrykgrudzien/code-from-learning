@@ -1,4 +1,4 @@
-package com.jurik99.powermock_in_28_minutes;
+package com.jurik99;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ interface Dependency
 
 class UtilityClass
 {
-	static int staticMethod(long value)
+	static int staticMethod(final long value)
 	{
 		// some comples logic here...
 		throw new RuntimeException("I don't want to be executed.");
@@ -23,16 +23,16 @@ public class SystemUnderTest
 
 	public int methodUsingAnArrayListConstructor()
 	{
-		ArrayList list = new ArrayList();
+		final ArrayList list = new ArrayList();
 		return list.size();
 	}
 
 	public int methodCallingStaticMethod()
 	{
-		List<Integer> stats = dependency.retrieveAllStats();
+		final List<Integer> stats = dependency.retrieveAllStats();
 		long sum = 0 ;
 
-		for (int stat : stats)
+		for (final int stat : stats)
 		{
 			sum += stat;
 		}
@@ -41,10 +41,10 @@ public class SystemUnderTest
 
 	private long privateMethodUnderTest()
 	{
-		List<Integer> stats = dependency.retrieveAllStats();
+		final List<Integer> stats = dependency.retrieveAllStats();
 		long sum = 0;
 
-		for (int stat : stats)
+		for (final int stat : stats)
 		{
 			sum += stat;
 		}
