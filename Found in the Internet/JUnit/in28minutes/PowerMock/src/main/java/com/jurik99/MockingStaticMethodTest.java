@@ -16,8 +16,7 @@ import java.util.List;
 
 @RunWith(PowerMockRunner.class) // first requirement
 @PrepareForTest(UtilityClass.class)   // second requirement
-public class MockingStaticMethodTest
-{
+public class MockingStaticMethodTest {
 	/**
 	 * When we want to combine MOCKITO and POWERMOCK we have to use SPECIFIC RUNNER class.
 	 * Then we have to INITIALIZE "UtilityClass.class" (mock static method in that class).
@@ -31,8 +30,7 @@ public class MockingStaticMethodTest
 	private SystemUnderTest systemUnderTest;
 
 	@Test
-	public void test()
-	{
+	public void test() {
 		final List<Integer> stats = Arrays.asList(1, 2, 3);
 		when(dependency.retrieveAllStats()).thenReturn(stats);
 
