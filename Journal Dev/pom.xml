@@ -18,6 +18,7 @@
         <module>Design Patterns</module>
         <module>Java 8 Features</module>
         <module>Sending Mail in Java Using SMTP</module>
+        <module>Database</module>
     </modules>
     
 </project>
