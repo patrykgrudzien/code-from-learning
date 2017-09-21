@@ -1,0 +1,2 @@
+WYWŁASZCZENIE - technika, w której algorytm szeregujący (SCHEDULER) może wstrzymać aktualnie wykonywane zadanie (np.
+proces lub wątek), aby umożliwić działanie innemu.
