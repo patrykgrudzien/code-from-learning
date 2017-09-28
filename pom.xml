@@ -148,6 +148,23 @@
         <powermock.module.junit4>1.6.2</powermock.module.junit4>
         <powermock.core>1.6.2</powermock.core>
         <lombok.version>1.16.16</lombok.version>
+        <!-- Set for Hibernate Validator -->
+
+        <!-- This transitively pulls in the dependency to the Bean Validation API
+        (javax.validation:validation-api:2.0.0.Final) -->
+        <hibernate.validator.version>6.0.2.Final</hibernate.validator.version>
+
+        <!-- Hibernate Validator also requires an implementation of the Unified Expression Language (JSR 341) for
+        evaluating dynamic expressions in constraint violation messages. When your application runs in a Java EE
+        container such as WildFly, an EL implementation is already provided by the container. In a Java SE environment,
+        however, you have to add an implementation as dependency to your POM file. For instance, you can add the
+        following two dependencies to use the JSR 341 reference implementation -->
+        <unified.expression.language.el.version>3.0.1-b08</unified.expression.language.el.version>
+
+        <!-- Bean Validation defines integration points with CDI (Contexts and Dependency Injection, JSR 346).
+        If your application runs in an environment which does not provide this integration out of the box, you may
+        use the Hibernate Validator CDI portable extension by adding the following Maven dependency to your POM -->
+        <hibernate.validator.cdi.version>6.0.2.Final</hibernate.validator.cdi.version>
     </properties>
 
 </project>
