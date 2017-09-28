@@ -17,6 +17,7 @@
     <modules>
         <module>Spring CORE</module>
         <module>Spring MVC</module>
+        <module>Spring MVC Form Validation</module>
         <module>Spring MVC and Hibernate CRUD</module>
     </modules>
 

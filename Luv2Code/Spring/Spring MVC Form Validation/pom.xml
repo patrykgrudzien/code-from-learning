@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>spring-all-courses</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>spring-mvc-form-validation</artifactId>
+    <name>Spring MVC Form Validation</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>1. Applying Built-In Validation Rules</module>
+        <module>2. Validating Number Ranges and Regular Expressions</module>
+        <module>3. Creating Custom Validation Rules</module>
+    </modules>
+
+</project>
