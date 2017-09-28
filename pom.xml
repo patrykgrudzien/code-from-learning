@@ -142,6 +142,7 @@
         <powermock.api.mockito>1.6.2</powermock.api.mockito>
         <powermock.module.junit4>1.6.2</powermock.module.junit4>
         <powermock.core>1.6.2</powermock.core>
+        <lombok.version>1.16.16</lombok.version>
     </properties>
 
 </project>
