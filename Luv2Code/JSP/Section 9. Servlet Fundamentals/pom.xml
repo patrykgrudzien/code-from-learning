@@ -11,6 +11,13 @@
     </parent>
 
     <artifactId>section-9-servlet-fundamentals</artifactId>
+    <packaging>pom</packaging>
     <name>Section 9. Servlet Fundamentals</name>
+
+    <modules>
+        <module>57. Hello World Servlet</module>
+        <module>60. HTML Form Data with Servlets</module>
+        <module>63. Reading Servlet Parameters</module>
+    </modules>
 
 </project>

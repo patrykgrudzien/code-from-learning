@@ -125,7 +125,7 @@
 
         <!-- PLUGINS VERSIONS -->
         <compiler.plugin.version>3.6.0</compiler.plugin.version>
-        <war.plugin.version>2.3</war.plugin.version>
+        <war.plugin.version>3.1.0</war.plugin.version>
         <liquibase.plugin.version>3.4.2</liquibase.plugin.version>
         <archetype.plugin.version>3.0.1</archetype.plugin.version>
 
@@ -141,7 +141,8 @@
         <jsp.jstl.api.version>1.2.1</jsp.jstl.api.version>
         <jstl.api.version>1.2</jstl.api.version>
         <jstl.version>1.2</jstl.version>
-        <servlet.api.version>2.5</servlet.api.version>
+        <servlet.version>2.5</servlet.version>
+        <servlet.api.version>4.0.0</servlet.api.version>
         <taglibs.version>1.2.5</taglibs.version>
         <tomcat.servlet.version>8.0.32</tomcat.servlet.version>
         <c3p0.version>0.9.5.2</c3p0.version>
