@@ -10,7 +10,12 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-5-state-management-with-jsp</artifactId>
+    <artifactId>state-management-with-jsp</artifactId>
+    <packaging>pom</packaging>
     <name>Section 5. State Management with JSP</name>
+
+    <modules>
+        <module>31. Tracking user actions with Sessions</module>
+    </modules>
 
 </project>
