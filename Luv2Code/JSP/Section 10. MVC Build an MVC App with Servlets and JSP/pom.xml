@@ -11,6 +11,11 @@
     </parent>
 
     <artifactId>section-10-mvc-build-an-mvc-app-with-servlets-and-jsp</artifactId>
-    <name>Section 10. MVC Build an MVC App with Servlets and JSP</name>
+    <packaging>pom</packaging>
+    <name>MVC Build an MVC App with Servlets and JSP</name>
+
+    <modules>
+        <module>67. MVC with Servlets and JSP</module>
+    </modules>
 
 </project>
