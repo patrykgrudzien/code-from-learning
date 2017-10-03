@@ -16,6 +16,7 @@
 
     <modules>
         <module>31. Tracking user actions with Sessions</module>
+        <module>36. Personalize Content with Cookies</module>
     </modules>
 
 </project>
