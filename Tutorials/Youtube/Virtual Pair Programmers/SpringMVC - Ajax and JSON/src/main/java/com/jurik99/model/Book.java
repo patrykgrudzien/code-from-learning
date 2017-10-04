@@ -19,10 +19,9 @@ public class Book {
 	private final int id;
 	private final String title;
 	private double price;
-	private static List<Book> testBooksList;
 
-	public static List<Book> prepateListOfBooks() {
-		testBooksList = Arrays.asList(
+	public static List<Book> prepareListOfBooks() {
+		return Arrays.asList(
 				new Book(1, "Ogniem i mieczem"),
 				new Book(2, "Pan Tadeusz"),
 				new Book(3, "Chłopcy z placu broni"),
@@ -34,6 +33,5 @@ public class Book {
 				new Book(9, "Ruby w pigułce"),
 				new Book(10, "Spring w akcji")
 		);
-		return testBooksList;
 	}
 }

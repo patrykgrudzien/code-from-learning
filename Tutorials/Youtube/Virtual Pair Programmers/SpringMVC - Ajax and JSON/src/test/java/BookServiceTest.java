@@ -9,7 +9,7 @@ import com.jurik99.model.Book;
 
 public class BookServiceTest {
 
-	private List<Book> preparedListOfBooks = Book.prepateListOfBooks();
+	private List<Book> preparedListOfBooks = Book.prepareListOfBooks();
 
 	@Test
 	public void sizeOfPreparedListOfBooks() {

@@ -9,13 +9,17 @@
 
     <script type="text/javascript">
         function doSearch() {
-            // make reqest to server
+            // make request to server
             $.getJSON(
-                "looseSearch",
+                "performLooseSearch",
                 {CHARS : $('#searchBox').val()},
                 function (data) {
                     // the CALLBACK
-                    alert("response received " + data);
+                    $('#results').text('');
+
+                    for (var index in data) {
+                        $('#results').append(data[index].title);
+                    }
                 }
             );
         }

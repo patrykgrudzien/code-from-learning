@@ -1,5 +1,6 @@
 package com.jurik99.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,10 +14,14 @@ import com.jurik99.service.BookService;
 @Controller
 public class BookController {
 
-	private BookService bookService = new BookService();
+	private BookService bookService;
 
-	// TODO : Marshalling and Unmarshalling need to be implemented cause for now we have no valid response
-	@RequestMapping("/looseSearch")
+	@Autowired
+	public BookController(BookService bookService) {
+		this.bookService = bookService;
+	}
+
+	@RequestMapping("/performLooseSearch")
 	public @ResponseBody List<Book> performLooseSearch(@RequestParam("CHARS") final String chars) {
 		return bookService.searchBooksByLooseMath(chars);
 	}
