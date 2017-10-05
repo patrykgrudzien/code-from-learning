@@ -17,10 +17,8 @@ import com.jurik99.service.BookService;
 public class BookServiceImpl implements BookService {
 
 	@Override
-	public List<Book> searchBooksByLooseMath(String chars) {
-		log.warn("looking for " + chars);
-
-		List<Book> preparedList = Book.prepareListOfBooks();
+	public List<Book> searchBooksByLooseMath(final String chars) {
+		final List<Book> preparedList = Book.prepareListOfBooks();
 		final List<Book> sortedListOfBooks = new ArrayList<>();
 
 		preparedList.stream()

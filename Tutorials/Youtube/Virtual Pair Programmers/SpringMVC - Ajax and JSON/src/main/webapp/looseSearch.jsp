@@ -18,7 +18,7 @@
                     $('#results').text('');
 
                     for (var index in data) {
-                        $('#results').append(data[index].title);
+                        $('#results').append('<p>' + data[index].title + '</p>');
                     }
                 }
             );
