@@ -6,18 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>found-in-the-internet</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>found-in-the-internet</artifactId>
+    <artifactId>java-honk</artifactId>
     <packaging>pom</packaging>
-    <name>Found in the Internet</name>
+    <name>Java Honk</name>
 
     <modules>
-        <module>Java 8</module>
-        <module>JUnit</module>
-        <module>Java Honk</module>
+        <module>Spring MVC jQuery Autocomplete</module>
     </modules>
-
+    
 </project>
