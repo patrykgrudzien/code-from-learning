@@ -18,10 +18,11 @@ public class BookServiceImpl implements BookService {
 
 	@Override
 	public List<Book> searchBooksByLooseMath(final String chars) {
+		List<Book> preparedList = new ArrayList<>();
 		if (chars.length() == 0) {
-			return new ArrayList<>();
+			return preparedList;
 		}
-		final List<Book> preparedList = Book.prepareListOfBooks();
+		preparedList = Book.prepareListOfBooks();
 		final List<Book> sortedListOfBooks = new ArrayList<>();
 
 		preparedList.stream()
