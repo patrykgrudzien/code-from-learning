@@ -17,9 +17,9 @@
                     // the CALLBACK
                     $('#results').text('');
 
-                    for (var index in data) {
-                        $('#results').append('<p>' + data[index].title + '</p>');
-                    }
+                    data.forEach(book => {
+                        $('#results').append('<p>' + book.title + '</p>');
+                    });
                 }
             );
         }

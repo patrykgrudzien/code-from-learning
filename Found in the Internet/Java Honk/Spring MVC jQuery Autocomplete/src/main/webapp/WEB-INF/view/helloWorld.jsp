@@ -14,9 +14,7 @@
         $(function () {
             $("#tagsName").autocomplete({
                 source: function (request, response) {
-                    $.getJSON("${pageContext.request.contextPath}/getMatchedNames.web", {
-                        term: request.term
-                    }, response);
+                    $.getJSON("${pageContext.request.contextPath}/getMatchedNames.web", {term: request.term}, response);
                 }
             });
         });
