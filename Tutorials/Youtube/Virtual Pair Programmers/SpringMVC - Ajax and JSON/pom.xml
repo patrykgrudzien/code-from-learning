@@ -12,9 +12,10 @@
 
     <artifactId>spring-mvc-ajax-and-json</artifactId>
     <packaging>war</packaging>
-    <name>SpringMVC - Ajax and JSON</name>
+    <name>Spring MVC - Ajax and JSON</name>
 
     <build>
+        <finalName>Books Ajax Search</finalName>
         <sourceDirectory>${java.directory}</sourceDirectory>
         <resources>
             <resource>
@@ -25,18 +26,6 @@
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${war.plugin.version}</version>
-                <configuration>
-                    <webResources>
-                        <resource>
-                            <directory>${web.directory}</directory>
-                        </resource>
-                    </webResources>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -114,6 +103,16 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.databind.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.ui.version}</version>
         </dependency>
     </dependencies>
 
