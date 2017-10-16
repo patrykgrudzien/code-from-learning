@@ -24,7 +24,7 @@ public class MyDataSourceFactory {
 	 */
 
 	public static DataSource getPostgreSQLDataSource() {
-		Properties properties = new Properties();
+		final Properties properties = new Properties();
 		FileInputStream fileInputStream = null;
 
 		PGPoolingDataSource postgreSQLDataSource = null;

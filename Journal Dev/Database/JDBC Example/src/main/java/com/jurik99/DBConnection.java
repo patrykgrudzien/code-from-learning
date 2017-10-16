@@ -10,7 +10,7 @@ import java.util.Properties;
 public class DBConnection {
 
 	public static Connection getConnection() {
-		Properties properties = new Properties();
+		final Properties properties = new Properties();
 		FileInputStream fileInputStream = null;
 		Connection connection = null;
 

@@ -1,0 +1,31 @@
+---------- Java DataSource ----------
+Most of the times we are looking for loose coupling for connectivity so that we can switch databases easily, connection pooling
+for transaction management and distributed systems support. JDBC DataSource is the preffered approach if you are looking for
+any of these features in your application. Java DataSource interface is present in "javax.sql" package and it only declare TWO
+overloaded methods:
+- getConnection()
+- getConnection(String str1, String str2)
+
+---------- JDBC DataSource ----------
+It is the responsibility of different Database vendors to provide different kinds of implementation of DataSource interface.
+For example MySQL JDBC Driver provides basic implementation of DataSource interface with "com.mysql.jdbc.jdbc2.optional
+.MysqlDataSource" class and Oracle database driver implements it with "oracle.jdbc.pool.OracleDataSource" class.
+
+
+
+These implementation classes provide methods through which we can provide database server details with user credentials. Some
+of the other common features provided by these JSBC DataSource implementation classes are:
+- Caching of PreparedStatement for faster processing
+- Connection timeout settings
+- Logging features
+- ResultSet maximum size threshold
+
+
+
+The major benefit of Java DataSource is when it's used within a "Context" and with "JNDI".
+
+With simple configurations we can create a Database Connection Pool that is maintained by the "Container" itself. Most of the
+servlet containers such as Tomcat and JBoss provide it's own Java DataSource implementation and all we need is to configure it
+through simple XML based configurations and then use JNDI context "lookup" to get the Java DataSource and work with it. This
+helps us by taking care of connection pooling and management from our application side to server side and thus giving us more
+time to write business logic for the application.
