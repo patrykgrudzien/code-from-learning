@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>implementing-inheritance</artifactId>
+    <packaging>pom</packaging>
     <name>Implementing Inheritance</name>
 
     <build>

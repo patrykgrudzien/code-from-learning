@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>operations-on-databases-via-java-code</artifactId>
+    <packaging>pom</packaging>
     <name>Operations on Databases via Java Code</name>
 
     <build>

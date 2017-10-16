@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>one-to-one-mapping</artifactId>
+    <packaging>pom</packaging>
     <name>One to One Mapping</name>
 
     <build>

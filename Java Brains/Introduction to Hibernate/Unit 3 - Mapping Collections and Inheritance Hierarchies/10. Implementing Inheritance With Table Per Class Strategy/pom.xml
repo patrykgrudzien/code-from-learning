@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>implementing-inheritance-with-table-per-class-strategy</artifactId>
+    <packaging>pom</packaging>
     <name>Implementing Inheritance With Table Per Class Strategy</name>
 
     <build>

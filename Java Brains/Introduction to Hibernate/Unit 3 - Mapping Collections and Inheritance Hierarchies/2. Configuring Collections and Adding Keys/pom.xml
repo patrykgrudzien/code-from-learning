@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>configuring-collections-and-adding-keys</artifactId>
+    <packaging>pom</packaging>
     <name>Configuring Collections and Adding Keys</name>
 
     <build>

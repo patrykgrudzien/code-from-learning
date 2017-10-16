@@ -12,6 +12,7 @@
     </parent>
 
     <artifactId>home-and-office-addresses-inside-user-details</artifactId>
+    <packaging>pom</packaging>
     <name>Home and Office Addresses inside UserDetails</name>
 
     <build>

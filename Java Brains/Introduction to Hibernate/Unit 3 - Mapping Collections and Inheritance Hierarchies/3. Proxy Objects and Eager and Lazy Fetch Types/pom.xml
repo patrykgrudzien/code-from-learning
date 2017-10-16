@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>proxy-objects-and-eager-and-lazy-fetch-types</artifactId>
+    <packaging>pom</packaging>
     <name>Proxy Objects and Eager and Lazy Fetch Types</name>
 
     <build>

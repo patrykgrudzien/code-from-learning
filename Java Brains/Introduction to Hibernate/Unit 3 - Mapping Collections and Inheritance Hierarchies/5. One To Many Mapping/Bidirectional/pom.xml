@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>bidirectional-one-to-many</artifactId>
+    <packaging>pom</packaging>
     <name>Bidirectional One to Many</name>
 
     <build>

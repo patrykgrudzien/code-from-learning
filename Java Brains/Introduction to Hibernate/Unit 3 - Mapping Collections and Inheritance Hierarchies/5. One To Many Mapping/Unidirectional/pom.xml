@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>unidirectional-one-to-many</artifactId>
+    <packaging>pom</packaging>
     <name>Unidirectional One to Many</name>
 
     <build>

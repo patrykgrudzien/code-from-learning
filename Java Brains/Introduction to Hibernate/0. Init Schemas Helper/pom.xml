@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>init-schemas-helper</artifactId>
+    <packaging>pom</packaging>
     <name>Init Schemas Helper</name>
 
     <build>

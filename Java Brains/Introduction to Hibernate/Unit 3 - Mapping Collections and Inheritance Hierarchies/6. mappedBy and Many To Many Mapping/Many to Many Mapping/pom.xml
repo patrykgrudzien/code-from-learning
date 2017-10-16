@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>many-to-many-mapping</artifactId>
+    <packaging>pom</packaging>
     <name>Many to Many Mapping</name>
 
     <build>

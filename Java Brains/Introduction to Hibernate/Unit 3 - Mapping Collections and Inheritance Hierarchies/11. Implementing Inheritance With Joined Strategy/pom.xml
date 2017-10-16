@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>implementing-inheritance-with-joined-strategy</artifactId>
+    <packaging>pom</packaging>
     <name>Implementing Inheritance With Joined Strategy</name>
 
     <build>

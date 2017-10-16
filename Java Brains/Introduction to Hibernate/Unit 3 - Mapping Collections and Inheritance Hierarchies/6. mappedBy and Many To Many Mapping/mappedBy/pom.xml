@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>mapped-by</artifactId>
+    <packaging>pom</packaging>
     <name>mappedBy</name>
 
     <build>

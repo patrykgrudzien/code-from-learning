@@ -12,6 +12,7 @@
     </parent>
 
     <artifactId>embedded-id-annotation</artifactId>
+    <packaging>pom</packaging>
     <name>EmbeddedId annotation</name>
 
     <build>

@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>20-call-java-class-from-jsp</artifactId>
+    <packaging>war</packaging>
     <name>20. Call Java Class from JSP</name>
 
     <build>

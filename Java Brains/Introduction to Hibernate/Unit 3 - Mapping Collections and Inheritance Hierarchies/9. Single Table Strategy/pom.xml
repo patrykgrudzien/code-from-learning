@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>single-table-strategy</artifactId>
+    <packaging>pom</packaging>
     <name>Single Table Strategy</name>
 
     <build>
