@@ -4,12 +4,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-public class ViewResolverConfig extends WebMvcConfigurerAdapter {
+/*
+ *  "WebMvcConfigurerAdapter" abstract class has been DEPRECATED cause now in "WebMvcConfigurer" interface we have a lot of
+ *  default methods which can be simply OVERRIDEN :)
+ */
+public class ViewResolverConfig implements WebMvcConfigurer {
 
 	@Bean
 	public InternalResourceViewResolver viewResolver() {

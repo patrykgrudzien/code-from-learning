@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>creating-custom-validation-rules</artifactId>
+    <packaging>war</packaging>
     <name>3. Creating Custom Validation Rules</name>
 
     <build>

@@ -41,19 +41,6 @@ public class CustomerController {
 
 		log.info("Last name: |" + customer.getLastName() + "|");
 
-		// --- Printing informations provided by "BindingResult" object ---
-		System.out.println("\n");
-		System.out.println("Binding result: " + bindingResult);
-		/*
-		 * Field error in object 'customer' on field 'freePasses':
-		 * rejected value [fadasdasd];
-		 * codes [typeMismatch.customer.freePasses, typeMismatch.freePasses, typeMismatch.java.lang.Integer, typeMismatch];
-		 *
-		 * typeMismatch.customer.freePasses - SPECIFIC ERROR listed on the left hand side
-		 * typeMismatch - GENERIC ERROR listed at the end of "CODES" list
-		 */
-		System.out.println("\n");
-
 		if (bindingResult.hasErrors()) {
 			log.error("Customer object is not valid. Please specify required input fields.");
 			return "customer-form";
