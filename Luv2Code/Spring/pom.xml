@@ -18,7 +18,7 @@
         <module>Spring CORE</module>
         <module>Spring MVC</module>
         <module>Spring MVC Form Validation</module>
-        <module>Spring MVC and Hibernate CRUD</module>
+        <module>Build a Database Web App - Spring MVC and Hibernate Project</module>
     </modules>
 
     <dependencies>

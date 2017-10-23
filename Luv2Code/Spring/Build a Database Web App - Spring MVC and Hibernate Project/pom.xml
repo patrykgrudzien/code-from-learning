@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>spring-MVC-Hibernate-CRUD</artifactId>
-    <name>Spring MVC and Hibernate CRUD</name>
+    <artifactId>build-a-database-web-app-spring-MVC-and-hibernate-project</artifactId>
+    <name>Build a Database Web App - Spring MVC and Hibernate Project</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
