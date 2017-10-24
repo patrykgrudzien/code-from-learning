@@ -1,0 +1,5 @@
+Session:
+- Wraps a JDBC connection
+- Main object used to save-retrieve objects
+- Short-lived object
+- Retrieved from SessionFactory

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>spring-all-courses</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>hibernate-luv2code-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>HIbernate Luv2Code</name>
+
+    <modules>
+        <module>Setting Up Hibernate Development Environment</module>
+        <module>Hibernate Configuration with Annotations</module>
+        <module>Hibernate CRUD Features - Create, Read, Update and Delete</module>
+    </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgre.sql.jdbc.version}</version>
+        </dependency>
+    </dependencies>
+    
+</project>
