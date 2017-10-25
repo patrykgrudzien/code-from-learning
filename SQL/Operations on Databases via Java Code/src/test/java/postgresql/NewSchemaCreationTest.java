@@ -10,7 +10,7 @@ public class NewSchemaCreationTest
 {
 	public static void main(final String[] args)
 	{
-		final User postgreSQLUser = UserFactory.getSpecificUser(UserType.POSTGRESQL,
+		final User postgreSQLUser = UserFactory.getSpecificUser(UserType.POSTGRESQL, "postgres",
 		                                                        DatabaseProperties.PostgreSQL.ROOT_USER,
 		                                                        DatabaseProperties.PostgreSQL.ROOT_PASSWORD);
 

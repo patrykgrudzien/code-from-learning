@@ -18,7 +18,7 @@ public class RootConnectionTest
 
 	public static void main(final String[] args)
 	{
-		final User postgreSqlUser = UserFactory.getSpecificUser(UserType.POSTGRESQL,
+		final User postgreSqlUser = UserFactory.getSpecificUser(UserType.POSTGRESQL, "postgres",
 		                                                        DatabaseProperties.PostgreSQL.ROOT_USER,
 		                                                        DatabaseProperties.PostgreSQL.ROOT_PASSWORD);
 		Connection rootConnection = null;

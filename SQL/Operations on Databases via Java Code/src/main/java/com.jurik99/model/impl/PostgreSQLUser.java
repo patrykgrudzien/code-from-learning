@@ -18,9 +18,11 @@ public class PostgreSQLUser extends User
 
 	private String postrgreSqlUserName;
 	private String postrgreSqlUserPassword;
+	private String databaseName;
 
-	public PostgreSQLUser(final String postrgreSqlUserName, final String postrgreSqlUserPassword)
+	public PostgreSQLUser(final String databaseName, final String postrgreSqlUserName, final String postrgreSqlUserPassword)
 	{
+		this.databaseName = databaseName;
 		this.postrgreSqlUserName = postrgreSqlUserName;
 		this.postrgreSqlUserPassword = postrgreSqlUserPassword;
 	}
@@ -62,9 +64,14 @@ public class PostgreSQLUser extends User
 	}
 
 	@Override
+	public String getDatabaseName() {
+		return databaseName;
+	}
+
+	@Override
 	public String getDatabaseRootURL()
 	{
-		return DatabaseProperties.PostgreSQL.DB_ROOT_URL;
+		return String.format("jdbc:postgresql://localhost:5432/%s?useSSL=false", getDatabaseName());
 	}
 
 	@Override

@@ -26,9 +26,11 @@ public class MySQLUser extends User
 
 	private String mySqlUserName;
 	private String mySqlUserPassword;
+	private String databaseName;
 
-	public MySQLUser(final String mySqlUserName, final String mySqlUserPassword)
+	public MySQLUser(final String databaseName, final String mySqlUserName, final String mySqlUserPassword)
 	{
+		this.databaseName = databaseName;
 		this.mySqlUserName = mySqlUserName;
 		this.mySqlUserPassword = mySqlUserPassword;
 	}
@@ -61,6 +63,11 @@ public class MySQLUser extends User
 	public String getJdbcDriver()
 	{
 		return DatabaseProperties.MySQL.JDBC_DRIVER;
+	}
+
+	@Override
+	public String getDatabaseName() {
+		return databaseName;
 	}
 
 	@Override

@@ -8,7 +8,7 @@ public class NewUserCreationTest
 {
 	public static void main(final String[] args)
 	{
-		final User mySqlUser = UserFactory.getSpecificUser(UserType.MYSQL,
+		final User mySqlUser = UserFactory.getSpecificUser(UserType.MYSQL, "postgres",
 		                                                   "provide user name!",
 		                                                   "provide user password");
 		mySqlUser.createNewUser();

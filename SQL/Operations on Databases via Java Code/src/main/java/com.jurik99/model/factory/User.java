@@ -27,6 +27,8 @@ public abstract class User
 
 	public abstract String getJdbcDriver();
 
+	public abstract String getDatabaseName();
+
 	public abstract String getDatabaseGenericURL();
 
 	public abstract String getDatabaseRootURL();

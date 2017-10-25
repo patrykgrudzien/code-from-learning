@@ -16,7 +16,7 @@ public class RootConnectionTest
 	@SuppressWarnings("Duplicates")
 	public static void main(final String[] args)
 	{
-		final User mySqlUser = UserFactory.getSpecificUser(UserType.MYSQL, DatabaseProperties.MySQL.ROOT_USER,
+		final User mySqlUser = UserFactory.getSpecificUser(UserType.MYSQL, "postgres", DatabaseProperties.MySQL.ROOT_USER,
 		                                                   DatabaseProperties.MySQL.ROOT_PASSWORD);
 		Connection rootConnection = null;
 		Statement statement = null;
