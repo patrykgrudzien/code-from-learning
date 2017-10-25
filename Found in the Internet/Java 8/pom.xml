@@ -15,6 +15,7 @@
 
     <modules>
         <module>FlatMap example</module>
+        <module>Function Examples javabrahman</module>
     </modules>
     
 </project>
