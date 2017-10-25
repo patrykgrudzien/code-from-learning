@@ -27,6 +27,11 @@
             <artifactId>postgresql</artifactId>
             <version>${postgre.sql.jdbc.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.jurik99</groupId>
+            <artifactId>init-schemas-helper</artifactId>
+            <version>1.0 Version</version>
+        </dependency>
     </dependencies>
-    
+
 </project>

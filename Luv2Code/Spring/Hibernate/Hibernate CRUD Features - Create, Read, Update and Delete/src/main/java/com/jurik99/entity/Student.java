@@ -1,6 +1,5 @@
 package com.jurik99.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,15 +10,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.jurik99.Constants;
+import static com.jurik99.Constants.Schemas.CONFIGURATION_WITH_ANNOTATIONS;
 
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
 @Entity
-@Table(name = "student", schema = Constants.Schemas.CONFIGURATION_WITH_ANNOTATIONS)
+@Table(name = "student", schema = CONFIGURATION_WITH_ANNOTATIONS)
 public class Student {
 
 	@Id
@@ -34,4 +32,10 @@ public class Student {
 
 	@Column(name = "email")
 	private String email;
+
+	public Student(final String firstName, final String lastName, final String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
 }
