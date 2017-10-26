@@ -12,7 +12,7 @@
         <property name="connection.url">jdbc:postgresql://localhost:5432/luv2code</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">password</property>
-        <property name="hibernate.default_schema">configuration_with_annotations</property>
+        <property name="hibernate.default_schema">creating_and_saving_java_objects</property>
 
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>

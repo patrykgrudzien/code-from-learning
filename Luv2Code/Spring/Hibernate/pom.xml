@@ -16,7 +16,7 @@
 
     <modules>
         <module>Setting Up Hibernate Development Environment</module>
-        <module>Hibernate Configuration with Annotations</module>
+        <module>Configuration with Annotations</module>
         <module>Hibernate CRUD Features - Create, Read, Update and Delete</module>
     </modules>
 

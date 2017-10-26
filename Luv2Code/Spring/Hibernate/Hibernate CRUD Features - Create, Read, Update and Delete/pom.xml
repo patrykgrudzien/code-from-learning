@@ -14,16 +14,9 @@
     <packaging>pom</packaging>
     <name>Hibernate CRUD Features - Create, Read, Update and Delete</name>
 
-    <build>
-        <sourceDirectory>${java.directory}</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${resources.directory}</directory>
-            </resource>
-        </resources>
-        <testSourceDirectory>${test.directory}</testSourceDirectory>
-        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${target.directory}</outputDirectory>
-    </build>
+    <modules>
+        <module>Creating and Saving Java Objects</module>
+        <module>Primary Keys</module>
+    </modules>
 
 </project>

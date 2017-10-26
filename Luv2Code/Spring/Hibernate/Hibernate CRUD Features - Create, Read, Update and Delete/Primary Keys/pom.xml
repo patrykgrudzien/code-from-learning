@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>hibernate-luv2code-parent</artifactId>
+        <artifactId>hibernate-crud-features-create-read-update-and-delete</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>hibernate-configuration-with-annotations</artifactId>
+    <artifactId>primry-keys</artifactId>
     <packaging>pom</packaging>
-    <name>Hibernate Configuration with Annotations</name>
+    <name>Primary Keys</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
