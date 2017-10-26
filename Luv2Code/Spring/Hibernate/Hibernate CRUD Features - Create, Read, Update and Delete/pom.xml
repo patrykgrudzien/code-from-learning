@@ -17,6 +17,7 @@
     <modules>
         <module>Creating and Saving Java Objects</module>
         <module>Primary Keys</module>
+        <module>Reading Objects</module>
     </modules>
 
 </project>

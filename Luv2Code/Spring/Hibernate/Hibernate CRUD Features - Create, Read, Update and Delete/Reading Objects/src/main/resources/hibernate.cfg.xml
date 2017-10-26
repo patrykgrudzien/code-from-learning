@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <!-- jdbc:postgresql://HOST:PORT/DATABASE -->
+        <property name="connection.url">jdbc:postgresql://localhost:5432/luv2code</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">password</property>
+        <property name="hibernate.default_schema">reading_objects</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL Dialect -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQL91Dialect</property>
+
+        <!-- Disable the second-level cache -->
+        <!--
+            "NoCacheProvider" has been deprecated for quiet long time.
+            "org.hibernate.cache.internal.NoCachingRegionFactory" is the "no caching" equivalent !!!
+         -->
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCachingRegionFactory</property>
+
+        <!-- Echo the SQL to System.out.println() -->
+        <property name="show_sql">true</property>
+
+        <!-- Set the current session context -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Names for the annotated entity classes -->
+        <mapping package="com.jurik99.entity"/>
+
+    </session-factory>
+</hibernate-configuration>
