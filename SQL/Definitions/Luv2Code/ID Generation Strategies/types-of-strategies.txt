@@ -1,0 +1,11 @@
+-------- GenerationType.AUTO --------
+Pick an appropriate strategy for the particular database
+
+-------- GenerationType.IDENTITY --------
+Assign primary keys using database identity column
+
+-------- GenerationType.SEQUENCE --------
+Assign primary keys using a database sequence
+
+-------- GenerationType.TABLE --------
+Assign primary keys using an underlying database table to ensure uniqueness
