@@ -1,0 +1,8 @@
+-------- More on Foreign Key --------
+* Main purpose is to preserve relationship between tables
+    - Referential Integrity
+
+* Prevents operations that would destroy relationship
+
+* Ensures only valid data is inserted into the foreign key column
+    - Can only contain valid reference to primary key in other table
