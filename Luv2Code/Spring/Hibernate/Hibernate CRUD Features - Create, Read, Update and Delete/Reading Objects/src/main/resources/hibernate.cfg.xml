@@ -9,7 +9,7 @@
         <!-- Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <!-- jdbc:postgresql://HOST:PORT/DATABASE -->
-        <property name="connection.url">jdbc:postgresql://localhost:5432/luv2code</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/luv2code?useSSL=false</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">password</property>
         <property name="hibernate.default_schema">reading_objects</property>
