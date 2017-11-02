@@ -1,0 +1,9 @@
+Jest to taka cecha oprogramowania, która charakteryzuje jego zdolności do wydajnego działania przy wzrastającym obciążeniu. Np.
+załóżmy, że mamy super serwis randkowy który ma 1000 użytkowników i generuje strony w 50ms. Po jakimś czasie serwis robi się
+popularny i przychodzi do niego kolejnych 1000 użytkowników. Byłoby dobrze jakby strony generowały się w powiedzmy w czasie
+100-200ms, ale generują się w 5000ms co niestety wskazuje na jego słabą SKALOWALNOŚĆ. Oczywiście ze wzrostem obciążenia
+zbliżamy się do limitu jaki może uciągnąć serwer, więc decydujemy się na wymianę starego, zasłużonego na nowy, dwa razy lepszy.
+To jak aplikacja będzie się spisywać na nowym serwerze też określa jego skalowalność. Jeśli nadal strony będą się generować
+powoli przy takim obciążeniu to znaczy, że coś skopaliśmy przy implementacji, jeśli jest znowu fajnie i 50ms to znaczy, że
+aplikacja daje radę :)
+Podsumowując skalowalność to także łatwość w rozszerzaniu aplikacji lub jej architektury celem zwiększenia wydajności.
