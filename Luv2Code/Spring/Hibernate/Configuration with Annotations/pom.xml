@@ -15,6 +15,7 @@
     <name>Configuration with Annotations</name>
 
     <build>
+        <finalName>Configuration with Annotations</finalName>
         <sourceDirectory>${java.directory}</sourceDirectory>
         <resources>
             <resource>

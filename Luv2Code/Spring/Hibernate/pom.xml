@@ -18,6 +18,7 @@
         <module>Setting Up Hibernate Development Environment</module>
         <module>Configuration with Annotations</module>
         <module>Hibernate CRUD Features - Create, Read, Update and Delete</module>
+        <module>HIbernate Advanced Mappings - OneToOne</module>
     </modules>
 
     <dependencies>
