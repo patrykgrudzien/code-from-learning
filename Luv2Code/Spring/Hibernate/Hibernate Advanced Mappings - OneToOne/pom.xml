@@ -13,7 +13,7 @@
 
     <artifactId>hibernate-advanced-mappings-one-to-one</artifactId>
     <packaging>pom</packaging>
-    <name>HIbernate Advanced Mappings - OneToOne</name>
+    <name>Hibernate Advanced Mappings - OneToOne</name>
 
     <build>
         <finalName>Hibernate Advanced Mappings - OneToOne</finalName>
