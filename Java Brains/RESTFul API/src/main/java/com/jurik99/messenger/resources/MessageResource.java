@@ -70,7 +70,7 @@ public class MessageResource
 	}
 
 	/*
-	* USING RESPOSNE INSTEAD OF RETURNING SIMPLE "MESSAGE" OBJECT
+	* USING RESPONSE INSTEAD OF RETURNING SIMPLE "MESSAGE" OBJECT
 	*/
 	@POST
 	public Response addMessage(final Message message, @Context final UriInfo uriInfo) throws URISyntaxException
@@ -98,6 +98,7 @@ public class MessageResource
 		messageService.removeMessage(messageId);
 	}
 
+	@SuppressWarnings("Duplicates")
 	@GET
 	@Path("/{messageId}")
 	public Message getMessage(@PathParam("messageId") final long messageId, @Context final UriInfo uriInfo)
