@@ -1,0 +1,5 @@
+A "MESSAGE-DRIVEN BEAN" is an enterprise bean that allows Java EE applications to process messages asynchronously. It normally
+acts as a JMS message listener, which is similar to an event listener except that it receives JMS messages instead of events.
+The messages can be sent by any Java EE component (an application client, another enterprise bean, or a web component) or by a
+JMS application or system that does not use Java EE technology. Message-driven beans can process JMS messages or other kind of
+messages.
