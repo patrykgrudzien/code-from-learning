@@ -1,0 +1,1 @@
+AUTORYZACJA - to stwierdzenie czy możesz uzyskać dostęp do jakiegoś zasobu, czyli np. ustawienie uprawnień dla użytkowników / grup
