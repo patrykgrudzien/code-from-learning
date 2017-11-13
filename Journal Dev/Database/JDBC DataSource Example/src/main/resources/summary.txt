@@ -1,0 +1,8 @@
+If you look at the JDBC DataSource and it's usage, it can be done with normal DriverManager too. The major benefit of Java
+DataSource is when it's used within a CONTEXT and with JNDI.
+
+With simple configurations we can create a DATABASE CONNECTION POOL that is maintained by the CONTAINER itself. Most of the
+servlet containers such as TOMCAT and JBOSS provide it's own JAVA DATASOURCE implementation and all we need is to configure it
+through simple XML based configurations and then use JNDI context lookup to get the Java DataSource and work with it. This
+helps us by taking care of connection pooling and management from our application side to server side and thus giving us more
+time to write business logic for the application.
