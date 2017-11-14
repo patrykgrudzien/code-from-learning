@@ -23,25 +23,21 @@
         <dependency>
             <groupId>org.hornetq</groupId>
             <artifactId>hornetq-core</artifactId>
-            <version>${hornetq.core.version}</version>
         </dependency>
         <!-- CLIENT -->
         <dependency>
             <groupId>org.hornetq</groupId>
             <artifactId>hornetq-jms-client</artifactId>
-            <version>${hornet.jms.client.version}</version>
         </dependency>
         <!-- SERVER -->
         <dependency>
             <groupId>org.hornetq</groupId>
             <artifactId>hornetq-jms-server</artifactId>
-            <version>${hornetq.jms.server.version}</version>
         </dependency>
         <!-- JMS API -->
         <dependency>
             <groupId>javax.jms</groupId>
             <artifactId>javax.jms-api</artifactId>
-            <version>${javax.jms.api.version}</version>
         </dependency>
     </dependencies>
 
