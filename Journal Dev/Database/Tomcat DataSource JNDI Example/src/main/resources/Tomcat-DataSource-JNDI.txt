@@ -1,0 +1,31 @@
+Actual benefit of DataSource comes when we use it with a JNDI Context. For example, connection pool in a web application deployed
+in a servlet container. Most of the popular servlet containers provide built-in support for DataSource through Resource
+configuration and JNDI context. This helps us in creating and using DataSource connection pool with just few lines
+of configuration.
+
+Apache Tomcat provide three ways to configure DataSource in JNDI context:
+
+1) Application context.xml – This is the easiest way to configure DataSource, all we need is a context.xml file in META-INF
+directory. We have to define Resource element in the context file and container will take care of loading and configuring it.
+The approach is simple but it has some drawbacks:
+
+    (*) Since the context file is bundled with the WAR file, we need to build and deploy new WAR for every small
+    configuration change. Same issue comes if your application works in distributed environment or your application needs to be
+    deployed in different testing environments such as QA, IT, PROD etc.
+
+    (*) The datasource is created by container for the application usage only, so it can’t be used globally. We can’t share the
+    datasource across multiple applications.
+
+    (*) If there is a global datasource (server.xml) defined with same name, the application datasource is ignored.
+
+2) Server context.xml – If there are multiple applications in the server and you want to share DataSource across them, we can
+define that in the server context.xml file. This file is located in apache-tomcat/conf directory. The scope of server context.xml
+file is application, so if you define a DataSource connection pool of 100 connections and there are 20 applications then the
+datasource will be created for each of the application. This will result in 2000 connections that will obviously consume all the
+database server resources and hurt application performance.
+
+3) server.xml and context.xml – We can define DataSource at global level by defining them in the server.xml
+GlobalNamingResources element. If we use this approach, then we need to define a ResourceLink from context.xml file of server
+or application specific. This is the preferred way when you are looking to share a common resource pool across multiple
+applications running on the server. Regarding resource link, whether to define it at server level context xml file or
+application level depends on your requirement.
