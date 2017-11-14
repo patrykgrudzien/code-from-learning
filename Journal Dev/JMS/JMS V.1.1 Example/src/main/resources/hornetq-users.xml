@@ -5,7 +5,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:hornetq /schema/hornetq-users.xsd">
 
-    <!-- Configure one user in “hornetq-users.xml”t o run this program -->
+    <!-- Configure one user in “hornetq-users.xml” to run this program -->
     <defaultuser name="jduser" password="jduser">
         <role name="jduser"/>
     </defaultuser>
