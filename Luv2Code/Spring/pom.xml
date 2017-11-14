@@ -118,6 +118,10 @@
             <artifactId>hibernate-validator-cdi</artifactId>
             <version>${hibernate.validator.cdi.version}</version>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

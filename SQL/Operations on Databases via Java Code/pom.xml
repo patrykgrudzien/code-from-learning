@@ -37,6 +37,10 @@
             <artifactId>log4j-configuration</artifactId>
             <version>1.0 Version</version>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
