@@ -36,7 +36,7 @@ public class EmbeddedHornetQJMSExample {
 
 				// --- 2. Consumer Code Start ---
 				final MessageConsumer consumer = session.createConsumer(queue);
-				connection.start();     // VERY IMPORTANT !!!
+				connection.start();     // VERY IMPORTANT -> ONLY IN JMS API 1.1 !!!
 				final TextMessage messageReceived = (TextMessage) consumer.receive(1000);
 				System.out.println("Received message: " + messageReceived.getText());
 			}
