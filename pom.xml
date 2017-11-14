@@ -84,11 +84,6 @@
             <version>${mockito.all.version}</version>
         </dependency>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.jcabi</groupId>
             <artifactId>jcabi-log</artifactId>
             <version>${jcabi.log.version}</version>
@@ -106,6 +101,16 @@
         </dependency>
 
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <properties>
         <!-- MODULES STRUCTURE PROPERTIES -->
@@ -183,6 +188,12 @@
 
         <swagger2.version>2.7.0</swagger2.version>
         <swagger.ui.version>${swagger2.version}</swagger.ui.version>
+
+        <!-- JMS with JBoss Embedded HornetQ JMS Server -->
+        <hornetq.core.version>2.3.0.BETA1</hornetq.core.version>
+        <hornet.jms.client.version>2.4.7.Final</hornet.jms.client.version>
+        <hornetq.jms.server.version>2.4.7.Final</hornetq.jms.server.version>
+        <javax.jms.api.version>2.0.1</javax.jms.api.version>
     </properties>
 
 </project>
