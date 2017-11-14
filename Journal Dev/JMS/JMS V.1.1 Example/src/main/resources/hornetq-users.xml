@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress XmlPathReference -->
+<configuration
+        xmlns="urn:hornetq"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:hornetq /schema/hornetq-users.xsd">
+
+    <!-- Configure one user in “hornetq-users.xml”t o run this program -->
+    <defaultuser name="jduser" password="jduser">
+        <role name="jduser"/>
+    </defaultuser>
+    <!-- Here we have defined one user "jduser" to use him in HornetQ Configuration XML file to configure Security -->
+
+</configuration>
