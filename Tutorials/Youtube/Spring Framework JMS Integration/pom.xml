@@ -16,6 +16,7 @@
 
     <modules>
         <module>Core JMS Asynchronous</module>
+        <module>Spring JMS Send Only</module>
     </modules>
 
     <dependencyManagement>
