@@ -196,6 +196,7 @@
         <hornetq.jms.server.version>2.4.7.Final</hornetq.jms.server.version>
         <javax.jms.api.version>2.0.1</javax.jms.api.version>
 
+        <activemq.all.version>5.15.2</activemq.all.version>
     </properties>
 
 </project>
