@@ -140,8 +140,9 @@
         <hamcrest.version>1.3</hamcrest.version>
         <mockito.all.version>1.10.19</mockito.all.version>
         <mysql.connector.version>5.1.39</mysql.connector.version>
-        <spring.version>5.0.0.RELEASE</spring.version>
+        <spring.framework.version>5.0.0.RELEASE</spring.framework.version>
         <spring.security.version>4.2.2.RELEASE</spring.security.version>
+        <spring.jms.version>4.3.12.RELEASE</spring.jms.version>
         <postgre.sql.jdbc.version>9.1-901.jdbc4</postgre.sql.jdbc.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
         <jsp.jstl.api.version>1.2.1</jsp.jstl.api.version>
@@ -194,6 +195,7 @@
         <hornet.jms.client.version>2.4.7.Final</hornet.jms.client.version>
         <hornetq.jms.server.version>2.4.7.Final</hornetq.jms.server.version>
         <javax.jms.api.version>2.0.1</javax.jms.api.version>
+
     </properties>
 
 </project>
