@@ -134,6 +134,7 @@
         <liquibase.plugin.version>3.4.2</liquibase.plugin.version>
         <archetype.plugin.version>3.0.1</archetype.plugin.version>
         <tomcat.7.plugin.version>2.2</tomcat.7.plugin.version>
+        <maven.jar.plugin.version>3.0.2</maven.jar.plugin.version>
 
         <!-- DEPENDENCIES VERSIONS -->
         <junit.version>4.12</junit.version>

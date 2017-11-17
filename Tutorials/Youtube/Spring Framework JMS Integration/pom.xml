@@ -17,6 +17,7 @@
     <modules>
         <module>Core JMS Asynchronous</module>
         <module>Spring JMS Send Only</module>
+        <module>Basic JMS Chat</module>
     </modules>
 
     <dependencyManagement>
