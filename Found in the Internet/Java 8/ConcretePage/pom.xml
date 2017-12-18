@@ -6,17 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>found-in-the-internet</artifactId>
+        <artifactId>java-8-found-in-the-internet</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>java-8-found-in-the-internet</artifactId>
+    <artifactId>ConcretePage</artifactId>
     <packaging>pom</packaging>
+    <name>ConcretePage</name>
 
     <modules>
-        <module>FlatMap example</module>
-        <module>Java Brahman</module>
-        <module>ConcretePage</module>
+        <module>BiConsumer-BiFunction-BiPredicate</module>
     </modules>
-    
+
 </project>
