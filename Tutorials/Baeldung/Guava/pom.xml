@@ -7,17 +7,24 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>tutorials</artifactId>
+        <artifactId>baeldung</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>baeldung</artifactId>
-    <name>Baeldung</name>
+    <artifactId>guava</artifactId>
+    <name>Guava</name>
     <packaging>pom</packaging>
 
     <modules>
-        <module>Mockito Annotations</module>
-        <module>Guava</module>
+        <module>Guava List</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

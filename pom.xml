@@ -199,6 +199,7 @@
         <javax.jms.api.version>2.0.1</javax.jms.api.version>
 
         <activemq.all.version>5.15.2</activemq.all.version>
+        <guava.version>19.0</guava.version>
     </properties>
 
 </project>
