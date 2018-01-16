@@ -7,18 +7,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>tutorials</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>tutorials</artifactId>
-    <name>Tutorials</name>
+    <artifactId>baeldung</artifactId>
+    <name>Baeldung</name>
     <packaging>pom</packaging>
 
     <modules>
-        <module>Youtube</module>
-        <module>Tutorials Point</module>
-        <module>Baeldung</module>
+        <module>Mockito Annotations</module>
     </modules>
-    
+
 </project>

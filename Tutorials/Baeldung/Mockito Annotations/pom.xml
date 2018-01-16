@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>tutorials</artifactId>
+        <artifactId>baeldung</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>baeldung-mockito-annotations</artifactId>
-    <name>Baeldung Mockito Annotations</name>
+    <artifactId>mockito-annotations</artifactId>
+    <name>Mockito Annotations</name>
     <packaging>pom</packaging>
-    <url>http://www.baeldung.com/mockito-annotations</url>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -27,5 +25,6 @@
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
     </build>
+
 
 </project>
