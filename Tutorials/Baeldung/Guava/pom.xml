@@ -17,6 +17,7 @@
 
     <modules>
         <module>Guava List</module>
+        <module>guava-write-to-file-read-from-file</module>
     </modules>
 
     <dependencies>
