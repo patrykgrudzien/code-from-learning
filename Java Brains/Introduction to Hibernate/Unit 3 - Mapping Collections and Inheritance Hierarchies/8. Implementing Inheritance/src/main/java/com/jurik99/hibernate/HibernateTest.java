@@ -33,7 +33,8 @@ public class HibernateTest
 		 * SECOND REASON - e.g. later on we change Vehicle class (we add some additional field). What will happen
 		 * thanks to Java inheritance? -> All sub-class will automatically get that NEWLY CREATED FIELD.
 		 */
-		PostgreSqlSchemasInitializer.initSchemaInDatabase(SchemaNames.Unit3.IMPLEMENTING_INHERITANCE_SCHEMA);
+		// TODO: update with proper database name
+		PostgreSqlSchemasInitializer.initSchemaInDatabase("", SchemaNames.Unit3.IMPLEMENTING_INHERITANCE_SCHEMA);
 
 		final Vehicle vehicle = new Vehicle();
 		vehicle.setVehicleName("Car");

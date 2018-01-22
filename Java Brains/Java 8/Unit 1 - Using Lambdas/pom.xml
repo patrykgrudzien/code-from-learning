@@ -17,14 +17,6 @@
     <packaging>pom</packaging>
     <name>Using Lambdas</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>unit-1-using-lambdas</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
         <resources>

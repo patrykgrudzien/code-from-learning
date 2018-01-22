@@ -14,7 +14,8 @@ public class HibernateTest
 {
 	public static void main(final String[] args)
 	{
-		PostgreSqlSchemasInitializer.initSchemaInDatabase(SchemaNames.Unit3.CASCADE_SCHEMA);
+		// TODO: update with proper database name
+		PostgreSqlSchemasInitializer.initSchemaInDatabase("", SchemaNames.Unit3.CASCADE_SCHEMA);
 
 		final UserDetails user1 = new UserDetails();
 		user1.setUserName("First User");

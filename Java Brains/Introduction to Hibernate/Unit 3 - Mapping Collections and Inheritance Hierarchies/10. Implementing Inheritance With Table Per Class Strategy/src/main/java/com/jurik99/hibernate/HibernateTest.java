@@ -15,7 +15,8 @@ public class HibernateTest
 {
 	public static void main(final String[] args)
 	{
-		PostgreSqlSchemasInitializer.initSchemaInDatabase(SchemaNames.Unit3.TABLE_PER_CLASS_STRATEGY_SCHEMA);
+		// TODO: update with proper database name
+		PostgreSqlSchemasInitializer.initSchemaInDatabase("", SchemaNames.Unit3.TABLE_PER_CLASS_STRATEGY_SCHEMA);
 
 		final Vehicle vehicle = new Vehicle();
 		vehicle.setVehicleName("Car");
