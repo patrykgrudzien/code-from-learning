@@ -142,6 +142,7 @@
         <hamcrest.version>1.3</hamcrest.version>
         <mockito.all.version>1.10.19</mockito.all.version>
         <mysql.connector.version>5.1.39</mysql.connector.version>
+        <spring.boot.version>1.5.2.RELEASE</spring.boot.version>
         <spring.framework.version>5.0.0.RELEASE</spring.framework.version>
         <spring.security.version>4.2.2.RELEASE</spring.security.version>
         <spring.jms.version>4.3.12.RELEASE</spring.jms.version>
