@@ -1,6 +1,6 @@
 package com.jurik99.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
@@ -9,11 +9,10 @@ import java.util.List;
 import com.jurik99.model.Topic;
 
 @RestController
-public class TopicController
-{
-	@RequestMapping("/topics")
-	public List<Topic> getAllTopics()
-	{
+public class TopicController {
+
+	@GetMapping("/topics")
+	public List<Topic> getAllTopics() {
 		// --- List<Topic> as returned object will be automatically converted into JSON format by Spring MVC ---
 		return Arrays.asList(new Topic("spring", "Spring Framework", "Spring Framework Description"),
 		                     new Topic("java", "Core Java", "Core Java Description"),
