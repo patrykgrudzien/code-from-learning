@@ -1,4 +1,4 @@
-JPA = Java Persistence API
+JPA = Java Persistence API (specification)
 ORM = Object Relational Mapping (Class <-> Table)
 
 Spring Data JPA is a separate project, which lets you make working with that ORM tools easier.
