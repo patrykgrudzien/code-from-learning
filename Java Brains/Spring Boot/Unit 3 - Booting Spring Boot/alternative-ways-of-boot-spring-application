@@ -2,4 +2,5 @@
 2) Spring Boot CLI ( Command Line Interface ) - it allows you to run "Groovy" scripts, which means that you have
    a familiar Java-like syntax, without so much boilerplate code.
 3) Using IDE
-4) Customize Spring Boot using "application.properties" in resources folder in classpath
+4) Customize Spring Boot using "application.properties" in resources folder in classpath (testing it in Unit 2 - just to avoid
+   copy/paste here whole files and duplicate them)
