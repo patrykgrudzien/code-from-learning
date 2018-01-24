@@ -64,6 +64,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <!-- For monitoring and managing my application -->
+        <!-- We can make a request to -> http://localhost:8080/health to check information about my service -->
+        <!-- management.port in "application.properties" to change this "health" port (see Unit 5) -->
+        <!-- For many more ENDPOINTS available in ACTUATOR -> look into project documentation -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!-- DEVTOOL -->
         <dependency>
             <!-- replacement for paid JRebel -->
             <groupId>org.springframework.boot</groupId>
