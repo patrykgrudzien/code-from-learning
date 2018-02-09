@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -14,30 +15,29 @@
     <packaging>war</packaging>
     <name>Spring-Security</name>
 
+    <!-- IMPORTANT NOTE HERE !!! -->
+
+    <!-- to make whole project working we must have correct versions of spring dependency -->
+    <!-- in this case (CORE has 5.0.3.RELEASE) and (SECURITY 5.0.1.RELEASE) -->
+
+    <!-- IMPORTANT NOTE HERE !!! -->
+
     <build>
-        <sourceDirectory>${java.directory}</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${resources.directory}</directory>
-            </resource>
-        </resources>
-        <testSourceDirectory>${test.directory}</testSourceDirectory>
-        <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${target.directory}</outputDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${war.plugin.version}</version>
-                <configuration>
-                    <webResources>
-                        <resource>
-                            <directory>${web.directory}</directory>
-                        </resource>
-                    </webResources>
-                </configuration>
-            </plugin>
-        </plugins>
+        <finalName>spring-security-demo</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <!-- we are gonna remove xml configuration and we need to configure maven build here -->
+                    <!-- instead maven will complain that web.xml IS MISSING -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${war.plugin.version}</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 </project>
