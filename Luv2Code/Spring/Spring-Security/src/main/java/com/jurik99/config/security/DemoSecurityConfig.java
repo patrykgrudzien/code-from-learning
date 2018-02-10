@@ -29,8 +29,12 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(final HttpSecurity http) throws Exception {
 
 		http.authorizeRequests()
-		        .anyRequest()
-		        .authenticated()
+//		        .anyRequest()
+//		        .authenticated()
+                // --- new we don't need authenticated ---
+		        .antMatchers("/").hasRole("EMPLOYEE")
+		        .antMatchers("/leaders/**").hasRole("MANAGER")
+		        .antMatchers("/systems/**").hasRole("ADMIN")
 		    .and()
 		    .formLogin()
 		        .loginPage("/showMyLoginPage")
@@ -39,14 +43,17 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		        // allow everyone to see login page. No need to be logged in
 		        .permitAll()
 		    .and()
-		    /*
-		     * Logout process:
-		     * When a logout is processed, by default Spring Security will:
-		     * 1) Invalidate user's HTTP session and remove session cookies, etc
-		     * 2) Send user back to your login page
-		     * 3) Append a logout parameter: ?logout
-		     */
-		    .logout()
-			.permitAll();
+			    /*
+			     * Logout process:
+			     * When a logout is processed, by default Spring Security will:
+			     * 1) Invalidate user's HTTP session and remove session cookies, etc
+			     * 2) Send user back to your login page
+			     * 3) Append a logout parameter: ?logout
+			     */
+			    .logout()
+				.permitAll()
+			.and()
+				.exceptionHandling()
+				.accessDeniedPage("/access-denied");
 	}
 }

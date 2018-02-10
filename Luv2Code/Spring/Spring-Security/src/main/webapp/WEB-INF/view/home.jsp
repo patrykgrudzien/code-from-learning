@@ -14,6 +14,22 @@
     </p>
     <hr>
 
+    <security:authorize access="hasRole('MANAGER')">
+        <%-- link "/leaders" for MANAGER role --%>
+        <p>
+            <a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
+            (Only for Manager)
+        </p>
+    </security:authorize>
+
+    <security:authorize access="hasRole('ADMIN')">
+        <%-- link "/systems" for ADMIN role --%>
+        <p>
+            <a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+            (Only for ADMIN)
+        </p>
+    </security:authorize>
+
     <p>Welcome to the luv2code company home page!</p>
 
     <%-- Add a logout button --%>
