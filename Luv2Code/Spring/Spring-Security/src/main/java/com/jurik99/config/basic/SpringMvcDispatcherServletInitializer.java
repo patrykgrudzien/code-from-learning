@@ -25,6 +25,6 @@ public class SpringMvcDispatcherServletInitializer extends AbstractAnnotationCon
 	@Override
 	protected String[] getServletMappings() {
 		// --- default mapping for DISPATCHER SERVLET ---
-		return new String[] {"/"};
+		return new String[] {"/showMyLoginPage"};
 	}
 }
