@@ -1,4 +1,4 @@
-package com.jurik99.config;
+package com.jurik99.config.basic;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
