@@ -37,6 +37,16 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 		        // login form should POST data to this URL for processing (check user id and password)
 		        .loginProcessingUrl("/authenticateTheUser")
 		        // allow everyone to see login page. No need to be logged in
-		        .permitAll();
+		        .permitAll()
+		    .and()
+		    /*
+		     * Logout process:
+		     * When a logout is processed, by default Spring Security will:
+		     * 1) Invalidate user's HTTP session and remove session cookies, etc
+		     * 2) Send user back to your login page
+		     * 3) Append a logout parameter: ?logout
+		     */
+		    .logout()
+			.permitAll();
 	}
 }
