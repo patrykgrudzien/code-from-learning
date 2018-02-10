@@ -70,6 +70,14 @@
 								<button type="submit" class="btn btn-success">Login</button>
 							</div>
 						</div>
+
+                        <%-- if we don't use <form:form> spring will NOT automatically add CSRF token --%>
+                        <%-- in such case we would need to add it MANUALLY like in below: --%>
+                        <%--
+                                <input type="hidden"
+                                       name="${_csrf.parameterName}"
+                                       value="${_csrf.token}" />
+                         --%>
 					</form:form>
 				</div>
 			</div>
