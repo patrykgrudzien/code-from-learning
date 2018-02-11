@@ -54,7 +54,7 @@ public class SpringServletAndWebXmlConfiguration implements WebMvcConfigurer {
 			securityDataSource.setDriverClass(environment.getProperty("jdbc.driver"));
 
 			log.info(">>>> jdbc.url=" + environment.getProperty("jdbc.url"));
-			log.info(">>>> jdbc.username=" + environment.getProperty("jdbc.user"));
+			log.info(">>>> jdbc.username=" + environment.getProperty("jdbc.username"));
 
 			securityDataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
 			securityDataSource.setUser(environment.getProperty("jdbc.username"));
