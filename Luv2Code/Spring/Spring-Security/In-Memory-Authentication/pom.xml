@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Spring-Security</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>In-Memory-Authentication</artifactId>
+    <packaging>war</packaging>
+    <name>In-Memory-Authentication</name>
+
+    <!-- IMPORTANT NOTE HERE !!! -->
+
+    <!-- to make whole project working we must have correct versions of spring dependency -->
+    <!-- in this case (CORE has 5.0.3.RELEASE) and (SECURITY 5.0.1.RELEASE) -->
+
+    <!-- IMPORTANT NOTE HERE !!! -->
+
+    <build>
+        <finalName>spring-security-in-memory-authentication</finalName>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <!-- we are gonna remove xml configuration and we need to configure maven build here -->
+                    <!-- instead maven will complain that web.xml IS MISSING -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${war.plugin.version}</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    
+</project>

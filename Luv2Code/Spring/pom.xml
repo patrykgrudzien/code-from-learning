@@ -101,7 +101,7 @@
             <artifactId>tomcat-servlet-api</artifactId>
             <version>${tomcat.servlet.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+        <!-- DB Connection Pool -->
         <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>

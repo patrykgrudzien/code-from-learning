@@ -12,32 +12,12 @@
     </parent>
 
     <artifactId>Spring-Security</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <name>Spring-Security</name>
 
-    <!-- IMPORTANT NOTE HERE !!! -->
-
-    <!-- to make whole project working we must have correct versions of spring dependency -->
-    <!-- in this case (CORE has 5.0.3.RELEASE) and (SECURITY 5.0.1.RELEASE) -->
-
-    <!-- IMPORTANT NOTE HERE !!! -->
-
-    <build>
-        <finalName>spring-security-demo</finalName>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <!-- we are gonna remove xml configuration and we need to configure maven build here -->
-                    <!-- instead maven will complain that web.xml IS MISSING -->
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>${war.plugin.version}</version>
-                    <configuration>
-                        <failOnMissingWebXml>false</failOnMissingWebXml>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+    <modules>
+        <module>In-Memory-Authentication</module>
+        <module>JDBC-Database-Authentication</module>
+    </modules>
 
 </project>
