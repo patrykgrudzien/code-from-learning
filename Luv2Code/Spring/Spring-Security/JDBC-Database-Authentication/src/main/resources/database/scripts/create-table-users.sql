@@ -1,5 +1,6 @@
-CREATE TABLE users (
-  username VARCHAR(50) NOT NULL PRIMARY KEY,
-  password VARCHAR(50) NOT NULL,
-  enabled INT NOT NULL
+CREATE TABLE users(
+   username varchar(20) NOT NULL,
+   password varchar(20) NOT NULL,
+   enabled boolean NOT NULL DEFAULT FALSE,
+   primary key(username)
 );

@@ -1,11 +1,13 @@
 package com.jurik99.config.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -25,7 +27,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
 
 		auth.jdbcAuthentication()
-		    .dataSource(securityDataSource);
+		    .dataSource(securityDataSource)
+		    .usersByUsernameQuery("SELECT username, password, enabled FROM users WHERE username=?")
+			.authoritiesByUsernameQuery("SELECT username, role FROM user_roles WHERE username=?");
 	}
 
 	// --- Configure security of web paths in application, login, logout, etc ---
@@ -36,8 +40,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 //		        .anyRequest()
 //		        .authenticated()
                 // --- new we don't need authenticated ---
-		        .antMatchers("/").hasRole("EMPLOYEE")
-		        .antMatchers("/leaders/**").hasRole("MANAGER")
+		        .antMatchers("/").hasRole("USER")
+		        .antMatchers("/leaders/**").hasRole("ADMIN")
 		        .antMatchers("/systems/**").hasRole("ADMIN")
 		    .and()
 		    .formLogin()
@@ -59,5 +63,11 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.and()
 				.exceptionHandling()
 				.accessDeniedPage("/access-denied");
+	}
+
+	// --- Without it, I'm getting EXCEPTION -> There is no PasswordEncoder mapped for the id “null” ---
+	@Bean
+	public static NoOpPasswordEncoder passwordEncoder() {
+		return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
 	}
 }

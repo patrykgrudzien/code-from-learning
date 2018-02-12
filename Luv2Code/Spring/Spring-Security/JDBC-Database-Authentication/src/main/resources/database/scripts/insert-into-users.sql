@@ -1,6 +1,2 @@
-INSERT INTO users
-  (username, password, enabled)
-VALUES
-  ('john', '{noop}test123', 1),
-  ('mary', '{noop}test123', 1),
-  ('susan', '{noop}test123', 1);
+INSERT INTO users (username, password, enabled) VALUES ('jack','jack', true);
+INSERT INTO users (username, password, enabled) VALUES ('peter','peter', true);
