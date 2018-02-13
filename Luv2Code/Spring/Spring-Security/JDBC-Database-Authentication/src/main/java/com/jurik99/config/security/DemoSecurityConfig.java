@@ -1,5 +1,7 @@
 package com.jurik99.config.security;
 
+import lombok.extern.log4j.Log4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +13,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 
 import javax.sql.DataSource;
 
+@Log4j
 @Configuration
 @EnableWebSecurity
 public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -26,6 +29,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
 
+		log.info(">>>> JDBC Authentication");
+
 		auth.jdbcAuthentication()
 		    .dataSource(securityDataSource)
 		    .usersByUsernameQuery("SELECT username, password, enabled FROM users WHERE username=?")
@@ -35,6 +40,8 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	// --- Configure security of web paths in application, login, logout, etc ---
 	@Override
 	protected void configure(final HttpSecurity http) throws Exception {
+
+		log.info(">>>> HTTPSecurity configure");
 
 		http.authorizeRequests()
 //		        .anyRequest()
