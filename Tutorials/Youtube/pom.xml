@@ -23,6 +23,7 @@
         <module>Project Lombok</module>
         <module>Virtual Pair Programmers</module>
         <module>Spring Framework JMS Integration</module>
+        <module>Tech-Primers</module>
     </modules>
 
 </project>
