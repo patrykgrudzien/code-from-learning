@@ -40,6 +40,7 @@
         <module>Found in the Internet</module>
         <module>Exercises</module>
         <module>Coding challenge</module>
+        <module>JWT-Examples</module>
     </modules>
 
     <build>
@@ -201,6 +202,8 @@
 
         <activemq.all.version>5.15.2</activemq.all.version>
         <guava.version>19.0</guava.version>
+        <jjwt.version>0.9.0</jjwt.version>
+        <h2database.version>1.4.196</h2database.version>
     </properties>
 
 </project>
