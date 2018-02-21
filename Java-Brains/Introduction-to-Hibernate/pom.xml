@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Java-Brains</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>Introduction-to-Hibernate</artifactId>
+    <packaging>pom</packaging>
+    <name>Introduction-to-Hibernate</name>
+
+    <modules>
+        <module>0. Init Schemas Helper</module>
+        <module>Unit 1 - Getting Started</module>
+        <module>Unit 2 - Entity Mapping with JPA</module>
+        <module>Unit 3 - Mapping Collections and Inheritance Hierarchies</module>
+    </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgre.sql.jdbc.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

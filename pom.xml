@@ -6,29 +6,29 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jurik99</groupId>
-    <artifactId>all-java-code</artifactId>
+    <artifactId>All-Java-Code</artifactId>
     <version>1.0 Version</version>
     <packaging>pom</packaging>
-    <name>All Java Code</name>
+    <name>All-Java-Code</name>
     <description>Module containing whole sub projects.</description>
 
     <modules>
-        <module>Java Brains</module>
-        <module>Journal Dev</module>
+        <module>Java-Brains</module>
+        <module>Journal-Dev</module>
         <module>Luv2Code</module>
         <module>Tutorials</module>
-        <module>Cave Of Programming</module>
+        <module>Cave-Of-Programming</module>
         <module>Own Logger</module>
-        <module>Archetype Creator</module>
+        <module>Archetype-Creator</module>
         <module>Algorithms</module>
         <module>SQL</module>
         <module>JavaDevMatt</module>
         <module>Unversioned Code</module>
-        <module>Artur Owczarek</module>
+        <module>Artur-Owczarek</module>
         <module>Mirosław Zelent</module>
         <module>Mkyong.com</module>
-        <module>General Terminology</module>
-        <module>Git</module>
+        <module>General-Terminology</module>
+        <module>Git-Terminology-and-Commands</module>
         <module>JavaStart</module>
         <module>Vogella.com</module>
         <module>Udemy</module>
@@ -37,9 +37,9 @@
         <module>Java Podstawy VIII</module>
         <module>Miscellaneous Examples</module>
         <module>Niespodzianka dla rodzicow</module>
-        <module>Found in the Internet</module>
+        <module>Found-in-the-Internet</module>
         <module>Exercises</module>
-        <module>Coding challenge</module>
+        <module>Coding-challenge</module>
         <module>JWT-Examples</module>
     </modules>
 

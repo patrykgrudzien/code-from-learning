@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
     <artifactId>Journal-Dev</artifactId>
-    <name>Journal Dev</name>
+    <name>Journal-Dev</name>
     <packaging>pom</packaging>
 
     <modules>

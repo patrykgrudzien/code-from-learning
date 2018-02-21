@@ -19,7 +19,7 @@ public class ShoppingCardMain
 		card.pay(new CreditCardStrategy("JuRik99", "123456789", "000", "20/18"));
 
 		/*
-		 * com.jurik99.Strategy pattern is useful when we have multiple algorithms for specific task and we want our application
+		 * com.jurik99.Strategy pattern is useful when we have multiple Algorithms for specific task and we want our application
 		 * to be flexible to choose any of the algorithm at RUNTIME for specific task.
 		 */
 	}
