@@ -15,7 +15,7 @@
     <name>Design Patterns TS</name>
 
     <modules>
-        <module>Structural TS</module>
+        <module>Structural-TS</module>
     </modules>
 
 </project>

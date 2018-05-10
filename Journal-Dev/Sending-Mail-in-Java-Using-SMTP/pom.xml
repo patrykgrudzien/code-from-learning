@@ -11,7 +11,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>sending-mail-in-java-using-smtp</artifactId>
+    <artifactId>Sending-Mail-in-Java-Using-SMTP</artifactId>
     <packaging>pom</packaging>
     <name>Sending Mail in Java Using SMTP</name>
 

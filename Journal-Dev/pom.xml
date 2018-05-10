@@ -15,9 +15,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Design Patterns</module>
+        <module>Design-Patterns</module>
         <module>Java 8 Features</module>
-        <module>Sending Mail in Java Using SMTP</module>
+        <module>Sending-Mail-in-Java-Using-SMTP</module>
         <module>Database</module>
         <module>JMS</module>
     </modules>

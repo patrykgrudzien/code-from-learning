@@ -6,12 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>design-patterns-ts</artifactId>
+        <artifactId>Design-Patterns</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>structural-ts</artifactId>
-    <name>Structural TS</name>
+    <artifactId>Creational</artifactId>
+    <name>Creational</name>
+
+    <description>
+        Creational design patterns provide solution to instantiate an object in the best possible way for specific
+        situations.
+    </description>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
