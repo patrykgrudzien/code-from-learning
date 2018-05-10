@@ -1,7 +1,6 @@
 package com.jurik99.Adapter;
 
-public class Intro
-{
+public class Intro {
 	/*
 	 * Adapter pattern works as a bridge between two incompatible interfaces. This type of design pattern comes under
 	 * structural pattern as this pattern combines the capability of two independent interfaces.
@@ -19,7 +18,7 @@ public class Intro
 	 * AudioPlayer can play MP3 format audio files by default.
 	 *
 	 * We are having another interface "AdvancedMediaPlayer" and concrete classes implementing the
-	 * "AdvancedMediaPlayer" interface. These classes can play VLC and MP4 firmat files.
+	 * "AdvancedMediaPlayer" interface. These classes can play VLC and MP4 format files.
 	 *
 	 * We want to make AudioPlayer to play other formats as well. To attain this, we have created an adapter class
 	 * "MediaAdapter" which implements the "MediaPlayer" interface and uses AdvancedMediaPlayer objects to play the

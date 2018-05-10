@@ -1,9 +1,8 @@
 package com.jurik99.Adapter;
 
-public class Main
-{
-	public static void main(final String[] args)
-	{
+public class Main {
+
+	public static void main(final String[] args) {
 		testClassAdapter();
 
 		System.out.println("--------------------------------------------");
@@ -11,8 +10,7 @@ public class Main
 		testObjectAdapter();
 	}
 
-	private static void testClassAdapter()
-	{
+	private static void testClassAdapter() {
 		final SocketAdapter socketAdapter = new SocketClassAdapterImpl();
 		final Volt v3 = getVolt(socketAdapter, 3);
 		final Volt v12 = getVolt(socketAdapter, 12);
@@ -22,8 +20,7 @@ public class Main
 		System.out.println("v120 volts using Object Adapter = " + v120.getVolts());
 	}
 
-	private static void testObjectAdapter()
-	{
+	private static void testObjectAdapter() {
 		final SocketAdapter sockAdapter = new SocketObjectAdapterImpl();
 		final Volt v3 = getVolt(sockAdapter, 3);
 		final Volt v12 = getVolt(sockAdapter, 12);
@@ -33,10 +30,8 @@ public class Main
 		System.out.println("v120 volts using Object Adapter = " + v120.getVolts());
 	}
 
-	private static Volt getVolt(final SocketAdapter socketAdapter, final int i)
-	{
-		switch (i)
-		{
+	private static Volt getVolt(final SocketAdapter socketAdapter, final int i) {
+		switch (i) {
 			case 3:
 				return socketAdapter.get3Volt();
 			case 12:
@@ -50,8 +45,8 @@ public class Main
 
 	/*
 	 * Some of the adapter design pattern example I could easily find in JDK classes are:
-	  * Arrays.asList();
-	  * InputStreamReader(InputStream) (returns a Reader)
-	  * OutputStreamWriter(OutputStream) (returns a Writer)
+	 * Arrays.asList();
+	 * InputStreamReader(InputStream) (returns a Reader)
+	 * OutputStreamWriter(OutputStream) (returns a Writer)
 	 */
 }

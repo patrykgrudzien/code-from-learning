@@ -1,33 +1,29 @@
 package com.jurik99.Factory;
 
-public class PC extends Computer
-{
-    private String ram;
-    private String hdd;
-    private String cpu;
+public class PC extends Computer {
 
-    public PC(final String ram, final String hdd, final String cpu)
-    {
-        this.ram = ram;
-        this.hdd = hdd;
-        this.cpu = cpu;
-    }
+	private String ram;
+	private String hdd;
+	private String cpu;
 
-    @Override
-    public String getRAM()
-    {
-        return ram;
-    }
+	public PC(final String ram, final String hdd, final String cpu) {
+		this.ram = ram;
+		this.hdd = hdd;
+		this.cpu = cpu;
+	}
 
-    @Override
-    public String getHDD()
-    {
-        return hdd;
-    }
+	@Override
+	public String getRAM() {
+		return ram;
+	}
 
-    @Override
-    public String getCPU()
-    {
-        return cpu;
-    }
+	@Override
+	public String getHDD() {
+		return hdd;
+	}
+
+	@Override
+	public String getCPU() {
+		return cpu;
+	}
 }

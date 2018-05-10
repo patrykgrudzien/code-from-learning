@@ -1,10 +1,9 @@
 package com.jurik99.Adapter;
 
-public class Intro
-{
+public class Intro {
 	/*
 	 *  Adapter design pattern is one of the STRUCTURAL DESIGN PATTERN and its used so that two unrelated interfaces
-	 *  can work together. The object that joins these unrelated interface is called an ADAPTER.
+	 *  can work together. The object that joins these unrelated interfaces is called an ADAPTER.
 	 *
 	 *  One of the great real life example of Adapter pattern is mobile charger. Mobile baterry needs 3 volts to
 	 *  charge but the normal socket produces either 120V (US) or 240V (India). So the mobile charger works as an

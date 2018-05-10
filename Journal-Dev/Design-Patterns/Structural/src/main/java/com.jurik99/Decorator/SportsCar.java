@@ -1,16 +1,15 @@
 package com.jurik99.Decorator;
 
-public class SportsCar extends CarDecorator
-{
-	public SportsCar(final Car car)
-	{
+public class SportsCar extends CarDecorator {
+
+	public SportsCar(final Car car) {
 		super(car);
+		System.out.println("SportsCar constructor.");
 	}
 
 	@Override
-	public void assembleCar()
-	{
+	public void assembleCar() {
 		super.assembleCar();
-		System.out.print(" Adding features of Sports Car.");
+		System.out.println("Adding features of Sports Car.");
 	}
 }

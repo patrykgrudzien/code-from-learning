@@ -1,9 +1,8 @@
 package com.jurik99.Adapter;
 
-public class AdapterPatternDemo
-{
-	public static void main(final String[] args)
-	{
+public class AdapterPatternDemo {
+
+	public static void main(final String[] args) {
 		final AudioPlayer audioPlayer = new AudioPlayer();
 
 		audioPlayer.play(AudioType.MP3, "beyond the horizon.mp3");
