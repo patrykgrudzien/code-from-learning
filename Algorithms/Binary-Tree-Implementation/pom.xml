@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Algorithms</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>Binary-Tree-Implementation</artifactId>
+    <packaging>pom</packaging>
+    <name>Binary-Tree-Implementation</name>
+
+    <modules>
+        <module>algorithm-tutorialhorizon-com</module>
+    </modules>
+
+    <build>
+        <sourceDirectory>Algorithms.tutorialhorizon.com/${java.directory}</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>Algorithms.tutorialhorizon.com/${resources.directory}</directory>
+            </resource>
+            <resource>
+                <directory>Algorithms.tutorialhorizon.com/${screenshots.resources.directory}</directory>
+            </resource>
+            <resource>
+                <directory>Algorithms.tutorialhorizon.com/${notes.resources.directory}</directory>
+            </resource>
+        </resources>
+        <testSourceDirectory>Algorithms.tutorialhorizon.com/${test.directory}</testSourceDirectory>
+        <testOutputDirectory>Algorithms.tutorialhorizon.com/${test.target.directory}</testOutputDirectory>
+        <outputDirectory>Algorithms.tutorialhorizon.com/${target.directory}</outputDirectory>
+    </build>
+    
+</project>

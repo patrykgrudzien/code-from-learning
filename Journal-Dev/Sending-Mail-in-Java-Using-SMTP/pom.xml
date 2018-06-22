@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Journal-Dev</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>Sending-Mail-in-Java-Using-SMTP</artifactId>
+    <packaging>pom</packaging>
+    <name>Sending Mail in Java Using SMTP</name>
+
+    <modules>
+        <module>0. Utility SMTP</module>
+        <module>1. Without Authentication</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>${javax.mail.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jurik99</groupId>
+            <artifactId>log4j-configuration</artifactId>
+            <version>1.0 Version</version>
+        </dependency>
+    </dependencies>
+
+</project>

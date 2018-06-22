@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>algorithms</artifactId>
+    <artifactId>Algorithms</artifactId>
     <packaging>pom</packaging>
     <name>Algorithms</name>
 
     <modules>
-        <module>Bubble Sort</module>
-        <module>Binary Tree</module>
+        <module>Bubble-Sort</module>
+        <module>Binary-Tree-Implementation</module>
     </modules>
     
 </project>

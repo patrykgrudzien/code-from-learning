@@ -6,16 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>all-java-code</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>exercises</artifactId>
+    <artifactId>Exercises</artifactId>
     <packaging>pom</packaging>
     <name>Exercises</name>
 
     <modules>
-        <module>Java 8 Exercises</module>
+        <module>Java-8-Exercises</module>
     </modules>
     
 </project>
