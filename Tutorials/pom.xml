@@ -19,6 +19,7 @@
         <module>Youtube</module>
         <module>Tutorials Point</module>
         <module>Baeldung</module>
+        <module>DZone-Java-Zone</module>
     </modules>
     
 </project>

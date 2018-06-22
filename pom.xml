@@ -160,6 +160,7 @@
         <ibatis.common.version>2.1.7.597</ibatis.common.version>
         <javax.mail.version>1.5.6</javax.mail.version>
         <log4j.version>1.2.17</log4j.version>
+        <rx.java.version>2.1.14</rx.java.version>
         <!-- This dependency provides posibility to color logger console messages -->
         <jcabi.log.version>0.17.1</jcabi.log.version>
         <jersey.version>2.25</jersey.version>
