@@ -54,7 +54,7 @@
     </bean>
 
     <!--
-        Default MessageListenerContainer is the Spring equivalent to an EJB Message Driven Bean. It polls and consumes messages
+        DefaultMessageListenerContainer is the Spring equivalent to an EJB Message Driven Bean. It polls and consumes messages
         from a JMS queue. The configuration below is as follows:
 
         1) connectionFactory - the connection factory definition used to connect to the Message Broker which in our case is

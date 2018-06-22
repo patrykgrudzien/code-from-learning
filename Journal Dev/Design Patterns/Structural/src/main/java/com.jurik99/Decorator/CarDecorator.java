@@ -6,9 +6,9 @@ package com.jurik99.Decorator;
  */
 public class CarDecorator implements Car
 {
-	protected Car car;
+	private Car car;
 
-	public CarDecorator(final Car car)
+	protected CarDecorator(final Car car)
 	{
 		this.car = car;
 	}
