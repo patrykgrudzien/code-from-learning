@@ -18,6 +18,7 @@
     <modules>
         <module>Mockito Annotations</module>
         <module>Guava</module>
+        <module>Hystrix</module>
     </modules>
 
 </project>
