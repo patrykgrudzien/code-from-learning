@@ -1,6 +1,6 @@
 package SmallerScale.BeanDAOFactory.View;
 
-public interface CreateUserListener
-{
-    void loginPerformed(CreateUserEvent event);
+public interface CreateUserListener {
+
+	void loginPerformed(CreateUserEvent event);
 }

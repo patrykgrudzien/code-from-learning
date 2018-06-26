@@ -1,13 +1,12 @@
 package com.jurik99;
 
-public class AccountWithDouble
-{
-	public static void main(final String[] args)
-	{
+public class AccountWithDouble {
+
+	public static void main(final String[] args) {
+
 		double accountBalance = 0.0;
 
-		for (int i = 0; i < 100; i++)
-		{
+		for (int i = 0; i < 100; i++) {
 			accountBalance += 0.01;
 		}
 
@@ -19,7 +18,6 @@ public class AccountWithDouble
 		 * Spowodowane jest to tym, że liczba taka jak "0.01" zapisana w systemie dziesiętnym i
 		 * NIE DA SIĘ JEJ ZAPISAĆ W SYSTEMIE BINARNYM !!!
 		 * Komputer przechowuje wszystkie wartości w postaci ZER-JEDYNEK.
-		 *
 		 *
 		 */
 	}

@@ -6,51 +6,41 @@ import SmallerScale.Singleton.View.View;
 
 import javax.swing.SwingUtilities;
 
-public class Demo
-{
-    public static void main(final String[] args)
-    {
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            @Override
-            public void run()
-            {
-                runApp();
-            }
-        });
-    }
+public class Demo {
 
-    private static void runApp()
-    {
-        /**
-         * It's completely INDEPENDENT of other classes
-         *
-         * Model should never import ANYTHING FROM VIEW PACKAGE and
-         * CONTROLLER PACKAGE either !!!
-         */
-        final Model model = new Model();
+	public static void main(final String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			@Override
+			public void run() {
+				runApp();
+			}
+		});
+	}
 
-        /**
-         * View of the Model.
-         *
-         * View is showing the DATA !!!
-         */
-        final View view = new View(model);
+	private static void runApp() {
+		/**
+		 * It's completely INDEPENDENT of other classes
+		 * Model should never import ANYTHING FROM VIEW PACKAGE and
+		 * CONTROLLER PACKAGE either !!!
+		 */
+		final Model model = new Model();
 
-        /**
-         * Controller sends commands to the Model (tells the Model what to do)
-         * but also
-         * tells View what to do.
-         *
-         * Controller also listens Model & View
-         */
-        final Controller controller = new Controller(model, view);
+		/**
+		 * View of the Model.
+		 * View is showing the DATA !!!
+		 */
+		final View view = new View(model);
 
-        // ================================================================================================= //
-        /**
-         * CONTROLLER listens to the VIEW
-         * If a "loginEvent" occurs in a VIEW tell CONTROLLER about it
-         */
-        view.setLoginListener(controller);
-    }
+		/**
+		 * Controller sends commands to the Model (tells the Model what to do) but also tells View what to do.
+		 * Controller also listens Model & View
+		 */
+		final Controller controller = new Controller(model, view);
+
+		/**
+		 * CONTROLLER listens to the VIEW
+		 * If a "loginEvent" occurs in a VIEW tell CONTROLLER about it
+		 */
+		view.setLoginListener(controller);
+	}
 }

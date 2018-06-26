@@ -1,11 +1,10 @@
 package SmallerScale.BeanDAOFactory.Model.MySQL;
 
-import static org.junit.Assert.assertEquals;
-
 import SmallerScale.BeanDAOFactory.Model.DAOFactory;
 import SmallerScale.BeanDAOFactory.Model.Database;
 import SmallerScale.BeanDAOFactory.Model.Person;
 import SmallerScale.BeanDAOFactory.Model.PersonDAOInterface;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,25 +15,23 @@ import org.junit.Test;
 import java.sql.SQLException;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 @Ignore
-public class MySQLPersonDAOTest
-{
+public class MySQLPersonDAOTest {
+
 	@BeforeClass
-	public static void setUpBeforeClass() throws Exception
-	{
+	public static void setUpBeforeClass() throws Exception {
 		Database.getInstance().connect();
 	}
 
 	@AfterClass
-	public static void tearDownAfterClass() throws Exception
-	{
+	public static void tearDownAfterClass() throws Exception {
 		Database.getInstance().disconnect();
 	}
 
 	@Before
-	public void setUp() throws Exception
-	{
-//        System.out.println("setUp");
+	public void setUp() throws Exception {
 
 		final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
 		final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
@@ -43,15 +40,11 @@ public class MySQLPersonDAOTest
 	}
 
 	@After
-	public void tearDown() throws Exception
-	{
-//        System.out.println("tearDown");
+	public void tearDown() throws Exception {
 	}
 
-	// ============================================================================================================== //
 	@Test
-	public void testDemo()
-	{
+	public void testDemo() {
 		int value = 7;
 		value += 2;
 
@@ -61,8 +54,7 @@ public class MySQLPersonDAOTest
 	}
 
 	@Test
-	public void testCreate() throws SQLException
-	{
+	public void testCreate() throws SQLException {
 		final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
 		final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
 

@@ -3,17 +3,17 @@ package SmallerScale.BeanDAOFactory.Model;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface PersonDAOInterface
-{
-    int addPerson(Person person) throws SQLException;
+public interface PersonDAOInterface {
 
-    Person getPerson(int id) throws SQLException;
+	int addPerson(Person person) throws SQLException;
 
-    List<Person> getPeople() throws SQLException;
+	Person getPerson(int id) throws SQLException;
 
-    int updatePerson(Person person) throws SQLException;
+	List<Person> getPeople() throws SQLException;
 
-    int deletePerson(int id) throws SQLException;
+	int updatePerson(Person person) throws SQLException;
 
-    int deleteAll() throws SQLException;
+	int deletePerson(int id) throws SQLException;
+
+	int deleteAll() throws SQLException;
 }

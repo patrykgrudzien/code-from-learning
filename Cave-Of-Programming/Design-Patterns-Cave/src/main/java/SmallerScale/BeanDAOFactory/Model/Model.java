@@ -1,6 +1,3 @@
 package SmallerScale.BeanDAOFactory.Model;
 
-public class Model
-{
-
-}
+public class Model {}

@@ -10,39 +10,33 @@ import SmallerScale.BeanDAOFactory.View.View;
 
 import java.sql.SQLException;
 
-public class Controller implements CreateUserListener
-{
-    private Model model;
-    private View view;
+public class Controller implements CreateUserListener {
 
-    public Controller(final Model model, final View view)
-    {
-        this.model = model;
-        this.view = view;
-    }
+	private Model model;
+	private View view;
 
-    @Override
-    public void loginPerformed(final CreateUserEvent event)
-    {
-        System.out.println("Login event received. " + event.getName() + ": " + event.getPassword());
+	public Controller(final Model model, final View view) {
+		this.model = model;
+		this.view = view;
+	}
 
-        final String name = event.getName();
-        final String password = event.getPassword();
+	@Override
+	public void loginPerformed(final CreateUserEvent event) {
+		System.out.println("Login event received. " + event.getName() + ": " + event.getPassword());
 
-        final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
-        assert factory != null;
-        final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
+		final String name = event.getName();
+		final String password = event.getPassword();
 
-        if (name != null && password != null)
-        {
-            try
-            {
-                mySQLPersonDAO.addPerson(new Person(name, password));
-            }
-            catch (final SQLException e)
-            {
-                e.printStackTrace();
-            }
-        }
-    }
+		final DAOFactory factory = DAOFactory.getFactory(DAOFactory.MYSQL);
+		assert factory != null;
+		final PersonDAOInterface mySQLPersonDAO = factory.getPersonDAO();
+
+		if (name != null && password != null) {
+			try {
+				mySQLPersonDAO.addPerson(new Person(name, password));
+			} catch (final SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }

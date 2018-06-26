@@ -1,5 +1,3 @@
 package Structural.MVC.Model;
 
-public class Model
-{
-}
+public class Model {}

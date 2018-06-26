@@ -19,156 +19,140 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class View extends JFrame implements ActionListener
-{
-    private Model model;
-    private JButton okButton;
-    private JTextField nameField;
-    private JPasswordField passField;
+public class View extends JFrame implements ActionListener {
 
-    private CreateUserListener createUserListener;
+	private Model model;
+	private JButton okButton;
+	private JTextField nameField;
+	private JPasswordField passField;
 
-    public View(final Model model)
-    {
-        super("MVC Demo");
+	private CreateUserListener createUserListener;
 
-        this.model = model;
+	public View(final Model model) {
+		super("MVC Demo");
 
-        nameField = new JTextField(10);
-        passField = new JPasswordField(10);
-        okButton = new JButton("Create user");
+		this.model = model;
 
-        setLayout(new GridBagLayout());
+		nameField = new JTextField(10);
+		passField = new JPasswordField(10);
+		okButton = new JButton("Create user");
 
-        final GridBagConstraints gc = new GridBagConstraints();
-        gc.anchor = GridBagConstraints.LAST_LINE_END;
-        gc.gridx = 1;
-        gc.gridy = 1;
-        gc.weightx = 1;
-        gc.weighty = 1;
-        gc.insets = new Insets(100, 0, 0, 10);
-        gc.fill = GridBagConstraints.NONE;
+		setLayout(new GridBagLayout());
 
-        add(new JLabel("Name: "), gc);
+		final GridBagConstraints gc = new GridBagConstraints();
+		gc.anchor = GridBagConstraints.LAST_LINE_END;
+		gc.gridx = 1;
+		gc.gridy = 1;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(100, 0, 0, 10);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.LAST_LINE_START;
-        gc.gridx = 2;
-        gc.gridy = 1;
-        gc.weightx = 1;
-        gc.weighty = 1;
-        gc.insets = new Insets(100, 0, 0, 0);
-        gc.fill = GridBagConstraints.NONE;
+		add(new JLabel("Name: "), gc);
 
-        add(nameField, gc);
+		gc.anchor = GridBagConstraints.LAST_LINE_START;
+		gc.gridx = 2;
+		gc.gridy = 1;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(100, 0, 0, 0);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.LINE_END;
-        gc.gridx = 1;
-        gc.gridy = 2;
-        gc.weightx = 1;
-        gc.weighty = 1;
-        gc.insets = new Insets(0, 0, 0, 10);
-        gc.fill = GridBagConstraints.NONE;
+		add(nameField, gc);
 
-        add(new JLabel("Password: "), gc);
+		gc.anchor = GridBagConstraints.LINE_END;
+		gc.gridx = 1;
+		gc.gridy = 2;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(0, 0, 0, 10);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.LINE_START;
-        gc.gridx = 2;
-        gc.gridy = 2;
-        gc.weightx = 1;
-        gc.weighty = 1;
-        gc.insets = new Insets(0, 0, 0, 0);
-        gc.fill = GridBagConstraints.NONE;
+		add(new JLabel("Password: "), gc);
 
-        add(passField, gc);
+		gc.anchor = GridBagConstraints.LINE_START;
+		gc.gridx = 2;
+		gc.gridy = 2;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(0, 0, 0, 0);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.FIRST_LINE_START;
-        gc.gridx = 2;
-        gc.gridy = 3;
-        gc.weightx = 1;
-        gc.weighty = 100;
-        gc.fill = GridBagConstraints.NONE;
+		add(passField, gc);
 
-        add(okButton, gc);
-        okButton.addActionListener(this);
+		gc.anchor = GridBagConstraints.FIRST_LINE_START;
+		gc.gridx = 2;
+		gc.gridy = 3;
+		gc.weightx = 1;
+		gc.weighty = 100;
+		gc.fill = GridBagConstraints.NONE;
 
-        // ========================================================================================== //
-        addWindowListener(new WindowAdapter()
-        {
-            @Override
-            public void windowOpened(final WindowEvent e)
-            {
-                try
-                {
-                    Database.getInstance().connect();
-                    if (Database.getInstance().isConnect())
-                    {
-                        JOptionPane.showMessageDialog(View.this, "Connected to database", "Info", JOptionPane.INFORMATION_MESSAGE);
-                    }
-                }
-                catch (final Exception e1)
-                {
-                    JOptionPane.showMessageDialog(View.this, "Unable to connect to database.", "ERROR", JOptionPane.WARNING_MESSAGE);
-                }
-            }
+		add(okButton, gc);
+		okButton.addActionListener(this);
 
-            @Override
-            public void windowClosing(final WindowEvent e)
-            {
-                Database.getInstance().disconnect();
-                if (Database.getInstance().isDisconnect())
-                {
-                    try
-                    {
-                        View.this.setVisible(false);
-                        Thread.sleep(500);
-                    }
-                    catch (final InterruptedException e1)
-                    {
-                        e1.printStackTrace();
-                    }
-                    JOptionPane.showMessageDialog(View.this, "Successfully disconnected.", "Info", JOptionPane.PLAIN_MESSAGE);
-                }
-            }
-        });
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowOpened(final WindowEvent e) {
+				try {
+					Database.getInstance().connect();
+					if (Database.getInstance().isConnect()) {
+						JOptionPane
+								.showMessageDialog(View.this, "Connected to database", "Info", JOptionPane.INFORMATION_MESSAGE);
+					}
+				} catch (final Exception e1) {
+					JOptionPane
+							.showMessageDialog(View.this, "Unable to connect to database.", "ERROR", JOptionPane.WARNING_MESSAGE);
+				}
+			}
 
-        // ========================================================================================== //
-        setSize(600, 500);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setVisible(true);
-    }
+			@Override
+			public void windowClosing(final WindowEvent e) {
+				Database.getInstance().disconnect();
+				if (Database.getInstance().isDisconnect()) {
+					try {
+						View.this.setVisible(false);
+						Thread.sleep(500);
+					} catch (final InterruptedException e1) {
+						e1.printStackTrace();
+					}
+					JOptionPane.showMessageDialog(View.this, "Successfully disconnected.", "Info", JOptionPane.PLAIN_MESSAGE);
+				}
+			}
+		});
 
-    @Override
-    public void actionPerformed(final ActionEvent e)
-    {
-        final String password = new String(passField.getPassword());
-        final String name = nameField.getText();
+		setSize(600, 500);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setVisible(true);
+	}
 
-        fireLoginEvent(new CreateUserEvent(name, password));
+	@Override
+	public void actionPerformed(final ActionEvent e) {
+		final String password = new String(passField.getPassword());
+		final String name = nameField.getText();
 
-        final int reply = JOptionPane.showConfirmDialog(null, "User has been added. Do you want to add next one?", "Info", JOptionPane.YES_NO_OPTION);
-        if (reply == JOptionPane.YES_OPTION)
-        {
-            passField.setText("");
-            nameField.setText("");
-        }
-    }
+		fireLoginEvent(new CreateUserEvent(name, password));
 
-    /**
-     * We want to pass ANYTHING WHICH IMPLEMENTS "LoginListener" INTERFACE
-     * <p>
-     * We want to store reference to the object which IMPLEMENTS "LoginListener" interface
-     */
-    public void setCreateUserListener(final CreateUserListener createUserListener)
-    {
-        this.createUserListener = createUserListener;
-    }
+		final int reply = JOptionPane.showConfirmDialog(null, "User has been added. Do you want to add next one?", "Info",
+		                                                JOptionPane.YES_NO_OPTION);
+		if (reply == JOptionPane.YES_OPTION) {
+			passField.setText("");
+			nameField.setText("");
+		}
+	}
 
-    private void fireLoginEvent(final CreateUserEvent event)
-    {
-        if (createUserListener != null)
-        {
-            createUserListener.loginPerformed(event);
-        }
-    }
+	/**
+	 * We want to pass ANYTHING WHICH IMPLEMENTS "LoginListener" INTERFACE
+	 * <p>
+	 * We want to store reference to the object which IMPLEMENTS "LoginListener" interface
+	 */
+	public void setCreateUserListener(final CreateUserListener createUserListener) {
+		this.createUserListener = createUserListener;
+	}
+
+	private void fireLoginEvent(final CreateUserEvent event) {
+		if (createUserListener != null) {
+			createUserListener.loginPerformed(event);
+		}
+	}
 }

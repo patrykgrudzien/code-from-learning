@@ -1,6 +1,3 @@
 package SmallerScale.Singleton.Model;
 
-public class Model
-{
-
-}
+public class Model {}

@@ -2,15 +2,14 @@ package com.jurik99;
 
 import java.math.BigDecimal;
 
-public class AccountWithBigDecimal
-{
-	public static void main(final String[] args)
-	{
+public class AccountWithBigDecimal {
+
+	public static void main(final String[] args) {
+
 		BigDecimal accountBalance = new BigDecimal(0.0);
 		final BigDecimal point = new BigDecimal(0.01);
 
-		for (int i = 0; i < 100; i++)
-		{
+		for (int i = 0; i < 100; i++) {
 			/*
 			 * Za każdym razem kiedy chcemy zmienić BigDecimala, tak naprawdę NIE ZMIENIAMY go tylko
 			 * TWORZYMY NA JEGO PODSTAWIE INNEGO !!!
@@ -38,8 +37,7 @@ public class AccountWithBigDecimal
 		BigDecimal accountBalanceUsingString = new BigDecimal("0.0");
 		final BigDecimal pointUsingString = new BigDecimal("0.01");
 
-		for (int i = 0; i < 100; i++)
-		{
+		for (int i = 0; i < 100; i++) {
 			accountBalanceUsingString = accountBalanceUsingString.add(pointUsingString);
 		}
 

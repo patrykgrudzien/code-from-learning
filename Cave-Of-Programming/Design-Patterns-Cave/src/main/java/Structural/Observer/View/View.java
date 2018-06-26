@@ -15,107 +15,102 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class View extends JFrame implements ActionListener
-{
-    private Model model;
-    private JButton okButton;
-    private JTextField nameField;
-    private JPasswordField passField;
+public class View extends JFrame implements ActionListener {
 
-    private LoginListener loginListener;
+	private Model model;
+	private JButton okButton;
+	private JTextField nameField;
+	private JPasswordField passField;
 
-    public View(final Model model)
-    {
-        super("MVC Demo");
+	private LoginListener loginListener;
 
-        this.model = model;
+	public View(final Model model) {
+		super("MVC Demo");
 
-        nameField = new JTextField(10);
-        passField = new JPasswordField(10);
-        okButton = new JButton("OK");
+		this.model = model;
 
-        setLayout(new GridBagLayout());
+		nameField = new JTextField(10);
+		passField = new JPasswordField(10);
+		okButton = new JButton("OK");
 
-        final GridBagConstraints gc = new GridBagConstraints();
-        gc.anchor = GridBagConstraints.LAST_LINE_END;
-        gc.gridx=1;
-        gc.gridy=1;
-        gc.weightx=1;
-        gc.weighty=1;
-        gc.insets = new Insets(100, 0, 0, 10);
-        gc.fill=GridBagConstraints.NONE;
+		setLayout(new GridBagLayout());
 
-        add(new JLabel("Name: "), gc);
+		final GridBagConstraints gc = new GridBagConstraints();
+		gc.anchor = GridBagConstraints.LAST_LINE_END;
+		gc.gridx = 1;
+		gc.gridy = 1;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(100, 0, 0, 10);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.LAST_LINE_START;
-        gc.gridx=2;
-        gc.gridy=1;
-        gc.weightx=1;
-        gc.weighty=1;
-        gc.insets = new Insets(100, 0, 0, 0);
-        gc.fill=GridBagConstraints.NONE;
+		add(new JLabel("Name: "), gc);
 
-        add(nameField, gc);
+		gc.anchor = GridBagConstraints.LAST_LINE_START;
+		gc.gridx = 2;
+		gc.gridy = 1;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(100, 0, 0, 0);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.LINE_END;
-        gc.gridx=1;
-        gc.gridy=2;
-        gc.weightx=1;
-        gc.weighty=1;
-        gc.insets = new Insets(0, 0, 0, 10);
-        gc.fill=GridBagConstraints.NONE;
+		add(nameField, gc);
 
-        add(new JLabel("Password: "), gc);
+		gc.anchor = GridBagConstraints.LINE_END;
+		gc.gridx = 1;
+		gc.gridy = 2;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(0, 0, 0, 10);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.LINE_START;
-        gc.gridx=2;
-        gc.gridy=2;
-        gc.weightx=1;
-        gc.weighty=1;
-        gc.insets = new Insets(0, 0, 0, 0);
-        gc.fill=GridBagConstraints.NONE;
+		add(new JLabel("Password: "), gc);
 
-        add(passField, gc);
+		gc.anchor = GridBagConstraints.LINE_START;
+		gc.gridx = 2;
+		gc.gridy = 2;
+		gc.weightx = 1;
+		gc.weighty = 1;
+		gc.insets = new Insets(0, 0, 0, 0);
+		gc.fill = GridBagConstraints.NONE;
 
-        gc.anchor = GridBagConstraints.FIRST_LINE_START;
-        gc.gridx=2;
-        gc.gridy=3;
-        gc.weightx=1;
-        gc.weighty=100;
-        gc.fill=GridBagConstraints.NONE;
+		add(passField, gc);
 
-        add(okButton, gc);
-        okButton.addActionListener(this);
+		gc.anchor = GridBagConstraints.FIRST_LINE_START;
+		gc.gridx = 2;
+		gc.gridy = 3;
+		gc.weightx = 1;
+		gc.weighty = 100;
+		gc.fill = GridBagConstraints.NONE;
 
-        setSize(600, 500);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setVisible(true);
-    }
+		add(okButton, gc);
+		okButton.addActionListener(this);
 
-    @Override
-    public void actionPerformed(final ActionEvent e)
-    {
-        final String password = new String(passField.getPassword());
-        final String name = nameField.getText();
+		setSize(600, 500);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
 
-        fireLoginEvent(new LoginFormEvent(name, password));
-    }
+	@Override
+	public void actionPerformed(final ActionEvent e) {
+		final String password = new String(passField.getPassword());
+		final String name = nameField.getText();
 
-    /**
-     * We want to pass ANYTHING WHICH IMPLEMENTS "LoginListener" INTERFACE
-     *
-     * We want to store reference to the object which IMPLEMENTS "LoginListener" interface
-     */
-    public void setLoginListener(final LoginListener loginListener)
-    {
-        this.loginListener = loginListener;
-    }
+		fireLoginEvent(new LoginFormEvent(name, password));
+	}
 
-    private void fireLoginEvent(final LoginFormEvent event)
-    {
-        if (loginListener != null)
-        {
-            loginListener.loginPerformed(event);
-        }
-    }
+	/**
+	 * We want to pass ANYTHING WHICH IMPLEMENTS "LoginListener" INTERFACE
+	 * <p>
+	 * We want to store reference to the object which IMPLEMENTS "LoginListener" interface
+	 */
+	public void setLoginListener(final LoginListener loginListener) {
+		this.loginListener = loginListener;
+	}
+
+	private void fireLoginEvent(final LoginFormEvent event) {
+		if (loginListener != null) {
+			loginListener.loginPerformed(event);
+		}
+	}
 }

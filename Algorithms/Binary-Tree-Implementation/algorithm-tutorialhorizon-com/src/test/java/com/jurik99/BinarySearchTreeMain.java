@@ -2,10 +2,10 @@ package com.jurik99;
 
 import static com.jurik99.BinarySearchTree.root;
 
-public class BinarySearchTreeMain
-{
-	public static void main(final String[] args)
-	{
+public class BinarySearchTreeMain {
+
+	public static void main(final String[] args) {
+
 		final BinarySearchTree tree = new BinarySearchTree();
 		tree.insert(20);
 		tree.insert(15);

@@ -1,26 +1,20 @@
 package SmallerScale.Singleton.Model;
 
-public class Database
-{
-    private static final Database instance = new Database();
+public class Database {
 
-    private Database()
-    {
+	private static final Database instance = new Database();
 
-    }
+	private Database() {}
 
-    public static Database getInstance()
-    {
-        return instance;
-    }
+	public static Database getInstance() {
+		return instance;
+	}
 
-    public void connect()
-    {
-        System.out.println("Connected to database.");
-    }
+	public void connect() {
+		System.out.println("Connected to database.");
+	}
 
-    public void disconnect()
-    {
-        System.out.println("Disconnected.");
-    }
+	public void disconnect() {
+		System.out.println("Disconnected.");
+	}
 }

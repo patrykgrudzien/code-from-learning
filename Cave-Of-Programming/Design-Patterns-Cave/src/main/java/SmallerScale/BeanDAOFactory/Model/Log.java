@@ -2,39 +2,33 @@ package SmallerScale.BeanDAOFactory.Model;
 
 import java.util.Date;
 
-public class Log
-{
-    private int id;
-    private Date date;
-    private String message;
+public class Log {
 
-    public int getId()
-    {
-        return id;
-    }
+	private int id;
+	private Date date;
+	private String message;
 
-    public void setId(final int id)
-    {
-        this.id = id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public Date getDate()
-    {
-        return date;
-    }
+	public void setId(final int id) {
+		this.id = id;
+	}
 
-    public void setDate(final Date date)
-    {
-        this.date = date;
-    }
+	public Date getDate() {
+		return date;
+	}
 
-    public String getMessage()
-    {
-        return message;
-    }
+	public void setDate(final Date date) {
+		this.date = date;
+	}
 
-    public void setMessage(final String message)
-    {
-        this.message = message;
-    }
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(final String message) {
+		this.message = message;
+	}
 }

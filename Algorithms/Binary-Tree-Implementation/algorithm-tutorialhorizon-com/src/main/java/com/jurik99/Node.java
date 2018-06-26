@@ -9,14 +9,13 @@ package com.jurik99;
  * 2) Usually we call the starting node of a tree as "ROOT".
  * 3) Left and right node of a "Leaf" node points to NULL so you will know that you have reached to the end of the tree.
  */
-public class Node
-{
+public class Node {
+
 	int data;
 	Node left;
 	Node right;
 
-	public Node(final int data)
-	{
+	public Node(final int data) {
 		this.data = data;
 		left = null;
 		right = null;
