@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-2-1-resource-life-cycle</artifactId>
-    <name>Lesson 2.1 Resource Life Cycle</name>
+    <artifactId>Lesson-2.8-Custom-Media-Type</artifactId>
     <packaging>war</packaging>
+    <name>Lesson-2.8-Custom-Media-Type</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -40,5 +40,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

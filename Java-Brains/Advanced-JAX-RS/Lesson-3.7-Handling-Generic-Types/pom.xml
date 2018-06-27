@@ -10,10 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-3-2-writing-a-JAX-RS-client</artifactId>
-    <packaging>war</packaging>
-
-    <name>Lesson 3.2 Writing a JAX-RS Client</name>
+    <artifactId>Lesson-3.7-Handling-Generic-Types</artifactId>
+    <packaging>pom</packaging>
+    <name>Lesson-3.7-Handling-Generic-Types</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -25,21 +24,14 @@
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>${war.plugin.version}</version>
-                <configuration>
-                    <webResources>
-                        <resource>
-                            <directory>${web.directory}</directory>
-                        </resource>
-                    </webResources>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jurik99</groupId>
+            <artifactId>lesson-3-2-writing-a-JAX-RS-client</artifactId>
+            <version>1.0 Version</version>
+        </dependency>
+    </dependencies>
+
 </project>

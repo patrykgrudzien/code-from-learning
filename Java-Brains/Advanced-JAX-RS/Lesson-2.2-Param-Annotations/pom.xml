@@ -10,10 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-3-6-creating-invocations</artifactId>
-    <packaging>pom</packaging>
-
-    <name>Lesson 3.6 Creating Invocations</name>
+    <artifactId>Lesson-2.2-Param-Annotations</artifactId>
+    <name>Lesson-2.2-Param-Annotations</name>
+    <packaging>war</packaging>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -25,14 +24,21 @@
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.plugin.version}</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${web.directory}</directory>
+                        </resource>
+                    </webResources>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>lesson-3-2-writing-a-JAX-RS-client</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
-    </dependencies>
-
+    
 </project>

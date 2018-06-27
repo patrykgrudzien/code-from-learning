@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-2-2-param-annotations</artifactId>
-    <name>Lesson 2.2 Param Annotations</name>
+    <artifactId>Lesson-2.1-Resource-Life-Cycle</artifactId>
+    <name>Lesson-2.1-Resource-Life-Cycle</name>
     <packaging>war</packaging>
 
     <build>

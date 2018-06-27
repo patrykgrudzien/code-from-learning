@@ -10,10 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-4-2-implementing-filters</artifactId>
+    <artifactId>Lesson-2.3-Param-Converters</artifactId>
+    <name>Lesson-2.3-Param-Converters</name>
     <packaging>war</packaging>
-
-    <name>Lesson 4.2 Implementing Filters</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -41,5 +40,5 @@
             </plugin>
         </plugins>
     </build>
-
+    
 </project>

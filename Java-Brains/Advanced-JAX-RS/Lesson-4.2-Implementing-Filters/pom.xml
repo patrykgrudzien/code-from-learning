@@ -10,10 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-2-8-custom-media-type</artifactId>
+    <artifactId>Lesson-4.2-Implementing-Filters</artifactId>
     <packaging>war</packaging>
-
-    <name>Lesson 2.8 Custom Media Type</name>
+    <name>Lesson-4.2-Implementing-Filters</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

@@ -10,10 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-3-5-making-a-POST-request</artifactId>
+    <artifactId>Lesson-3.6-Creating-Invocations</artifactId>
     <packaging>pom</packaging>
-
-    <name>Lesson 3.5 Making a POST request</name>
+    <name>Lesson-3.6-Creating-Invocations</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -34,5 +33,5 @@
             <version>1.0 Version</version>
         </dependency>
     </dependencies>
-    
+
 </project>

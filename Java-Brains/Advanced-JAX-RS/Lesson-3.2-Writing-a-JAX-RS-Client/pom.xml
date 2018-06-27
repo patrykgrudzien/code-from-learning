@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-2-3-param-converters</artifactId>
-    <name>Lesson 2.3 Param Converters</name>
+    <artifactId>Lesson-3.2-Writing-a-JAX-RS-Client</artifactId>
     <packaging>war</packaging>
+    <name>Lesson-3.2-Writing-a-JAX-RS-Client</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

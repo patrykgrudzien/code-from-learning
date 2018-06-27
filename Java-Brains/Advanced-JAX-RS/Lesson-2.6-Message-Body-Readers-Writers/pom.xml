@@ -11,11 +11,10 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>lesson-2-6-message-body-readers-writers</artifactId>
+    <artifactId>Lesson-2.6-Message-Body-Readers-Writers</artifactId>
     <version>1.0 Version</version>
     <packaging>war</packaging>
-
-    <name>Lesson 2.6 Message Body Readers Writers</name>
+    <name>Lesson-2.6-Message-Body-Readers-Writers</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
