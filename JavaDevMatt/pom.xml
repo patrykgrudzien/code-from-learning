@@ -10,13 +10,12 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>java-dev-matt</artifactId>
+    <artifactId>JavaDevMatt</artifactId>
     <packaging>pom</packaging>
-
     <name>JavaDevMatt</name>
 
     <modules>
-        <module>Wzorce projektowe</module>
+        <module>Wzorce-projektowe</module>
     </modules>
     
 </project>

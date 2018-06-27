@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>wzorce-projektowe</artifactId>
+    <artifactId>Wzorce-projektowe</artifactId>
     <packaging>pom</packaging>
-    <name>Wzorce projektowe</name>
+    <name>Wzorce-projektowe</name>
 
     <modules>
         <module>Observer</module>

@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>klonowanie-obiektow</artifactId>
-    <name>Klonowanie obiektow</name>
+    <name>Klonowanie-obiektow</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

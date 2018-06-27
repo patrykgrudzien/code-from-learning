@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>java-podstawy-viii</artifactId>
+        <artifactId>Java-Podstawy-VIII</artifactId>
         <version>1.0 Version</version>
     </parent>
 
     <artifactId>rozdzial-14-wielowatkowosc</artifactId>
     <packaging>pom</packaging>
-    <name>Rozdzial 14 - Wielowatkowosc</name>
+    <name>Rozdzial-14-Wielowatkowosc</name>
 
     <modules>
-        <module>1. Czym sa watki</module>
-        <module>5. Synchronizacja</module>
+        <module>1-Czym-sa-watki</module>
+        <module>5-Synchronizacja</module>
     </modules>
 
 </project>

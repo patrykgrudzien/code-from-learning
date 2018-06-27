@@ -6,17 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>Java-Podstawy-VIII</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>java-podstawy-viii</artifactId>
+    <artifactId>rozdzial-6-interfejsy-i-klasy-wewnetrzne</artifactId>
     <packaging>pom</packaging>
-    <name>Java Podstawy VIII</name>
+    <name>Rozdzial-6-Interfejsy-I-Klasy-Wewnetrzne</name>
 
     <modules>
-        <module>Rozdzial 6 - Interfejsy i klasy wewnetrzne</module>
-        <module>Rozdzial 14 - Wielowatkowosc</module>
+        <module>Klonowanie-obiektow</module>
     </modules>
-    
+
 </project>

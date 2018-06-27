@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>rozdzial-14-wielowatkowosc</artifactId>
+        <artifactId>synchronizacja</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>czym-sa-watki</artifactId>
-    <name>1. Czym sa watki</name>
+    <artifactId>1-Przyklad-sytuacji-powodujacej-wyscig</artifactId>
+    <name>1-Przyklad-sytuacji-powodujacej-wyscig</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

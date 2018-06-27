@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>blokada-warunek</artifactId>
-    <name>2. Blokada i warunek</name>
+    <artifactId>2-Blokada-i-warunek</artifactId>
+    <name>2-Blokada-i-warunek</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

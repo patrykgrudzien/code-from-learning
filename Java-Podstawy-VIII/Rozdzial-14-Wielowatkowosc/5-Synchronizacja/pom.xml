@@ -6,16 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>java-podstawy-viii</artifactId>
+        <artifactId>rozdzial-14-wielowatkowosc</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>rozdzial-6-interfejsy-i-klasy-wewnetrzne</artifactId>
+    <artifactId>5-Synchronizacja</artifactId>
     <packaging>pom</packaging>
-    <name>Rozdzial 6 - Interfejsy i klasy wewnetrzne</name>
+    <name>5-Synchronizacja</name>
 
     <modules>
-        <module>Klonowanie obiektow</module>
+        <module>1-Przyklad-sytuacji-powodujacej-wyscig</module>
+        <module>2-Blokada-i-warunek</module>
     </modules>
 
 </project>

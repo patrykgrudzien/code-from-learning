@@ -6,17 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>rozdzial-14-wielowatkowosc</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>synchronizacja</artifactId>
+    <artifactId>Java-Podstawy-VIII</artifactId>
     <packaging>pom</packaging>
-    <name>5. Synchronizacja</name>
+    <name>Java-Podstawy-VIII</name>
 
     <modules>
-        <module>1. Przyklad sytuacji powodujacej wyscig</module>
-        <module>2. Blokada i warunek</module>
+        <module>Rozdzial-6-Interfejsy-I-Klasy-Wewnetrzne</module>
+        <module>Rozdzial-14-Wielowatkowosc</module>
     </modules>
-
+    
 </project>
