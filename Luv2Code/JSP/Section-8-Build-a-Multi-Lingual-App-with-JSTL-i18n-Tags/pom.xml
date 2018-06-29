@@ -6,16 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>JSP</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
-    <packaging>pom</packaging>
-    <name>Jenkov.com</name>
-
-    <modules>
-        <module>Jackson-Java-JSON</module>
-    </modules>
+    <artifactId>Section-8-Build-a-Multi-Lingual-App-with-JSTL-i18n-Tags</artifactId>
+    <name>Section-8-Build-a-Multi-Lingual-App-with-JSTL-i18n-Tags</name>
     
 </project>

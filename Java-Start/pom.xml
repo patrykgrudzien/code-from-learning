@@ -10,12 +10,13 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Java-Start</artifactId>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
+    <name>Java-Start</name>
 
     <modules>
-        <module>Jackson-Java-JSON</module>
+        <module>Rekurencja</module>
+        <module>Interfejs-Set</module>
     </modules>
-    
+
 </project>

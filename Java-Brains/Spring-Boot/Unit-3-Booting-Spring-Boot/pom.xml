@@ -6,16 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>Spring-Boot</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Unit-3-Booting-Spring-Boot</artifactId>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
+    <name>Unit-3-Booting-Spring-Boot</name>
 
-    <modules>
-        <module>Jackson-Java-JSON</module>
-    </modules>
-    
 </project>

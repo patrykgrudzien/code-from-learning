@@ -6,20 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Java-Brains</artifactId>
+        <artifactId>Section-4-Reading-HTML-Form-Data-with-JSP</artifactId>
         <version>1.0 Version</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>Java-8-Java-Brains</artifactId>
-    <name>Java-8-Java-Brains</name>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>Unit-1-Using-Lambdas</module>
-        <module>Unit-2-More-Lambda-Features</module>
-        <module>Unit-3-Method-References-and-Collections</module>
-    </modules>
+    <artifactId>25-drop-down-list</artifactId>
+    <packaging>war</packaging>
+    <name>25. Drop Down Lists</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -30,7 +23,17 @@
         </resources>
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${target.directory}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.plugin.version}</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webappDirectory>${web.directory}</webappDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

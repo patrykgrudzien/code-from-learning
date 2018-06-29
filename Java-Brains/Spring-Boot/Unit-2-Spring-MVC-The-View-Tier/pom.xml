@@ -6,20 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Java-Brains</artifactId>
+        <artifactId>Spring-Boot</artifactId>
         <version>1.0 Version</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>Java-8-Java-Brains</artifactId>
-    <name>Java-8-Java-Brains</name>
+    <artifactId>Unit-2-Spring-MVC-The-View-Tier</artifactId>
     <packaging>pom</packaging>
-
-    <modules>
-        <module>Unit-1-Using-Lambdas</module>
-        <module>Unit-2-More-Lambda-Features</module>
-        <module>Unit-3-Method-References-and-Collections</module>
-    </modules>
+    <name>Unit-2-Spring-MVC-The-View-Tier</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

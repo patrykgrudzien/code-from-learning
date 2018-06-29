@@ -6,16 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>JSP</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Section-5-State-Management-with-JSP</artifactId>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
+    <name>Section-5-State-Management-with-JSP</name>
 
     <modules>
-        <module>Jackson-Java-JSON</module>
+        <module>31. Tracking user actions with Sessions</module>
+        <module>36. Personalize Content with Cookies</module>
     </modules>
-    
+
 </project>

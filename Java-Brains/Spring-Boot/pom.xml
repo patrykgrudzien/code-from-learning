@@ -16,11 +16,11 @@
     <name>Spring-Boot</name>
 
     <modules>
-        <module>Unit 1 - Introducing Spring Boot</module>
-        <module>Unit 2 - Spring MVC The View Tier</module>
-        <module>Unit 3 - Booting Spring Boot</module>
-        <module>Unit 4 - Spring Data JPA The Data Tier</module>
-        <module>Unit 5 - Deployment and monitoring</module>
+        <module>Unit-1-Introducing-Spring-Boot</module>
+        <module>Unit-2-Spring-MVC-The-View-Tier</module>
+        <module>Unit-3-Booting-Spring-Boot</module>
+        <module>Unit-4-Spring-Data-JPA-The-Data-Tier</module>
+        <module>Unit-5-Deployment-and-monitoring</module>
     </modules>
 
     <build>

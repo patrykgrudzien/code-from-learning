@@ -10,14 +10,14 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>database</artifactId>
+    <artifactId>Database</artifactId>
     <packaging>pom</packaging>
     <name>Database</name>
 
     <modules>
-        <module>JDBC Example</module>
-        <module>JDBC DataSource Example</module>
-        <module>Tomcat DataSource JNDI Example</module>
+        <module>JDBC-Example</module>
+        <module>JDBC-DataSource-Example</module>
+        <module>Tomcat-DataSource-JNDI-Example</module>
     </modules>
 
     <dependencies>

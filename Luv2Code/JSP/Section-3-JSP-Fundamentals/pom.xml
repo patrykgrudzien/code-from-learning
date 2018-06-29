@@ -6,16 +6,22 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>JSP</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Section-3-JSP-Fundamentals</artifactId>
+    <name>Section-3-JSP-Fundamentals</name>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
 
     <modules>
-        <module>Jackson-Java-JSON</module>
+        <module>16. JSP Hello World</module>
+        <module>17. JSP Expressions</module>
+        <module>18. JSP Scriplets</module>
+        <module>19. JSP Declarations</module>
+        <module>20. Call Java Class from JSP</module>
+        <module>21. JSP Built-in Objects</module>
+        <module>22. Including Files in JSP</module>
     </modules>
-    
+
 </project>

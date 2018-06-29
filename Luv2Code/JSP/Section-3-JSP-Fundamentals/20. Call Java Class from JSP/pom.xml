@@ -6,20 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Java-Brains</artifactId>
+        <artifactId>Section-3-JSP-Fundamentals</artifactId>
         <version>1.0 Version</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>Java-8-Java-Brains</artifactId>
-    <name>Java-8-Java-Brains</name>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>Unit-1-Using-Lambdas</module>
-        <module>Unit-2-More-Lambda-Features</module>
-        <module>Unit-3-Method-References-and-Collections</module>
-    </modules>
+    <artifactId>20-call-java-class-from-jsp</artifactId>
+    <packaging>war</packaging>
+    <name>20. Call Java Class from JSP</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -30,7 +23,21 @@
         </resources>
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${target.directory}</outputDirectory>
+        <outputDirectory>${src.target.directory}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.plugin.version}</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${web.directory}</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

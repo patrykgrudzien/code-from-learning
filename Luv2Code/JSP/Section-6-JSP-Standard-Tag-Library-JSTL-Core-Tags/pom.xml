@@ -6,16 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>JSP</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
-    <packaging>pom</packaging>
-    <name>Jenkov.com</name>
-
-    <modules>
-        <module>Jackson-Java-JSON</module>
-    </modules>
+    <artifactId>Section-6-JSP-Standard-Tag-Library-JSTL-Core-Tags</artifactId>
+    <name>Section-6-JSP-Standard-Tag-Library-JSTL-Core-Tags</name>
     
 </project>

@@ -6,16 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>Journal-Dev</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Java-8-Features</artifactId>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
+    <name>Java-8-Features</name>
 
     <modules>
-        <module>Jackson-Java-JSON</module>
+        <module>Java-Time-API</module>
     </modules>
     
 </project>

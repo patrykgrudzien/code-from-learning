@@ -6,16 +6,19 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>JSP</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Section-4-Reading-HTML-Form-Data-with-JSP</artifactId>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
+    <name>Section-4-Reading-HTML-Form-Data-with-JSP</name>
 
     <modules>
-        <module>Jackson-Java-JSON</module>
+        <module>24. HTML Forms Overview Part 2</module>
+        <module>25. Drop Down Lists</module>
+        <module>26. Radio Buttons</module>
+        <module>28. Checkboxes Write Some Code</module>
     </modules>
-    
+
 </project>

@@ -29,7 +29,7 @@
     <dependencies>
         <dependency>
             <groupId>com.jurik99</groupId>
-            <artifactId>lesson-3-2-writing-a-JAX-RS-client</artifactId>
+            <artifactId>Lesson-3.2-Writing-a-JAX-RS-Client</artifactId>
             <version>1.0 Version</version>
         </dependency>
     </dependencies>

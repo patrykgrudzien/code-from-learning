@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>JMS</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>JMS-V.1.1-Example</artifactId>
+    <name>JMS-V.1.1-Example</name>
+
+    <build>
+        <finalName>EmbeddedJMS1.1Example</finalName>
+    </build>
+
+    <dependencies>
+        <!-- CORE -->
+        <dependency>
+            <groupId>org.hornetq</groupId>
+            <artifactId>hornetq-core</artifactId>
+        </dependency>
+        <!-- CLIENT -->
+        <dependency>
+            <groupId>org.hornetq</groupId>
+            <artifactId>hornetq-jms-client</artifactId>
+        </dependency>
+        <!-- SERVER -->
+        <dependency>
+            <groupId>org.hornetq</groupId>
+            <artifactId>hornetq-jms-server</artifactId>
+        </dependency>
+        <!-- JMS API -->
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>javax.jms-api</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

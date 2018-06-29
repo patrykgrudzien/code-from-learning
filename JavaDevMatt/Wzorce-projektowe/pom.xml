@@ -6,16 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>JavaDevMatt</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Jenkov.com</artifactId>
+    <artifactId>Wzorce-projektowe</artifactId>
     <packaging>pom</packaging>
-    <name>Jenkov.com</name>
+    <name>Wzorce-projektowe</name>
 
     <modules>
-        <module>Jackson-Java-JSON</module>
+        <module>Observer</module>
     </modules>
     
 </project>

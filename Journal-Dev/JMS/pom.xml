@@ -15,7 +15,7 @@
     <name>JMS</name>
 
     <modules>
-        <module>JMS V.1.1 Example</module>
+        <module>JMS-V.1.1-Example</module>
     </modules>
 
     <dependencyManagement>
