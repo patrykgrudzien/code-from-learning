@@ -15,10 +15,10 @@
     <name>Introduction-to-Hibernate</name>
 
     <modules>
-        <module>0. Init Schemas Helper</module>
-        <module>Unit 1 - Getting Started</module>
-        <module>Unit 2 - Entity Mapping with JPA</module>
-        <module>Unit 3 - Mapping Collections and Inheritance Hierarchies</module>
+        <module>0-Init-Schemas-Helper</module>
+        <module>Unit-1-Getting-Started</module>
+        <module>Unit-2-Entity-Mapping-With-JPA</module>
+        <module>Unit-3-Mapping-Collections-And-Inheritance-Hierarchies</module>
     </modules>
 
     <dependencies>

@@ -30,7 +30,7 @@
         </dependency>
         <dependency>
             <groupId>com.jurik99</groupId>
-            <artifactId>init-schemas-helper</artifactId>
+            <artifactId>0-Init-Schemas-Helper</artifactId>
             <version>1.0 Version</version>
         </dependency>
     </dependencies>
