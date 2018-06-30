@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>16-jsp-hello-world</artifactId>
+    <artifactId>19-jsp-declarations</artifactId>
     <packaging>war</packaging>
-    <name>16. JSP Hello World</name>
+    <name>19-JSP-Declarations</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -40,5 +40,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

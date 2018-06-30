@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>22-including-files-in-jsp</artifactId>
+    <artifactId>17-jsp-expressions</artifactId>
     <packaging>war</packaging>
-    <name>22. Including Files in JSP</name>
+    <name>17-JSP-Expressions</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -23,7 +23,7 @@
         </resources>
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
-        <outputDirectory>${src.target.directory}</outputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -31,7 +31,6 @@
                 <version>${war.plugin.version}</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <webappDirectory>${web.directory}</webappDirectory>
                     <webResources>
                         <resource>
                             <directory>${web.directory}</directory>

@@ -12,7 +12,7 @@
 
     <artifactId>21-jsp-built-in-objects</artifactId>
     <packaging>war</packaging>
-    <name>21. JSP Built-in Objects</name>
+    <name>21-JSP-Built-in-Objects</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

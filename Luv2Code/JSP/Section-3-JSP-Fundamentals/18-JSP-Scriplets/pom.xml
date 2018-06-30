@@ -12,7 +12,7 @@
 
     <artifactId>18-jsp-scriplets</artifactId>
     <packaging>war</packaging>
-    <name>18. JSP Scriplets</name>
+    <name>18-JSP-Scriplets</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>17-jsp-expressions</artifactId>
+    <artifactId>16-jsp-hello-world</artifactId>
     <packaging>war</packaging>
-    <name>17. JSP Expressions</name>
+    <name>16-JSP-Hello-World</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -40,5 +40,5 @@
             </plugin>
         </plugins>
     </build>
-
+    
 </project>
