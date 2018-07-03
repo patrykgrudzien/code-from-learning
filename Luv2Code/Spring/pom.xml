@@ -10,15 +10,15 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>spring-all-courses</artifactId>
+    <artifactId>Spring</artifactId>
     <packaging>pom</packaging>
-    <name>Spring All Courses</name>
+    <name>Spring</name>
 
     <modules>
-        <module>Spring CORE</module>
-        <module>Spring MVC</module>
-        <module>Spring MVC Form Validation</module>
-        <module>Build a Database Web App - Spring MVC and Hibernate Project</module>
+        <module>Spring-CORE</module>
+        <module>Spring-MVC</module>
+        <module>Spring-MVC-Form-Validation</module>
+        <module>Build-a-Database-Web-App-Spring-MVC-and-Hibernate-Project</module>
         <module>Hibernate</module>
         <module>Spring-Security</module>
     </modules>

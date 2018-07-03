@@ -6,19 +6,19 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>spring-all-courses</artifactId>
+        <artifactId>Spring</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>hibernate-luv2code-parent</artifactId>
+    <artifactId>Hibernate</artifactId>
     <packaging>pom</packaging>
-    <name>HIbernate Luv2Code</name>
+    <name>Hibernate</name>
 
     <modules>
-        <module>Setting Up Hibernate Development Environment</module>
-        <module>Configuration with Annotations</module>
-        <module>Hibernate CRUD Features - Create, Read, Update and Delete</module>
-        <module>HIbernate Advanced Mappings - OneToOne</module>
+        <module>Setting-Up-Hibernate-Development-Environment</module>
+        <module>Configuration-with-Annotations</module>
+        <module>Hibernate-CRUD-Features-Create-Read-Update-and-Delete</module>
+        <module>Hibernate-Advanced-Mappings-OneToOne</module>
     </modules>
 
     <dependencies>

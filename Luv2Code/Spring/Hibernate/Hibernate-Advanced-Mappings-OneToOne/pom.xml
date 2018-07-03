@@ -7,13 +7,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>hibernate-luv2code-parent</artifactId>
+        <artifactId>Hibernate</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>hibernate-advanced-mappings-one-to-one</artifactId>
+    <artifactId>Hibernate-Advanced-Mappings-OneToOne</artifactId>
     <packaging>pom</packaging>
-    <name>Hibernate Advanced Mappings - OneToOne</name>
+    <name>Hibernate-Advanced-Mappings-OneToOne</name>
 
     <build>
         <finalName>Hibernate Advanced Mappings - OneToOne</finalName>

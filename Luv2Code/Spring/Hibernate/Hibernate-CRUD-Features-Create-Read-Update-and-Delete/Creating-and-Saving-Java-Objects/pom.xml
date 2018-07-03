@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>hibernate-crud-features-create-read-update-and-delete</artifactId>
+        <artifactId>Hibernate-CRUD-Features-Create-Read-Update-and-Delete</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>creating-and-saving-java-objects</artifactId>
+    <artifactId>Creating-and-Saving-Java-Objects</artifactId>
     <packaging>pom</packaging>
-    <name>Creating and Saving Java Objects</name>
+    <name>Creating-and-Saving-Java-Objects</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

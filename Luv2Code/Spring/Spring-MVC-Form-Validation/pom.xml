@@ -6,18 +6,18 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>hibernate-luv2code-parent</artifactId>
+        <artifactId>Spring</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>hibernate-crud-features-create-read-update-and-delete</artifactId>
+    <artifactId>Spring-MVC-Form-Validation</artifactId>
+    <name>Spring-MVC-Form-Validation</name>
     <packaging>pom</packaging>
-    <name>Hibernate CRUD Features - Create, Read, Update and Delete</name>
 
     <modules>
-        <module>Creating and Saving Java Objects</module>
-        <module>Primary Keys</module>
-        <module>Reading Objects</module>
+        <module>1-Applying-Built-In-Validation-Rules</module>
+        <module>2-Validating-Number-Ranges-and-Regular-Expressions</module>
+        <module>3-Creating-Custom-Validation-Rules</module>
     </modules>
 
 </project>

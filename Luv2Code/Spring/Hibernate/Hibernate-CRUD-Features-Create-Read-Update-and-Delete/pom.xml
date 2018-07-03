@@ -6,18 +6,18 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>spring-all-courses</artifactId>
+        <artifactId>Hibernate</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>spring-mvc-form-validation</artifactId>
-    <name>Spring MVC Form Validation</name>
+    <artifactId>Hibernate-CRUD-Features-Create-Read-Update-and-Delete</artifactId>
     <packaging>pom</packaging>
+    <name>Hibernate-CRUD-Features-Create-Read-Update-and-Delete</name>
 
     <modules>
-        <module>1. Applying Built-In Validation Rules</module>
-        <module>2. Validating Number Ranges and Regular Expressions</module>
-        <module>3. Creating Custom Validation Rules</module>
+        <module>Creating-and-Saving-Java-Objects</module>
+        <module>Primary-Keys</module>
+        <module>Reading-Objects</module>
     </modules>
 
 </project>

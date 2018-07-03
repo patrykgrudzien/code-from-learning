@@ -6,16 +6,15 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>hibernate-luv2code-parent</artifactId>
+        <artifactId>Spring-MVC-Form-Validation</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>configuration-with-annotations</artifactId>
-    <packaging>pom</packaging>
-    <name>Configuration with Annotations</name>
+    <artifactId>1-Applying-Built-In-Validation-Rules</artifactId>
+    <packaging>war</packaging>
+    <name>1-Applying-Built-In-Validation-Rules</name>
 
     <build>
-        <finalName>Configuration with Annotations</finalName>
         <sourceDirectory>${java.directory}</sourceDirectory>
         <resources>
             <resource>
@@ -25,6 +24,20 @@
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.plugin.version}</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${web.directory}</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
+    
 </project>

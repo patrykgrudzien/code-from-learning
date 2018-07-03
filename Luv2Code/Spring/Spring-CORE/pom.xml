@@ -7,12 +7,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>spring-all-courses</artifactId>
+        <artifactId>Spring</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>spring-core</artifactId>
-    <name>Spring CORE</name>
+    <artifactId>Spring-CORE</artifactId>
+    <name>Spring-CORE</name>
     <packaging>war</packaging>
     <url>http://maven.apache.org</url>
 

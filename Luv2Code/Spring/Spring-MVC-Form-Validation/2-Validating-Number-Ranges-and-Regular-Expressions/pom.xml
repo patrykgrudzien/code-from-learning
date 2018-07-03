@@ -6,12 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>spring-all-courses</artifactId>
+        <artifactId>Spring-MVC-Form-Validation</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>build-a-database-web-app-spring-MVC-and-hibernate-project</artifactId>
-    <name>Build a Database Web App - Spring MVC and Hibernate Project</name>
+    <artifactId>2-Validating-Number-Ranges-and-Regular-Expressions</artifactId>
+    <name>2-Validating-Number-Ranges-and-Regular-Expressions</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -38,5 +38,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

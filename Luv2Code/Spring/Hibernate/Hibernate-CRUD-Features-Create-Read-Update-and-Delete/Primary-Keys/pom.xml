@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>hibernate-crud-features-create-read-update-and-delete</artifactId>
+        <artifactId>Hibernate-CRUD-Features-Create-Read-Update-and-Delete</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>primry-keys</artifactId>
+    <artifactId>Primary-Keys</artifactId>
     <packaging>pom</packaging>
-    <name>Primary Keys</name>
+    <name>Primary-Keys</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
