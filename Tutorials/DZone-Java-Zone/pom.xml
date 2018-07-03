@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>DZone-Java-Zone</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>Rx-Java-Quick-Introduction</module>

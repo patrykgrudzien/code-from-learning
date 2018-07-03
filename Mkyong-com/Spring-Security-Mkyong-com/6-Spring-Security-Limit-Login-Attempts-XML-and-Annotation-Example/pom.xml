@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>5-Spring-Security-Form-Login-Using-Database–XML-and-Annotation-Example</artifactId>
-    <name>5-Spring-Security-Form-Login-Using-Database–XML-and-Annotation-Example</name>
+    <artifactId>6-Spring-Security-Limit-Login-Attempts-XML-and-Annotation-Example</artifactId>
+    <name>6-Spring-Security-Limit-Login-Attempts-XML-and-Annotation-Example</name>
     
 </project>

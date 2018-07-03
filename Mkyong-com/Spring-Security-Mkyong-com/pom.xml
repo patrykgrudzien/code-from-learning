@@ -19,8 +19,8 @@
         <module>2-Spring-Security-Hello-World-Annotation-Example</module>
         <module>3-Spring-Security-Custom-Login-Form-XML-Example</module>
         <module>4-Spring-Security-Custom-Login-Form-Annotation-Example</module>
-        <module>5-Spring-Security-Form-Login-Using-Database–XML-and-Annotation-Example</module>
-        <module>6-Spring-Security-Limit-Login-Attempts–XML-and-Annotation-Example</module>
+        <module>5-Spring-Security-Form-Login-Using-Database-XML-and-Annotation-Example</module>
+        <module>6-Spring-Security-Limit-Login-Attempts-XML-and-Annotation-Example</module>
         <module>7-Spring-Security-Remember-Me-Example</module>
         <module>8-Spring-Security-password-hashing-example</module>
         <module>9-Spring-Security-Hibernate-XML-Example</module>

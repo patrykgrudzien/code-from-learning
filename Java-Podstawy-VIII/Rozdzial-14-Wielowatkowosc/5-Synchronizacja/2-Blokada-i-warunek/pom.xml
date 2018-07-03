@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>synchronizacja</artifactId>
+        <artifactId>5-Synchronizacja</artifactId>
         <version>1.0 Version</version>
     </parent>
 
