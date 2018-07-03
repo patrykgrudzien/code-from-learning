@@ -6,11 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>mockito-tutorial-learn-mocking-with-25-junit-examples</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-2-unit-testing-with-junit</artifactId>
-    <name>Section 2 - Unit Testing with Junit</name>
-    
+    <artifactId>Unversioned-Code</artifactId>
+    <name>Unversioned-Code</name>
+
 </project>

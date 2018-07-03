@@ -6,16 +6,19 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>the-complete-jenkins-course-for-developers-and-devops</artifactId>
+        <artifactId>1-Getting-started-with-Jenkins</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>getting-started-with-jenkins</artifactId>
-    <packaging>pom</packaging>
-    <name>1. Getting started with Jenkins</name>
+    <artifactId>Part-2-Introduction-to-Continuous-Integration</artifactId>
+    <name>Part-2-Introduction-to-Continuous-Integration</name>
 
-    <modules>
-        <module>Part 2. Introduction to Continuous Integration</module>
-    </modules>
-
+    <build>
+        <resources>
+            <resource>
+                <directory>${screenshots.main.directory}</directory>
+            </resource>
+        </resources>
+    </build>
+    
 </project>

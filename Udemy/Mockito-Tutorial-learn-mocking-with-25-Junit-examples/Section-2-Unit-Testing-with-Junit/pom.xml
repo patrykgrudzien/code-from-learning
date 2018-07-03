@@ -6,16 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>udemy</artifactId>
+        <artifactId>Mockito-Tutorial-learn-mocking-with-25-Junit-examples</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>the-complete-jenkins-course-for-developers-and-devops</artifactId>
-    <packaging>pom</packaging>
-    <name>The Complete Jenkins Course For Developers and DevOps</name>
-
-    <modules>
-        <module>1. Getting started with Jenkins</module>
-    </modules>
+    <artifactId>Section-2-Unit-Testing-with-Junit</artifactId>
+    <name>Section-2-Unit-Testing-with-Junit</name>
     
 </project>

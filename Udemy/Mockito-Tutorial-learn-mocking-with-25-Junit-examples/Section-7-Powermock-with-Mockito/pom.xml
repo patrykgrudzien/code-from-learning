@@ -6,17 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>Mockito-Tutorial-learn-mocking-with-25-Junit-examples</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Udemy</artifactId>
-    <packaging>pom</packaging>
-    <name>Udemy</name>
-
-    <modules>
-        <module>Mockito-Tutorial-learn-mocking-with-25-Junit-examples</module>
-        <module>The-Complete-Jenkins-Course-For-Developers-and-DevOps</module>
-    </modules>
-
+    <artifactId>Section-7-Powermock-with-Mockito</artifactId>
+    <name>Section-7-Powermock-with-Mockito</name>
+    
 </project>

@@ -6,11 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>mockito-tutorial-learn-mocking-with-25-junit-examples</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-6-mockito-advanced</artifactId>
-    <name>Section 6 - Mockito Advanced</name>
+    <artifactId>Vogella-com</artifactId>
+    <packaging>pom</packaging>
+    <name>Vogella-com</name>
+
+    <modules>
+        <module>Mockito</module>
+        <module>Rx-Java</module>
+    </modules>
     
 </project>

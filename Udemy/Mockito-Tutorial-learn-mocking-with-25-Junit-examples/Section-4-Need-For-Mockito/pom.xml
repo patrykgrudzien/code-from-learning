@@ -6,11 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>mockito-tutorial-learn-mocking-with-25-junit-examples</artifactId>
+        <artifactId>Mockito-Tutorial-learn-mocking-with-25-Junit-examples</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-7-powermock-with-mockito</artifactId>
-    <name>Section 7 - Powermock with Mockito</name>
-    
+    <artifactId>Section-4-Need-For-Mockito</artifactId>
+    <name>Section-4-Need-For-Mockito</name>
+
 </project>

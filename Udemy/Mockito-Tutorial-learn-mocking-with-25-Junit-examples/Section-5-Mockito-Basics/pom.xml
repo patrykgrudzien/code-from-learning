@@ -6,19 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>getting-started-with-jenkins</artifactId>
+        <artifactId>Mockito-Tutorial-learn-mocking-with-25-Junit-examples</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>part-2-introduction-to-continuous-integration</artifactId>
-    <name>Part 2. Introduction to Continuous Integration</name>
+    <artifactId>Section-5-Mockito-Basics</artifactId>
+    <name>Section-5-Mockito-Basics</name>
 
-    <build>
-        <resources>
-            <resource>
-                <directory>${screenshots.main.directory}</directory>
-            </resource>
-        </resources>
-    </build>
-    
 </project>

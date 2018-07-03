@@ -6,11 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>mockito-tutorial-learn-mocking-with-25-junit-examples</artifactId>
+        <artifactId>The-Complete-Jenkins-Course-For-Developers-and-DevOps</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-1-introduction</artifactId>
-    <name>Section 1 - Introduction</name>
+    <artifactId>1-Getting-started-with-Jenkins</artifactId>
+    <packaging>pom</packaging>
+    <name>1-Getting-started-with-Jenkins</name>
+
+    <modules>
+        <module>Part-2-Introduction-to-Continuous-Integration</module>
+    </modules>
 
 </project>

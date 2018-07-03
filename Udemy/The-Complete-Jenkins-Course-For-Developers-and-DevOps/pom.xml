@@ -6,11 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>mockito-tutorial-learn-mocking-with-25-junit-examples</artifactId>
+        <artifactId>Udemy</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-3-getting-ready-for-mockito</artifactId>
-    <name>Section 3 - Getting Ready for Mockito</name>
+    <artifactId>The-Complete-Jenkins-Course-For-Developers-and-DevOps</artifactId>
+    <packaging>pom</packaging>
+    <name>The-Complete-Jenkins-Course-For-Developers-and-DevOps</name>
+
+    <modules>
+        <module>1-Getting-started-with-Jenkins</module>
+    </modules>
     
 </project>
