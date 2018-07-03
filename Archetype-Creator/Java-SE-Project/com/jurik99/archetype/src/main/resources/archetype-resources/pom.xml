@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>All-Java-Code</artifactId>
+        <artifactId>My-Whole-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 

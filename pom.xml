@@ -6,11 +6,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jurik99</groupId>
-    <artifactId>All-Java-Code</artifactId>
+    <artifactId>My-Whole-Code</artifactId>
     <version>1.0 Version</version>
     <packaging>pom</packaging>
-    <name>All-Java-Code</name>
-    <description>Module containing whole sub projects.</description>
+    <name>My-Whole-Code</name>
 
     <modules>
         <module>Java-Brains</module>
