@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>section-10-mvc-build-an-mvc-app-with-servlets-and-jsp</artifactId>
+        <artifactId>Section-10-MVC-Build-an-MVC-App-with-Servlets-and-JSP</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mvc-with-servlets-and-jsp</artifactId>
+    <artifactId>67-MVC-with-Servlets-and-JSP</artifactId>
     <packaging>war</packaging>
-    <name>67. MVC with Servlets and JSP</name>
+    <name>67-MVC-with-Servlets-and-JSP</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

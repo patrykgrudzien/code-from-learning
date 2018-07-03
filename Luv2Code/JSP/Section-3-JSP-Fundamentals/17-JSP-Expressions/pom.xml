@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>17-jsp-expressions</artifactId>
+    <artifactId>17-JSP-Expressions</artifactId>
     <packaging>war</packaging>
     <name>17-JSP-Expressions</name>
 

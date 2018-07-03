@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>19-jsp-declarations</artifactId>
+    <artifactId>19-JSP-Declarations</artifactId>
     <packaging>war</packaging>
     <name>19-JSP-Declarations</name>
 

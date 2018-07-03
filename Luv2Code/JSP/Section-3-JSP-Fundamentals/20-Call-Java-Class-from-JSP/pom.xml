@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>20-call-java-class-from-jsp</artifactId>
+    <artifactId>20-Call-Java-Class-from-JSP</artifactId>
     <packaging>war</packaging>
     <name>20-Call-Java-Class-from-JSP</name>
 

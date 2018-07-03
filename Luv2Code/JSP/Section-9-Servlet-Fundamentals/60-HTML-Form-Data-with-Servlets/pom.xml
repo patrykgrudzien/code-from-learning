@@ -6,32 +6,36 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Section-4-Reading-HTML-Form-Data-with-JSP</artifactId>
+        <artifactId>Section-9-Servlet-Fundamentals</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>25-drop-down-list</artifactId>
+    <artifactId>60-HTML-Form-Data-with-Servlets</artifactId>
     <packaging>war</packaging>
-    <name>25. Drop Down Lists</name>
+    <name>60-HTML-Form-Data-with-Servlets</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${resources.directory}</directory>
-            </resource>
-        </resources>
+            <resources>
+                <resource>
+                    <directory>${resources.directory}</directory>
+                </resource>
+            </resources>
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
+        <outputDirectory>${target.directory}</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${war.plugin.version}</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <webappDirectory>${web.directory}</webappDirectory>
-                </configuration>
+                    <configuration>
+                        <webResources>
+                            <resource>
+                                <directory>${web.directory}</directory>
+                            </resource>
+                        </webResources>
+                    </configuration>
             </plugin>
         </plugins>
     </build>

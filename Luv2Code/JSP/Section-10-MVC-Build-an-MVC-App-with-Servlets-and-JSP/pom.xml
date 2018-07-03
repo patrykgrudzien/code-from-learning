@@ -10,12 +10,12 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-10-mvc-build-an-mvc-app-with-servlets-and-jsp</artifactId>
+    <artifactId>Section-10-MVC-Build-an-MVC-App-with-Servlets-and-JSP</artifactId>
     <packaging>pom</packaging>
-    <name>MVC Build an MVC App with Servlets and JSP</name>
+    <name>Section-10-MVC-Build-an-MVC-App-with-Servlets-and-JSP</name>
 
     <modules>
-        <module>67. MVC with Servlets and JSP</module>
+        <module>67-MVC-with-Servlets-and-JSP</module>
     </modules>
 
 </project>

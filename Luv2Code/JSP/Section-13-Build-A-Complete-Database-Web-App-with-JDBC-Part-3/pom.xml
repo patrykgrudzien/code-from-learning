@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>section-13-build-a-complete-database-web-app-with-jdbc-part-3</artifactId>
+    <artifactId>Section-13-Build-A-Complete-Database-Web-App-with-JDBC-Part-3</artifactId>
     <name>Section-13-Build-A-Complete-Database-Web-App-with-JDBC-Part-3</name>
 
 </project>

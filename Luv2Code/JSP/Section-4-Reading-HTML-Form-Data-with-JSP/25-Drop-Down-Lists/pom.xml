@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>28-checkboxes-write-some-code</artifactId>
+    <artifactId>25-Drop-Down-Lists</artifactId>
     <packaging>war</packaging>
-    <name>28. Checkboxes Write Some Code</name>
+    <name>25-Drop-Down-Lists</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

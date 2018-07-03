@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>22-including-files-in-jsp</artifactId>
+    <artifactId>22-Including-Files-in-JSP</artifactId>
     <packaging>war</packaging>
     <name>22-Including-Files-in-JSP</name>
 

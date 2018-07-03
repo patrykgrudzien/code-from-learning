@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>tracking-user-actions-with-sessions</artifactId>
+    <artifactId>31-Tracking-user-actions-with-Sessions</artifactId>
     <packaging>war</packaging>
-    <name>31. Tracking user actions with Sessions</name>
+    <name>31-Tracking-user-actions-with-Sessions</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

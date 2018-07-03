@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>21-jsp-built-in-objects</artifactId>
+    <artifactId>21-JSP-Built-in-Objects</artifactId>
     <packaging>war</packaging>
     <name>21-JSP-Built-in-Objects</name>
 

@@ -15,13 +15,13 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>16. JSP Hello World</module>
-        <module>17. JSP Expressions</module>
-        <module>18. JSP Scriplets</module>
-        <module>19. JSP Declarations</module>
-        <module>20. Call Java Class from JSP</module>
-        <module>21. JSP Built-in Objects</module>
-        <module>22. Including Files in JSP</module>
+        <module>16-JSP-Hello-World</module>
+        <module>17-JSP-Expressions</module>
+        <module>18-JSP-Scriplets</module>
+        <module>19-JSP-Declarations</module>
+        <module>20-Call-Java-Class-from-JSP</module>
+        <module>21-JSP-Built-in-Objects</module>
+        <module>22-Including-Files-in-JSP</module>
     </modules>
 
 </project>

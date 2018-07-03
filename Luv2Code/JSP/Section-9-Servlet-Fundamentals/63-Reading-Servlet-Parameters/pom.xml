@@ -10,9 +10,9 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>hello-world-servlet</artifactId>
+    <artifactId>63-Reading-Servlet-Parameters</artifactId>
     <packaging>war</packaging>
-    <name>57. Hello World Servlet</name>
+    <name>63-Reading-Servlet-Parameters</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>

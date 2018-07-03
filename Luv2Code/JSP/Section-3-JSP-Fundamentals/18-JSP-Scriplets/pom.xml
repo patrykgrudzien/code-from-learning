@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>18-jsp-scriplets</artifactId>
+    <artifactId>18-JSP-Scriplets</artifactId>
     <packaging>war</packaging>
     <name>18-JSP-Scriplets</name>
 

@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>16-jsp-hello-world</artifactId>
+    <artifactId>16-JSP-Hello-World</artifactId>
     <packaging>war</packaging>
     <name>16-JSP-Hello-World</name>
 
