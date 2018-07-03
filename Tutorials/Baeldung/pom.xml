@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Mockito Annotations</module>
+        <module>Mockito-Annotations</module>
         <module>Guava</module>
         <module>Hystrix</module>
     </modules>

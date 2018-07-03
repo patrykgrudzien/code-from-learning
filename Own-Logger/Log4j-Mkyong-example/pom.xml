@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>vogella-com</artifactId>
+        <artifactId>Own-Logger</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mockito</artifactId>
-    <packaging>pom</packaging>
-    <name>Mockito</name>
+    <artifactId>Log4j-Mkyong-example</artifactId>
+    <packaging>jar</packaging>
+    <name>Log4j-Mkyong-example</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -27,11 +27,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>Log4j-Mkyong-example</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>

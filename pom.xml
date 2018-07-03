@@ -18,7 +18,7 @@
         <module>Luv2Code</module>
         <module>Tutorials</module>
         <module>Cave-Of-Programming</module>
-        <module>Own Logger</module>
+        <module>Own-Logger</module>
         <module>Archetype-Creator</module>
         <module>Algorithms</module>
         <module>SQL</module>
@@ -33,7 +33,6 @@
         <module>Vogella.com</module>
         <module>Udemy</module>
         <module>Jenkov.com</module>
-        <module>Reports</module>
         <module>Java-Podstawy-VIII</module>
         <module>Miscellaneous-Examples</module>
         <module>Found-in-the-Internet</module>

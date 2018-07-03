@@ -15,7 +15,7 @@
     <name>SQL</name>
 
     <modules>
-        <module>Operations on Databases via Java Code</module>
+        <module>Operations-on-Databases-via-Java-Code</module>
         <module>Liquibase</module>
         <module>Definitions</module>
         <module>Queries</module>

@@ -6,13 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>vogella-com</artifactId>
+        <artifactId>youtube</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mockito</artifactId>
-    <packaging>pom</packaging>
-    <name>Mockito</name>
+    <artifactId>Project-Lombok</artifactId>
+    <name>Project-Lombok</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -27,11 +26,6 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>Log4j-Mkyong-example</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>vogella-com</artifactId>
+        <artifactId>guava</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mockito</artifactId>
+    <artifactId>Guava-List</artifactId>
+    <name>Guava-List</name>
     <packaging>pom</packaging>
-    <name>Mockito</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -25,17 +26,5 @@
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>Log4j-Mkyong-example</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-        </dependency>
-    </dependencies>
-
+    
 </project>

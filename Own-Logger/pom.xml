@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>All-Java-Code</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Own-Logger</artifactId>
     <packaging>pom</packaging>
-    <name>Queries</name>
-    
+    <name>Own-Logger</name>
+
+    <modules>
+        <module>Log4j-Mkyong-example</module>
+    </modules>
+
 </project>

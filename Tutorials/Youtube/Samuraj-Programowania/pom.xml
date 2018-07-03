@@ -6,12 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>youtube</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Samuraj-Programowania</artifactId>
+    <name>Samuraj-Programowania</name>
     <packaging>pom</packaging>
-    <name>Queries</name>
+
+    <modules>
+        <module>Strona-internetowa-od-zera</module>
+    </modules>
     
 </project>

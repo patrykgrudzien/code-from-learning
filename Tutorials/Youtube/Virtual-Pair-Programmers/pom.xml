@@ -6,12 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>youtube</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Virtual-Pair-Programmers</artifactId>
     <packaging>pom</packaging>
-    <name>Queries</name>
-    
+    <name>Virtual-Pair-Programmers</name>
+
+    <modules>
+        <module>Spring-MVC-Ajax-and-JSON</module>
+    </modules>
+
 </project>

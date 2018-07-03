@@ -16,13 +16,13 @@
     <name>Youtube</name>
 
     <modules>
-        <module>Corax The Tutor</module>
-        <module>whizdom tr</module>
-        <module>Telusko Learnings</module>
-        <module>Samuraj Programowania</module>
-        <module>Project Lombok</module>
-        <module>Virtual Pair Programmers</module>
-        <module>Spring Framework JMS Integration</module>
+        <module>Corax-The-Tutor</module>
+        <module>whizdom-tr</module>
+        <module>Telusko-Learnings</module>
+        <module>Samuraj-Programowania</module>
+        <module>Project-Lombok</module>
+        <module>Virtual-Pair-Programmers</module>
+        <module>Spring-Framework-JMS-Integration</module>
         <module>Tech-Primers</module>
     </modules>
 

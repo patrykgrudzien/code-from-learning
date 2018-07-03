@@ -6,12 +6,18 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>Spring-Framework-Security-Introduction</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Security-1-Form</artifactId>
     <packaging>pom</packaging>
-    <name>Queries</name>
-    
+    <name>Security-1-Form</name>
+
+    <modules>
+        <module>Using-Windows-Form</module>
+        <module>Using-Default-Spring-Form</module>
+        <module>Using-Own-JSP-Form</module>
+    </modules>
+
 </project>

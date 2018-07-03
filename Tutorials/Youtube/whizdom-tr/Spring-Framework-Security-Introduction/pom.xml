@@ -6,12 +6,17 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>whizdom-tr</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Spring-Framework-Security-Introduction</artifactId>
     <packaging>pom</packaging>
-    <name>Queries</name>
-    
+    <name>Spring-Framework-Security-Introduction</name>
+
+    <modules>
+        <module>Security-1-Form</module>
+        <module>Security-2-Hash-Password</module>
+    </modules>
+
 </project>

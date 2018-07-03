@@ -10,7 +10,7 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>liquibase-hello-world-example</artifactId>
+    <artifactId>Liquibase</artifactId>
     <name>Liquibase</name>
 
     <build>

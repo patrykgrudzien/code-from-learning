@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>vogella-com</artifactId>
+        <artifactId>sql</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mockito</artifactId>
-    <packaging>pom</packaging>
-    <name>Mockito</name>
+    <artifactId>Operations-on-Databases-via-Java-Code</artifactId>
+    <packaging>jar</packaging>
+    <name>Operations-on-Databases-via-Java-Code</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -27,6 +27,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.ibatis</groupId>
+            <artifactId>ibatis2-common</artifactId>
+            <version>${ibatis.common.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.jurik99</groupId>
             <artifactId>Log4j-Mkyong-example</artifactId>

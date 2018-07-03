@@ -6,13 +6,13 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>vogella-com</artifactId>
+        <artifactId>Spring-Framework-Security-Introduction</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mockito</artifactId>
-    <packaging>pom</packaging>
-    <name>Mockito</name>
+    <artifactId>Security-2-Hash-Password</artifactId>
+    <packaging>war</packaging>
+    <name>Security-2-Hash-Password</name>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -24,18 +24,20 @@
         <testSourceDirectory>${test.directory}</testSourceDirectory>
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${war.plugin.version}</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${web.directory}</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>Log4j-Mkyong-example</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

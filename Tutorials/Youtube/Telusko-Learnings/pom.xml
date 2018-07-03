@@ -6,12 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>youtube</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Telusko-Learnings</artifactId>
+    <name>Telusko-Learnings</name>
     <packaging>pom</packaging>
-    <name>Queries</name>
+
+    <modules>
+        <module>Java8</module>
+    </modules>
     
 </project>

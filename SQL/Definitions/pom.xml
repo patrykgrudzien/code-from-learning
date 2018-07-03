@@ -10,8 +10,8 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>definitions-in-sql</artifactId>
+    <artifactId>Definitions</artifactId>
     <packaging>pom</packaging>
-    <name>Definitions in SQL</name>
+    <name>Definitions</name>
 
 </project>

@@ -6,13 +6,11 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>vogella-com</artifactId>
+        <artifactId>Corax-The-Tutor</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>mockito</artifactId>
-    <packaging>pom</packaging>
-    <name>Mockito</name>
+    <artifactId>GUI</artifactId>
 
     <build>
         <sourceDirectory>${java.directory}</sourceDirectory>
@@ -25,17 +23,5 @@
         <testOutputDirectory>${test.target.directory}</testOutputDirectory>
         <outputDirectory>${target.directory}</outputDirectory>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.jurik99</groupId>
-            <artifactId>Log4j-Mkyong-example</artifactId>
-            <version>1.0 Version</version>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

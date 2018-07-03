@@ -28,7 +28,7 @@
         </dependency>
         <dependency>
             <groupId>com.jurik99</groupId>
-            <artifactId>log4j-configuration</artifactId>
+            <artifactId>Log4j-Mkyong-example</artifactId>
             <version>1.0 Version</version>
         </dependency>
     </dependencies>

@@ -6,12 +6,16 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>tutorials</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Tutorials-Point</artifactId>
     <packaging>pom</packaging>
-    <name>Queries</name>
-    
+    <name>Tutorials-Point</name>
+
+    <modules>
+        <module>Design-Patterns-TS</module>
+    </modules>
+
 </project>

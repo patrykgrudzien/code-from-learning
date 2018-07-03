@@ -6,12 +6,19 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>sql</artifactId>
+        <artifactId>youtube</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Queries</artifactId>
+    <artifactId>Corax-The-Tutor</artifactId>
     <packaging>pom</packaging>
-    <name>Queries</name>
-    
+    <name>Corax-The-Tutor</name>
+
+    <modules>
+        <module>Introduction</module>
+        <module>Dziedziczenie</module>
+        <module>GUI</module>
+        <module>Powtorka</module>
+    </modules>
+
 </project>
