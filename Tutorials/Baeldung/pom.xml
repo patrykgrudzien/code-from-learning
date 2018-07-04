@@ -19,6 +19,7 @@
         <module>Mockito-Annotations</module>
         <module>Guava</module>
         <module>Hystrix</module>
+        <module>Vavr-Tutorial</module>
     </modules>
 
 </project>

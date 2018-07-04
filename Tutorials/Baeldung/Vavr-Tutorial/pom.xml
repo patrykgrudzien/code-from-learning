@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>baeldung</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>Vavr-Tutorial</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        Vavr is a functional library for Java 8+ that provides immutable data types and functional control structures. Note that functional
+        programming is not only a new set of tools to get accustomed with but also a new paradigm to understand.
+    </description>
+
+    <modules>
+        <module>Introduction-to-Vavr</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${vavr.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
