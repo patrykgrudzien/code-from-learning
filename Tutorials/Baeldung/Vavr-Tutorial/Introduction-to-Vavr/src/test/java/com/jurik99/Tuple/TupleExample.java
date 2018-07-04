@@ -1,4 +1,4 @@
-package com.jurik99.tuple;
+package com.jurik99.Tuple;
 
 import static org.junit.Assert.assertEquals;
 

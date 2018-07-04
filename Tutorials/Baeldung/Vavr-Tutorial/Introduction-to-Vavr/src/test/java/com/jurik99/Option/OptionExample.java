@@ -1,4 +1,4 @@
-package com.jurik99.option;
+package com.jurik99.Option;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -14,7 +14,7 @@ public class OptionExample {
 	 * Option is an object container in Vavr with a similar end goal like {@link java.util.Optional} in Java 8.
 	 * Vavr's Option implements:
 	 * - {@link java.io.Serializable}
-	 * - {@link java.lang.Iterable}
+	 * - {@link Iterable}
 	 * and has a richer API.
 	 */
 
