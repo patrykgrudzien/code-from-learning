@@ -43,4 +43,13 @@ public class TryExample {
 
 		assertEquals(-1, error);
 	}
+
+	/**
+	 * Or even to explicitly throw an exception of our choice:
+	 */
+	@Test(expected = ArithmeticException.class)
+	public void givenBadCode_whenTryHandles_thenCorrect3() {
+		Try<Integer> result = Try.of(() -> 1 / 0);
+		result.getOrElseThrow(() -> new ArithmeticException("EXCEPTION"));
+	}
 }
