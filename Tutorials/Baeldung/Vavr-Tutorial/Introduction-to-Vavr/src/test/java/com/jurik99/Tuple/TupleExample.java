@@ -1,11 +1,11 @@
 package com.jurik99.Tuple;
 
-import static org.junit.Assert.assertEquals;
-
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
 
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class TupleExample {
 
@@ -35,5 +35,10 @@ public class TupleExample {
 
 		assertEquals("Java", element1);
 		assertEquals(8, element2);
+
+		/**
+		 * A tuple's place is in storing a fixed group of objects of any type that are better processed as a unit and can be
+		 * passed around. A more obvious (use case is returning more than one object from a function or a method) in Java.
+		 */
 	}
 }
