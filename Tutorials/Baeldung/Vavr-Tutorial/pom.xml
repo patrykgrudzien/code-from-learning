@@ -20,6 +20,7 @@
 
     <modules>
         <module>Introduction-to-Vavr</module>
+        <module>Guide-to-Try-in-Vavr</module>
     </modules>
 
     <dependencies>
