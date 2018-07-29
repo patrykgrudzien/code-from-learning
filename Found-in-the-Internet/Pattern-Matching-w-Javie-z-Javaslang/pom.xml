@@ -6,19 +6,19 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>My-Whole-Code</artifactId>
+        <artifactId>Found-in-the-Internet</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Found-in-the-Internet</artifactId>
-    <packaging>pom</packaging>
-    <name>Found-in-the-Internet</name>
+    <artifactId>Pattern-Matching-w-Javie-z-Javaslang</artifactId>
+    <url>https://koziolekweb.pl/2016/06/17/pattern-matching-w-javie-z-javaslang-i/</url>
 
-    <modules>
-        <module>Java-8-Found-In-The-Internet</module>
-        <module>Junit-Examples</module>
-        <module>Java-Honk</module>
-        <module>Pattern-Matching-w-Javie-z-Javaslang</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${vavr.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
