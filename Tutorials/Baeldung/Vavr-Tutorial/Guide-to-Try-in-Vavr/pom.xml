@@ -6,19 +6,10 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>My-Whole-Code</artifactId>
+        <artifactId>Vavr-Tutorial</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Found-in-the-Internet</artifactId>
-    <packaging>pom</packaging>
-    <name>Found-in-the-Internet</name>
-
-    <modules>
-        <module>Java-8-Found-In-The-Internet</module>
-        <module>Junit-Examples</module>
-        <module>Java-Honk</module>
-        <module>Pattern-Matching-w-Javie-z-Javaslang</module>
-    </modules>
+    <artifactId>Guide-to-Try-in-Vavr</artifactId>
 
 </project>

@@ -6,19 +6,15 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>My-Whole-Code</artifactId>
+        <artifactId>youtube</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Found-in-the-Internet</artifactId>
     <packaging>pom</packaging>
-    <name>Found-in-the-Internet</name>
+    <artifactId>Andrzej-Radziejewski</artifactId>
 
     <modules>
-        <module>Java-8-Found-In-The-Internet</module>
-        <module>Junit-Examples</module>
-        <module>Java-Honk</module>
-        <module>Pattern-Matching-w-Javie-z-Javaslang</module>
+        <module>Watki-Java</module>
     </modules>
 
 </project>

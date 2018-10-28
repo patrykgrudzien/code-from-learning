@@ -6,23 +6,12 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>baeldung</artifactId>
+        <artifactId>Found-in-the-Internet</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Vavr-Tutorial</artifactId>
-    <packaging>pom</packaging>
-
-    <description>
-        Vavr is a functional library for Java 8+ that provides immutable data types and functional control structures. Note that functional
-        programming is not only a new set of tools to get accustomed with but also a new paradigm to understand.
-    </description>
-
-    <modules>
-        <module>Introduction-to-Vavr</module>
-        <module>Guide-to-Try-in-Vavr</module>
-        <module>Exceptions-in-Lambda-Using-Vavr</module>
-    </modules>
+    <artifactId>Pattern-Matching-w-Javie-z-Javaslang</artifactId>
+    <url>https://koziolekweb.pl/2016/06/17/pattern-matching-w-javie-z-javaslang-i/</url>
 
     <dependencies>
         <dependency>
