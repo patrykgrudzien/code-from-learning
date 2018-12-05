@@ -20,6 +20,7 @@
         <module>Guava</module>
         <module>Hystrix</module>
         <module>Vavr-Tutorial</module>
+        <module>Introduction-to-Java-8-Date-Time-API</module>
     </modules>
 
 </project>
