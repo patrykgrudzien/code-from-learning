@@ -21,6 +21,7 @@
     <modules>
         <module>Introduction-to-Vavr</module>
         <module>Guide-to-Try-in-Vavr</module>
+        <module>Exceptions-in-Lambda-Using-Vavr</module>
     </modules>
 
     <dependencies>
