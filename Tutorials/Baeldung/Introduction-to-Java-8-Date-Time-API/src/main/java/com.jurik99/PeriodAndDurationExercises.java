@@ -1,6 +1,7 @@
 package com.jurik99;
 
 import java.time.Duration;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
@@ -35,6 +36,11 @@ public class PeriodAndDurationExercises {
 		System.out.println("finalTime = " + finalTime);
 
 		System.out.println("Duration.between(finalTime, initialTime).getSeconds() = " + Duration.between(finalTime, initialTime).getSeconds());
-		System.out.println("ChronoUnit.SECONDS.between(finalDate, initialDate) = " + ChronoUnit.SECONDS.between(finalDate, initialDate));
+//		System.out.println("ChronoUnit.SECONDS.between(finalDate, initialDate) = " + ChronoUnit.SECONDS.between(finalDate, initialDate));
+
+		final Instant start = Instant.now();
+		System.out.println("start = " + start);
+		System.out.println("Duration.between(start, Instant.now()).toString() = " + Duration.between(start, Instant.now()).toString());
+		System.out.println("Duration.between(start, Instant.now()).getSeconds() = " + Duration.between(start, Instant.now()).getSeconds());
 	}
 }
