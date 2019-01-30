@@ -6,17 +6,10 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Java-8-Found-In-The-Internet</artifactId>
+        <artifactId>ConcretePage</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>ConcretePage</artifactId>
-    <packaging>pom</packaging>
-    <name>ConcretePage</name>
-
-    <modules>
-        <module>BiConsumer-BiFunction-BiPredicate</module>
-        <module>Java-8-reduce-example</module>
-    </modules>
+    <artifactId>Java-8-reduce-example</artifactId>
 
 </project>
