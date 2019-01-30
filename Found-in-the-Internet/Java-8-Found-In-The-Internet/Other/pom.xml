@@ -6,18 +6,10 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Found-in-the-Internet</artifactId>
+        <artifactId>Java-8-Found-In-The-Internet</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Java-8-Found-In-The-Internet</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>Other</artifactId>
 
-    <modules>
-        <module>FlatMap-example</module>
-        <module>Java-Brahman</module>
-        <module>ConcretePage</module>
-        <module>Other</module>
-    </modules>
-    
 </project>
