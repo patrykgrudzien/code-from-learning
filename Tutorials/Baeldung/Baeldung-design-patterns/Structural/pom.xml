@@ -6,16 +6,10 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>baeldung</artifactId>
+        <artifactId>Baeldung-design-patterns</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Baeldung-design-patterns</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>Behavioral</module>
-        <module>Structural</module>
-    </modules>
+    <artifactId>Structural</artifactId>
 
 </project>
