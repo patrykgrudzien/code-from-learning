@@ -14,8 +14,17 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>Creational-by-Baeldung</module>
         <module>Behavioral</module>
         <module>Structural</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${vavr.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
