@@ -10,6 +10,11 @@
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Strategy-design-patterns</artifactId>
+    <artifactId>Baeldung-design-patterns</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>Behavioral</module>
+    </modules>
 
 </project>

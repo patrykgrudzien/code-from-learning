@@ -1,4 +1,4 @@
-package com.jurik99;
+package com.jurik99.Strategy;
 
 import java.math.BigDecimal;
 
@@ -17,6 +17,6 @@ public class StrategyPattern {
     public static void main(String[] args) {
 
         final Discounter christmasDiscounter = Discounter.christmasDiscounter();
-        System.out.println("christmasDiscounter.apply(new BigDecimal(\"123456789\")) = " + christmasDiscounter.apply(new BigDecimal("123456789")));
+        System.out.println("christmasDiscounter.apply(new BigDecimal(\"123456789\")) = " + christmasDiscounter.applyDiscount(new BigDecimal("123456789")));
     }
 }

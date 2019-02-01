@@ -1,13 +1,10 @@
-package com.jurik99;
+package com.jurik99.Strategy;
 
 import java.math.BigDecimal;
-import java.util.function.UnaryOperator;
 
-public interface Discounter extends UnaryOperator<BigDecimal> {
+public interface Discounter {
 
-    default Discounter combine(final Discounter after) {
-        return value -> after.apply(this.apply(value));
-    }
+    BigDecimal applyDiscount(final BigDecimal amount);
 
     static Discounter christmasDiscounter() {
         return amount -> amount.multiply(BigDecimal.valueOf(0.9));
