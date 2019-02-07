@@ -14,7 +14,7 @@ public class StrategyPattern {
      * First, let’s create a Discounter interface which will be implemented by each of our strategies
      */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         final Discounter christmasDiscounter = Discounter.christmasDiscounter();
         System.out.println("christmasDiscounter.apply(new BigDecimal(\"123456789\")) = " + christmasDiscounter.applyDiscount(new BigDecimal("123456789")));
