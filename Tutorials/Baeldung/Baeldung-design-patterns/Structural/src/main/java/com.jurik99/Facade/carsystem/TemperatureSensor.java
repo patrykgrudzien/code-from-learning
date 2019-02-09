@@ -1,0 +1,8 @@
+package com.jurik99.Facade.carsystem;
+
+public class TemperatureSensor {
+
+    public void getTemperature() {
+        System.out.println("Getting temperature from the sensor..");
+    }
+}
