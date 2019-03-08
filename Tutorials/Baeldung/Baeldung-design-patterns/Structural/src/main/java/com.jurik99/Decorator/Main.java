@@ -1,6 +1,15 @@
 package com.jurik99.Decorator;
 
 /**
+ * Suppose we have a Christmas tree object and we want to decorate it.
+ * The decoration does not change the object itself; it’s just that in addition to the Christmas tree,
+ * we’re adding some decoration items like
+ * 1) garland
+ * 2) tinsel
+ * 3) tree-topper
+ * 4) bubble lights
+ * etc...
+ *
  * Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
  * This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
  *
