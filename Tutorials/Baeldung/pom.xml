@@ -22,6 +22,7 @@
         <module>Vavr-Tutorial</module>
         <module>Introduction-to-Java-8-Date-Time-API</module>
         <module>Baeldung-design-patterns</module>
+        <module>Guide-to-Java-URL-Encoding-Decoding</module>
     </modules>
 
 </project>
