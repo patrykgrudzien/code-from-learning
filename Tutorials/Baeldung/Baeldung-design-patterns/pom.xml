@@ -17,6 +17,7 @@
         <module>Creational-by-Baeldung</module>
         <module>Behavioral</module>
         <module>Structural</module>
+        <module>Currying-in-Java</module>
     </modules>
 
     <dependencies>
