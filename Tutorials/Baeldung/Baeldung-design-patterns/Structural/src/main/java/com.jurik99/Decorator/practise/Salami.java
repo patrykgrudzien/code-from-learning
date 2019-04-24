@@ -2,7 +2,7 @@ package com.jurik99.Decorator.practise;
 
 import java.math.BigDecimal;
 
-public class Salami extends ToppingDecorator {
+class Salami extends ToppingDecorator {
 
     Salami(final Pizza pizza) {
         super(pizza);
@@ -10,8 +10,7 @@ public class Salami extends ToppingDecorator {
     }
 
     @Override
-    public BigDecimal getPrice() {
-        System.out.println("Salami price.");
-        return super.getPrice().add(new BigDecimal("10.00"));
+    BigDecimal getToppingPrice() {
+        return new BigDecimal("10.00");
     }
 }

@@ -6,5 +6,7 @@ public class Main {
 
         final Pizza pizza = new Cheese(new Salami(new PizzaImpl()));
         System.out.println("pizza.getPrice() = " + pizza.getPrice());
+
+        System.out.println("new PizzaImpl().getPrice() = " + new PizzaImpl().getPrice());
     }
 }

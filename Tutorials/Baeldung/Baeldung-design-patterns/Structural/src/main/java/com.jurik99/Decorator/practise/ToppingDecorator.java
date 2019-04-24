@@ -12,6 +12,8 @@ public abstract class ToppingDecorator implements Pizza {
 
     @Override
     public BigDecimal getPrice() {
-        return pizza.getPrice();
+        return pizza.getPrice().add(getToppingPrice());
     }
+
+    abstract BigDecimal getToppingPrice();
 }
