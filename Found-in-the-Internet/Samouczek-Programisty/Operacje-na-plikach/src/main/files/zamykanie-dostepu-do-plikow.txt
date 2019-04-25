@@ -1,0 +1,13 @@
+Proszę pamiętaj o zamknięciu strumienia danych.
+Dlaczego jest to ważne? Podstawowym powodem jest tutaj zarządzanie przez system operacyjny tak zwanymi uchwytami
+do otwartych plików. Otóż systemy operacyjne, które znam mają limity, które pozwalają na otwarcie
+np. 2048 plików jednocześnie przez każdy program.
+Liczba ta jest na tyle duża, że nie zauważasz tego ograniczenia w codziennym użytkowaniu.
+Jeśli jednak napiszesz program, który będzie otwierał pliki bez ich zamykania możesz z łatwością wyczerpać ten limit.
+
+Bardziej przyziemnym powodem jest tak zwane buforowanie.
+Zapis do pliku może być buforowany (i jest w części przypadków przez klasy ze standardowej biblioteki Javy).
+Oznacza to tyle, że wywołanie metody write tak naprawdę jeszcze niczego na dysku nie zapisuje.
+Zapisuje te dane w buforze, który zrzucany jest na dysk. Taki zabieg jest wykonywany aby przyspieszyć zapis danych.
+Jeśli nie zamkniesz pliku może to doprowadzić do sytuacji, w której w buforze zostaną dane, które jeszcze
+nie zostały do pliku zrzucone. Zostaną one wówczas utracone, a tego chcielibyśmy uniknąć :)

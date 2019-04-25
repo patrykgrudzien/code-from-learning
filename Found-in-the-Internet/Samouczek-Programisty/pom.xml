@@ -6,20 +6,15 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>My-Whole-Code</artifactId>
+        <artifactId>Found-in-the-Internet</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Found-in-the-Internet</artifactId>
+    <artifactId>Samouczek-Programisty</artifactId>
     <packaging>pom</packaging>
-    <name>Found-in-the-Internet</name>
 
     <modules>
-        <module>Java-8-Found-In-The-Internet</module>
-        <module>Junit-Examples</module>
-        <module>Java-Honk</module>
-        <module>Pattern-Matching-w-Javie-z-Javaslang</module>
-        <module>Samouczek-Programisty</module>
+        <module>Operacje-na-plikach</module>
     </modules>
 
 </project>
