@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-@SuppressWarnings("SpellCheckingInspection")
+@SuppressWarnings({"SpellCheckingInspection", "DanglingJavadoc"})
 public class Main {
 
     public static void main(final String[] args) throws FileNotFoundException {

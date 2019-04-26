@@ -3,7 +3,7 @@ package com.jurik99;
 import java.io.FileWriter;
 import java.io.IOException;
 
-@SuppressWarnings("SpellCheckingInspection")
+@SuppressWarnings({"SpellCheckingInspection", "DanglingJavadoc"})
 public class ZapisDoPlikuTekstowego {
 
     public static void main(final String[] args) {

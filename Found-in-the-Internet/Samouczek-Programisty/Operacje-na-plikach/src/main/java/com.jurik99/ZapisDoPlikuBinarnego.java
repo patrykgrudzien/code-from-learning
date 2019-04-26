@@ -4,7 +4,7 @@ import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-@SuppressWarnings("SpellCheckingInspection")
+@SuppressWarnings({"SpellCheckingInspection", "DanglingJavadoc"})
 public class ZapisDoPlikuBinarnego {
 
     public static void main(final String[] args) {
