@@ -6,17 +6,15 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Found-in-the-Internet</artifactId>
+        <artifactId>Samouczek-Programisty</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Samouczek-Programisty</artifactId>
+    <artifactId>Kolekcje-w-jezyku-Java</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>Operacje-na-plikach</module>
-        <module>Kolekcje-w-jezyku-Java</module>
-        <module>Porownywanie-obiektow-equals-hashCode</module>
+        <module>Mapy</module>
     </modules>
-
+    
 </project>
