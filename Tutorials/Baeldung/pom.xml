@@ -23,6 +23,7 @@
         <module>Introduction-to-Java-8-Date-Time-API</module>
         <module>Baeldung-design-patterns</module>
         <module>Guide-to-Java-URL-Encoding-Decoding</module>
+        <module>Currying-in-Java</module>
     </modules>
 
 </project>
