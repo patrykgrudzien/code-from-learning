@@ -17,6 +17,7 @@
         <module>question-1-how-to-reverse-a-string</module>
         <module>question-2-remove-junk-special-chars-in-a-string</module>
         <module>question-3-how-to-reverse-an-integer</module>
+        <module>question-4-how-to-find-missing-number-in-array</module>
     </modules>
 
 </project>
