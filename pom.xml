@@ -37,6 +37,7 @@
         <module>Found-in-the-Internet</module>
         <module>Exercises</module>
         <module>JWT-Examples</module>
+        <module>Java-Interview-Questions</module>
     </modules>
 
     <build>
@@ -165,7 +166,7 @@
         <powermock.api.mockito>1.6.2</powermock.api.mockito>
         <powermock.module.junit4>1.6.2</powermock.module.junit4>
         <powermock.core>1.6.2</powermock.core>
-        <lombok.version>1.16.20</lombok.version>
+        <lombok.version>1.18.8</lombok.version>
         <!-- Set for Hibernate Validator -->
 
         <!-- This transitively pulls in the dependency to the Bean Validation API
