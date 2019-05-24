@@ -6,17 +6,10 @@
 
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>Java-Interview-Questions</artifactId>
+        <artifactId>Naveen-AutomationLabs</artifactId>
         <version>1.0 Version</version>
     </parent>
 
-    <artifactId>Naveen-AutomationLabs</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>question-1-how-to-reverse-a-string</module>
-        <module>question-2-remove-junk-special-chars-in-a-string</module>
-        <module>question-3-how-to-reverse-an-integer</module>
-    </modules>
+    <artifactId>question-3-how-to-reverse-an-integer</artifactId>
 
 </project>
