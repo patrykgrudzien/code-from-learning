@@ -8,7 +8,7 @@
     <!-- PARENT -->
     <parent>
         <groupId>com.jurik99</groupId>
-        <artifactId>My-Whole-Code</artifactId>
+        <artifactId>code-from-learning</artifactId>
         <version>1.0 Version</version>
         <relativePath>../pom.xml</relativePath>
     </parent>

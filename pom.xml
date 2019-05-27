@@ -6,10 +6,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jurik99</groupId>
-    <artifactId>My-Whole-Code</artifactId>
+    <artifactId>code-from-learning</artifactId>
     <version>1.0 Version</version>
     <packaging>pom</packaging>
-    <name>My-Whole-Code</name>
+    <name>code-from-learning</name>
 
     <modules>
         <module>Java-Brains</module>

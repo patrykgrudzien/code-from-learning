@@ -9,7 +9,7 @@ public class OdczytzPlikuBinarnego {
 
     public static void main(final String[] args) {
 
-        final String filePath = "/home/jurik99/Projects/my-whole-code/Found-in-the-Internet/Samouczek-Programisty/" +
+        final String filePath = "/home/jurik99/Projects/code-from-learning/Found-in-the-Internet/Samouczek-Programisty/" +
                 "Operacje-na-plikach/src/main/files/binary-file-1.txt";
         int number = 0;
 
