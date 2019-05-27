@@ -1,0 +1,28 @@
+zwierzaki
+{
+	 font-family: Verdana, Arial
+}
+pies
+{
+	display: block;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #FFCC00;
+}
+kot
+{
+	display: block;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #66FF00;
+}
+krolik
+{
+	display: block;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #CCFFFF;
+}

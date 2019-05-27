@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Artur-Owczarek</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>JPA-learning</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>11-multiple-tables</module>
+        <module>12-embedded-class</module>
+        <module>13-one-to-one</module>
+        <module>14-find-and-modify</module>
+        <module>15-refreshing-object</module>
+        <module>16-deleting</module>
+        <module>17-jpql-part-1</module>
+        <module>18-jpql-part-2</module>
+        <module>19-jpql-entity-name</module>
+        <module>20-jpql-functions</module>
+        <module>22-one-to-one-bidirectional</module>
+        <module>23-one-to-many-unidirectional</module>
+        <module>24-one-to-many-bidirectional</module>
+        <module>date-and-time</module>
+        <module>entity-configuration</module>
+        <module>possible-types</module>
+    </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.3.11.Final</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -17,6 +17,7 @@
     <modules>
         <module>HTML</module>
         <module>Java-Script</module>
+        <module>CSS</module>
     </modules>
 
 </project>

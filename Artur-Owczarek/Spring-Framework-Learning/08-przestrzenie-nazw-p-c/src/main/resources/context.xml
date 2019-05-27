@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="someLocale" class="java.util.Locale" factory-method="getDefault" />
+
+	<bean id="someUser" class="com.jurik99.springtutorial.User">
+		<constructor-arg value="Patryk" />
+		<constructor-arg value="25" />
+		<constructor-arg ref="someLocale"></constructor-arg>
+	</bean>
+
+	<bean id="someBean" class="com.jurik99.springtutorial.SomeBean">
+		<property name="user" ref="someUser" />
+		<property name="stringValue" value="some string value" />
+		<property name="intValue" value="100" />
+	</bean>
+
+	<bean id="someUser2" class="com.jurik99.springtutorial.User"
+		c:name="Patrycja" c:age="25" c:locale-ref="someLocale" />
+		
+	<bean id="someUser3" class="com.jurik99.springtutorial.User"
+		c:_0="Patrycja" c:_1="25" c:_2-ref="someLocale" />
+
+	<bean id="someBean2" class="com.jurik99.springtutorial.SomeBean"
+		p:stringValue="some string value2" p:intValue="43" p:user-ref="someUser2" />
+
+</beans>

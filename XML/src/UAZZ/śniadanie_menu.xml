@@ -1,0 +1,44 @@
+<?xml-stylesheet type=”text/xsl” href=”menu.xsl”?>
+
+<śniadanie_menu>
+    <jedzenie>
+        <nazwa>Polskie gofry</nazwa>
+        <cena>5.95</cena>
+        <opis>
+            Dwa z naszych słynnych gofrów z dużą ilością prawdziwego syropu klonowego
+        </opis>
+        <kalorie>650</kalorie>
+    </jedzenie>
+    <jedzenie>
+        <nazwa>Polskie gofry z truskawkami</nazwa>
+        <cena>7.95</cena>
+        <opis>
+            Lekkie gofry pokryte truskawkami i bitą śmietaną
+        </opis>
+        <kalorie>900</kalorie>
+    </jedzenie>
+    <jedzenie>
+        <nazwa>Polskie gofry z jagodmi</nazwa>
+        <cena>8.95</cena>
+        <opis>
+            Lekkie gofry pokryte świeżymi jagodami i bitą śmietaną
+        </opis>
+        <kalorie>900</kalorie>
+    </jedzenie>
+    <jedzenie>
+        <nazwa>Tosty francuskie</nazwa>
+        <cena>4.50</cena>
+        <opis>
+            Grube plastry z naszego chleba na domowym zakwasie
+        </opis>
+        <kalorie>600</kalorie>
+    </jedzenie>
+    <jedzenie>
+        <nazwa>Domowe śniadanie</nazwa>
+        <cena>6.95</cena>
+        <opis>
+            Dwa jajka, boczek lub kiełbasa, tosty i nasz popularny placek ziemniaczany
+        </opis>
+        <kalorie>950</kalorie>
+    </jedzenie>
+</śniadanie_menu>

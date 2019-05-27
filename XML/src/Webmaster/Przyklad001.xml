@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+
+<?xml-stylesheet type="text/css" href="arkusz001.css"?>
+
+<zwierzaki>
+    <pies>Brytan</pies>
+    <kot>Feliks</kot>
+    <krolik>Kicek</krolik>
+</zwierzaki>

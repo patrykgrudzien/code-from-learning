@@ -16,6 +16,8 @@
 
     <modules>
         <module>Big-Decimal-Wrong-Usage</module>
+        <module>Spring-Framework-Learning</module>
+        <module>JPA-learning</module>
     </modules>
     
 </project>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<?xml-stylesheet type="text/css" href="/cd_katalog.css"?>
+<KATALOG>
+<CD>
+    <TYTUŁ>Empire Burlesque</TYTUŁ>
+    <ARTYSTA>Bob Dylan</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>Columbia</WYTWÓRNIA>
+    <CENA>10.90</CENA>
+    <ROK>1985</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Hide your heart</TYTUŁ>
+    <ARTYSTA>Bonnie Tyler</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>CBS Records</WYTWÓRNIA>
+    <CENA>9.90</CENA>
+    <ROK>1988</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Greatest Hits</TYTUŁ>
+    <ARTYSTA>Dolly Parton</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>RCA</WYTWÓRNIA>
+    <CENA>9.90</CENA>
+    <ROK>1982</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Still got the blues</TYTUŁ>
+    <ARTYSTA>Gary Moore</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Virgin records</WYTWÓRNIA>
+    <CENA>10.20</CENA>
+    <ROK>1990</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Eros</TYTUŁ>
+    <ARTYSTA>Eros Ramazzotti</ARTYSTA>
+    <KRAJ>EU</KRAJ>
+    <WYTWÓRNIA>BMG</WYTWÓRNIA>
+    <CENA>9.90</CENA>
+    <ROK>1997</ROK>
+</CD>
+<CD>
+    <TYTUŁ>One night only</TYTUŁ>
+    <ARTYSTA>Bee Gees</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Polydor</WYTWÓRNIA>
+    <CENA>10.90</CENA>
+    <ROK>1998</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Sylvias Mother</TYTUŁ>
+    <ARTYSTA>Dr.Hook</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>CBS</WYTWÓRNIA>
+    <CENA>8.10</CENA>
+    <ROK>1973</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Maggie May</TYTUŁ>
+    <ARTYSTA>Rod Stewart</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Pickwick</WYTWÓRNIA>
+    <CENA>8.50</CENA>
+    <ROK>1990</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Romanza</TYTUŁ>
+    <ARTYSTA>Andrea Bocelli</ARTYSTA>
+    <KRAJ>EU</KRAJ>
+    <WYTWÓRNIA>Polydor</WYTWÓRNIA>
+    <CENA>10.80</CENA>
+    <ROK>1996</ROK>
+</CD>
+<CD>
+    <TYTUŁ>When a man loves a woman</TYTUŁ>
+    <ARTYSTA>Percy Sledge</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>Atlantic</WYTWÓRNIA>
+    <CENA>8.70</CENA>
+    <ROK>1987</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Black angel</TYTUŁ>
+    <ARTYSTA>Savage Rose</ARTYSTA>
+    <KRAJ>EU</KRAJ>
+    <WYTWÓRNIA>Mega</WYTWÓRNIA>
+    <CENA>10.90</CENA>
+    <ROK>1995</ROK>
+</CD>
+<CD>
+    <TYTUŁ>1999 Grammy Nominees</TYTUŁ>
+    <ARTYSTA>Many</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>Grammy</WYTWÓRNIA>
+    <CENA>10.20</CENA>
+    <ROK>1999</ROK>
+</CD>
+<CD>
+    <TYTUŁ>For the good times</TYTUŁ>
+    <ARTYSTA>Kenny Rogers</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Mucik Master</WYTWÓRNIA>
+    <CENA>8.70</CENA>
+    <ROK>1995</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Big Willie style</TYTUŁ>
+    <ARTYSTA>Will Smith</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>Columbia</WYTWÓRNIA>
+    <CENA>9.90</CENA>
+    <ROK>1997</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Tupelo Honey</TYTUŁ>
+    <ARTYSTA>Van Morrison</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Polydor</WYTWÓRNIA>
+    <CENA>8.20</CENA>
+    <ROK>1971</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Soulsville</TYTUŁ>
+    <ARTYSTA>Jorn Hoel</ARTYSTA>
+    <KRAJ>Norway</KRAJ>
+    <WYTWÓRNIA>WEA</WYTWÓRNIA>
+    <CENA>7.90</CENA>
+    <ROK>1996</ROK>
+</CD>
+<CD>
+    <TYTUŁ>The very best of</TYTUŁ>
+    <ARTYSTA>Cat Stevens</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Island</WYTWÓRNIA>
+    <CENA>8.90</CENA>
+    <ROK>1990</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Stop</TYTUŁ>
+    <ARTYSTA>Sam Brown</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>A and M</WYTWÓRNIA>
+    <CENA>8.90</CENA>
+    <ROK>1988</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Bridge of Spies</TYTUŁ>
+    <ARTYSTA>T'Pau</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Siren</WYTWÓRNIA>
+    <CENA>7.90</CENA>
+    <ROK>1987</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Private Dancer</TYTUŁ>
+    <ARTYSTA>Tina Turner</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>Capitol</WYTWÓRNIA>
+    <CENA>8.90</CENA>
+    <ROK>1983</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Midt om natten</TYTUŁ>
+    <ARTYSTA>Kim Larsen</ARTYSTA>
+    <KRAJ>EU</KRAJ>
+    <WYTWÓRNIA>Medley</WYTWÓRNIA>
+    <CENA>7.80</CENA>
+    <ROK>1983</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Pavarotti Gala Concert</TYTUŁ>
+    <ARTYSTA>Luciano Pavarotti</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>DECCA</WYTWÓRNIA>
+    <CENA>9.90</CENA>
+    <ROK>1991</ROK>
+</CD>
+<CD>
+    <TYTUŁ>The dock of the bay</TYTUŁ>
+    <ARTYSTA>Otis Redding</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>Atlantic</WYTWÓRNIA>
+    <CENA>7.90</CENA>
+    <ROK>1987</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Picture book</TYTUŁ>
+    <ARTYSTA>Simply Red</ARTYSTA>
+    <KRAJ>EU</KRAJ>
+    <WYTWÓRNIA>Elektra</WYTWÓRNIA>
+    <CENA>7.20</CENA>
+    <ROK>1985</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Red</TYTUŁ>
+    <ARTYSTA>The Communards</ARTYSTA>
+    <KRAJ>UK</KRAJ>
+    <WYTWÓRNIA>London</WYTWÓRNIA>
+    <CENA>7.80</CENA>
+    <ROK>1987</ROK>
+</CD>
+<CD>
+    <TYTUŁ>Unchain my heart</TYTUŁ>
+    <ARTYSTA>Joe Cocker</ARTYSTA>
+    <KRAJ>USA</KRAJ>
+    <WYTWÓRNIA>EMI</WYTWÓRNIA>
+    <CENA>8.20</CENA>
+    <ROK>1987</ROK>
+</CD>
+</KATALOG>

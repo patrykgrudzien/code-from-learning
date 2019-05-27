@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- przykładowy komentarz
+ XML został zaprojektowany do transportu i przechowywania danych
+ HTML został zaprojektowany do wyświetlania danych -->
+<notatka>
+    <do>Alek</do>
+    <od>Janicki</od>
+    <gangster nazwisko="Grzegorz &quot;DUBELTÓWKA&quot; Strzelecki"></gangster>
+    <nagłówek>Przypomnienie</nagłówek>
+    <wiadomość>Nie zapomnij o mnie w ten weekend!</wiadomość>
+</notatka>

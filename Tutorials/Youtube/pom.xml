@@ -25,6 +25,7 @@
         <module>Spring-Framework-JMS-Integration</module>
         <module>Tech-Primers</module>
         <module>Andrzej-Radziejewski</module>
+        <module>Strefa-Kursow-Poziom-2</module>
     </modules>
 
 </project>

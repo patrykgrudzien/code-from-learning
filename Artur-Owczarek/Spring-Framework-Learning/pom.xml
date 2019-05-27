@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jurik99</groupId>
+        <artifactId>Artur-Owczarek</artifactId>
+        <version>1.0 Version</version>
+    </parent>
+
+    <artifactId>Spring-Framework-Learning</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>02-basic-dependency-injection</module>
+        <module>03-simple-values-injection</module>
+        <module>04-constructor-injection</module>
+        <module>05-factory-method</module>
+        <module>06-own-factory-method</module>
+        <module>07-instancyjne-factory-method</module>
+        <module>08-przestrzenie-nazw-p-c</module>
+        <module>09-tricks-tips</module>
+        <module>10-beany-wewnetrzne-wstrzykiwanie-nulli</module>
+    </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.3.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

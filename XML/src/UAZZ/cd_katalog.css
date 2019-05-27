@@ -1,0 +1,27 @@
+KATALOG
+{
+   background-color: #ffffff;
+   width: 100%;
+}
+CD
+{
+   display: block;
+   margin-bottom: 30pt;
+   margin-left: 0;
+}
+TYTUŁ
+{
+   color: #FF0000;
+   font-size: 20pt;
+}
+ARTYSTA
+{
+   color: #0000FF;
+   font-size: 20pt;
+}
+KRAJ,WYTWÓRNIA,CENA,ROK
+{
+   display: block;
+   color: #000000;
+   margin-left: 20pt;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osoby>
+    <osoba płeć="mężczyzna">
+        <imię>Jan</imię>
+        <nazwisko>Kowalski</nazwisko>
+        <wiek>30</wiek>
+    </osoba>
+
+    <osoba płeć="kobieta">
+        <imię>Anna</imię>
+        <nazwisko>Nowacka</nazwisko>
+        <wiek> &lt;18 </wiek>
+    </osoba>
+</osoby>

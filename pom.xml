@@ -12,6 +12,7 @@
     <name>code-from-learning</name>
 
     <modules>
+        <module>Annotations</module>
         <module>Java-Brains</module>
         <module>Journal-Dev</module>
         <module>Luv2Code</module>
@@ -27,6 +28,7 @@
         <module>Miroslaw-Zelent</module>
         <module>Mkyong-com</module>
         <module>General-Terminology</module>
+        <module>Git-Interactive-Tutorial</module>
         <module>Git-Terminology-and-Commands</module>
         <module>Java-Start</module>
         <module>Vogella-com</module>
@@ -38,6 +40,8 @@
         <module>Exercises</module>
         <module>JWT-Examples</module>
         <module>Java-Interview-Questions</module>
+        <module>RESTWeb-Services-Girls-Carrot</module>
+        <module>XML</module>
     </modules>
 
     <build>

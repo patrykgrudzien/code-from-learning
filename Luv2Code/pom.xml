@@ -17,6 +17,7 @@
     <modules>
         <module>Spring</module>
         <module>JSP</module>
+        <module>Hibernate-Luv2Code</module>
     </modules>
 
 </project>
