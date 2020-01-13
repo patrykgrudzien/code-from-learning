@@ -20,6 +20,7 @@
         <module>Java-Honk</module>
         <module>Pattern-Matching-w-Javie-z-Javaslang</module>
         <module>Samouczek-Programisty</module>
+        <module>Geeks-for-Geeks</module>
     </modules>
 
 </project>
